@@ -21,7 +21,7 @@ Events, RBOs, Treaties
 
 ## Interface Design 
 Coordinated (Multiple) View Geoviz similar to the Climate Proxies Finder
-
+![](img/climate-proxies-finder.png)
 
 [World Cloud][] for visualizing a world cloud of words from treaties to demonstrate the verbage which may express positive or negative connotations regarding various treaties. 
 
