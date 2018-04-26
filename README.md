@@ -30,10 +30,12 @@ Coordinated (Multiple) View Geoviz similar to the Climate Proxies Finder
 
 ## GEOviz for each variable
 ### Global Level
-#### Chloropeth Layers 
-poulation 
-landcover
-dams
+#### Chloropeth Layers
+---------------------|
+poulation| 
+landcover|
+dams|
+
 #### Data
 treaty
 events
