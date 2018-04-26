@@ -29,23 +29,23 @@ Coordinated (Multiple) View Geoviz similar to the Climate Proxies Finder
 [World Cloud]: https://www.jasondavies.com/wordcloud/
 
 ## GEOviz for each variable
+
 ### Global Level
 #### Chloropeth Layers
-
 poulation  
 landcover  
 dams  
 
 #### Data
-treaty
-events
-RBO
+treaty  
+events  
+RBO  
 
 ### Basin/BCU level
-countries
-land area
-population
-dams (existing and planned)
-treaties
-events
+countries  
+land area  
+population  
+dams (existing and planned)  
+treaties  
+events   
 
