@@ -28,24 +28,24 @@ Coordinated (Multiple) View Geoviz similar to the Climate Proxies Finder
 [Link]: https://github.com/hannahfriedrich/TFDDGeoViz/tree/master/assets
 [World Cloud]: https://www.jasondavies.com/wordcloud/
 
-## GEOviz for each variable
+## Variables
 
 ### Global Level
 #### Chloropeth Layers
-poulation  
-landcover  
-dams  
+Poulation  
+Landcover  
+Dams  
 
-#### Data
-treaty  
-events  
+#### Network Visualization
+Treaty  
+Events  
 RBO  
 
 ### Basin/BCU level
-countries  
-land area  
-population  
-dams (existing and planned)  
-treaties  
-events   
+Countries  
+Land area  
+Population  
+Dams (existing and planned)  
+Treaties  
+Events   
 
