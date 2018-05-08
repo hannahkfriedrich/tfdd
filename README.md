@@ -49,3 +49,11 @@ Dams (existing and planned)
 Treaties  
 Events   
 
+## Interface Sketch
+
+The website will be accessed from a landing/welcome page with a brief introduction containing basic information about the database and links to social media and other resources.
+The main interface of the website will have as a central element a world map with the international water basins and basin country units (BCU, subdivision of each basin among countries) boundaries. Clicking on each basin/BCU a side panel will appear with statistics about that particular unit: population, land area, water, land cover distribution, number of dams etc. The visualization will be in the form of coordinate pie and bar charts.
+A navbar on the top of the page will allow to change thematic maps as background: climate world map, land use etc.
+From the top navbar you will also be able to switch to the other sections of the website, which take in account international treaties, events and river basin organizations. On these pages the visualization will be in the form of Force Atlas and Sankey diagrams to show the type and number of relationships for each basin/country.
+
+
