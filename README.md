@@ -11,13 +11,17 @@ Utilizing Transboundary Freshwater Dispute Database data, create a geovisualizat
 shows basins, BCUs, and countries and a breakdown associated variables with that particular basin, BCU, or country. Primary goal is to express the variables using D3.js on a side panel, which may be expanded to show a comparison of variables between two basins, BCUs, or countries. For the tabluar data (events, RBOs, and treaties), we would like to have a bar beneath the web map that contains rows of the associated event, RBO, or treaties which the user can scroll through. From this table, one can link to PDFs of the treaties which is hosted by the TFDD group. It is also planned to create a network visualization of the events, RBOs, and treaties to show which countries have treaties with other countries. From the main landing page, one will be able to share, view on Github, and have a link to an "About" page which contains background information on the database, a bibliography, and credits. 
 
 ## Data 
-[Link] to data.
 
-### Spatial Data: 
-Basins, BCUs, Countries, Rivers
+### Spatial Data:
+The TFDD database has both spatial and tabular data. Spatial data consist in a series of shapefiles (which will be transformed in topojson files for this project) delineating the boundaries of International River Basins and of Basin Country Units. The attribute table of those shapefiles contains information about population, population density and land area in each unit. 
 
 ### Tabular Data
-Events, RBOs, Treaties
+Tabular data consist of three excel spreadsheet containing information about: 
+1) International water treaties
+2) International events (both conflictual and friendly) related to water
+3) River Basin Organizations within each basin.
+
+[Link] to data.
 
 ## Interface Design 
 Coordinated (Multiple) View Geoviz similar to the Climate Proxies Finder
