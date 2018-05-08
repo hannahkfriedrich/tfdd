@@ -60,10 +60,15 @@ The main interface of the website will have as a central element a world map wit
 A navbar on the top of the page will allow to change thematic maps as background: climate world map, land use etc.
 From the top navbar you will also be able to switch to the other sections of the website, which take in account international treaties, events and river basin organizations. On these pages the visualization will be in the form of Force Atlas and Sankey diagrams to show the type and number of relationships for each basin/country.
 
+### Landing Page
 ![](assets/img/landing.JPG)
-![](assets/img/about.JPG)
+### Coordinated, Multiple View with Map
 ![](assets/img/map.JPG)
+### Force Atlas which displays treaties data
 ![](assets/img/forceatlas.JPG)
+### Sankey Diagram which shops conflict, cooperation events
 ![](assets/img/events.JPG)
+### Choropleth map that shows River Basin Organizations (RBOs)
 ![](assets/img/rbo.JPG)
+### About page
 ![](assets/img/about.JPG)
