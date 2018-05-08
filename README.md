@@ -65,7 +65,7 @@ From the top navbar you will also be able to switch to the other sections of the
 ### Coordinated, Multiple View with Map
 ![](assets/img/map.JPG)
 ### Force Atlas which displays treaties data
-![](assets/img/forceatlas.JPG)
+![](assets/img/foceatlas.JPG)
 ### Sankey Diagram which shops conflict, cooperation events
 ![](assets/img/events.JPG)
 ### Choropleth map that shows River Basin Organizations (RBOs)
