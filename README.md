@@ -83,5 +83,6 @@ Titles: 'Cinzel Decorative'
 Body: 'Artifika'
 ### 3) Web Icon
 ![](assets/img/TFDDicon.JPG =250px)
+<img src="assets/img/TFDDicon.JP" width="200">
 TFDD icon for logo and table icon
 ### 4) Multimedia
