@@ -82,6 +82,6 @@ All fonts will come from Google Fonts
 Titles: 'Cinzel Decorative'
 Body: 'Artifika'
 ### 3) Web Icon
-![](assets/img/TFDDicon.JPG)
+![](assets/img/TFDDicon.JPG=250x)
 TFDD icon for logo and table icon
 ### 4) Multimedia
