@@ -72,3 +72,16 @@ From the top navbar you will also be able to switch to the other sections of the
 ![](assets/img/rbo.JPG)
 ### About page
 ![](assets/img/about.JPG)
+
+## Design Scheme
+### 1) Color
+Color Scheme URL: https://coolors.co/afb6bc-919ba3-53626f-374e60-2f3942
+![](assets/img/afb6bc-919ba3-53626f-374e60-2f3942.PNG)
+### 2) Fonts
+All fonts will come from Google Fonts
+Titles: 'Cinzel Decorative'
+Body: 'Artifika'
+### 3) Web Icon
+![](assets/img/TFDD.JPG)
+TFDD icon for logo and table icon
+### 4) Multimedia
