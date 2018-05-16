@@ -87,7 +87,7 @@ CDN: <link href="https://fonts.googleapis.com/css?family=Artifika|Cinzel+Decorat
 local: assets/fonts
 
 ### 3) Web Icon
-![](assets/img/TFDDicon.JPG | width=100)
+![](assets/img/TFDDicon.JPG)
 
 TFDD icon for logo and table icon
 ### 4) Multimedia
