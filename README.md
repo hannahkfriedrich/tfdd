@@ -87,7 +87,9 @@ CDN: <link href="https://fonts.googleapis.com/css?family=Artifika|Cinzel+Decorat
 local: assets/fonts
 
 ### 3) Web Icon
-![](assets/img/TFDDicon.JPG)
+![](assets/img/TFDDicon.JPG =250x)
 
 TFDD icon for logo and table icon
 ### 4) Multimedia
+
+https://videos.pexels.com/videos/footage-of-nature-waterfalls-857218
