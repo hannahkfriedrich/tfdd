@@ -91,26 +91,33 @@ local: assets/fonts
 
 TFDD icon for logo and table icon
 
-Events
+##### Icons for menu items
+
+Events:
+
 ![](assets/icon/icons8-conflict-50.png)
 
-Dams
+Dams:
+
 ![](assets/icon/icons8-dam-50.png)
 
-Land Cover
+Land Cover:
+
 ![](assets/icon/icons8-field-50.png)
 
-Population
+Population:
+
 ![](assets/icon/icons8-global-citizen-50.png)
 
-Organizations 
+Organizations:
+
 ![](assets/icon/icons8-museum-50.png)
 
-Treaty
+Treaty:
 
 ![](assets/icon/icons8-separate-document-80.png)
 
-Icons for menu items
+
 ### 4) Multimedia
 
 https://videos.pexels.com/videos/footage-of-nature-waterfalls-857218
