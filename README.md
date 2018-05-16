@@ -103,8 +103,11 @@ Land Cover
 Population
 ![](assets/icon/icons8-global-citizen-50.png)
 
-Organizations
+Organizations 
 ![](assets/icon/icons8-museum-50.png)
+
+Treaty
+
 ![](assets/icon/icons8-separate-document-80.png)
 
 Icons for menu items
