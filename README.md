@@ -115,7 +115,7 @@ Organizations:
 
 Treaty:
 
-![](assets/icon/icons8-separate-document-80.png)
+![](assets/icon/icons8-parchment-50.png)
 
 
 ### 4) Multimedia
