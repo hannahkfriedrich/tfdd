@@ -90,6 +90,15 @@ local: assets/fonts
 ![](assets/img/TFDDicon.JPG)
 
 TFDD icon for logo and table icon
+
+![](assets/icon/icons8-conflict-50.png)
+![](assets/icon/icons8-dam-50.png)
+![](assets/icon/icons8-field-50.png)
+![](assets/icon/icons8-global-citizen-50.png)
+![](assets/icon/icons8-museum-50.png)
+![](assets/icon/icons8-separate-document-80.png)
+
+Icons for menu items
 ### 4) Multimedia
 
 https://videos.pexels.com/videos/footage-of-nature-waterfalls-857218
