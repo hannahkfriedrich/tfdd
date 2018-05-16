@@ -91,10 +91,19 @@ local: assets/fonts
 
 TFDD icon for logo and table icon
 
+Events
 ![](assets/icon/icons8-conflict-50.png)
+
+Dams
 ![](assets/icon/icons8-dam-50.png)
+
+Land Cover
 ![](assets/icon/icons8-field-50.png)
+
+Population
 ![](assets/icon/icons8-global-citizen-50.png)
+
+Organizations
 ![](assets/icon/icons8-museum-50.png)
 ![](assets/icon/icons8-separate-document-80.png)
 
