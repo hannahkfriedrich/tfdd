@@ -76,12 +76,12 @@ From the top navbar you will also be able to switch to the other sections of the
 ## Design Scheme
 ### 1) Color
 Color Scheme URL: https://coolors.co/afb6bc-919ba3-53626f-374e60-2f3942
-![](assets/img/afb6bc-919ba3-53626f-374e60-2f3942.PNG)
+![](assets/img/afb6bc-919ba3-53626f-374e60-2f3942.png)
 ### 2) Fonts
-All fonts will come from Google Fonts
+All fonts will come from Google Fonts 
 Titles: 'Cinzel Decorative'
 Body: 'Artifika'
 ### 3) Web Icon
-![](assets/img/TFDD.JPG)
+![](assets/img/TFDDicon.JPG)
 TFDD icon for logo and table icon
 ### 4) Multimedia
