@@ -77,13 +77,15 @@ From the top navbar you will also be able to switch to the other sections of the
 ### 1) Color
 Color Scheme URL: https://coolors.co/afb6bc-919ba3-53626f-374e60-2f3942
 ![](assets/img/afb6bc-919ba3-53626f-374e60-2f3942.png)
-### 2) Fonts
-All fonts will come from Google Fonts <br>
-Titles: 'Cinzel Decorative',
-Body: 'Artifika'
 
+
+### 2) Fonts
+All fonts will come from Google Fonts: <br>
+Titles: 'Cinzel Decorative' <br>
+Body: 'Artifika'
 CDN: <link href="https://fonts.googleapis.com/css?family=Artifika|Cinzel+Decorative" rel="stylesheet">
 local: assets/fonts
+
 ### 3) Web Icon
 ![](assets/img/TFDDicon.JPG)
 
