@@ -1,4 +1,4 @@
-# TFDDGeoViz
+# The Transboundary Distpute Database (tfdd)
 
 ## Team Members
 Hannah Friedrich, Giovanni Svevo, Alex Walters
