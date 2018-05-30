@@ -1,4 +1,4 @@
-# The Transboundary Distpute Database (tfdd)
+# The Transboundary Dispute Database (tfdd)
 
 ## Team Members
 Hannah Friedrich, Giovanni Svevo, Alex Walters
