@@ -1,248 +1,336 @@
-<!doctype html>
-<html lang="en" xmlns:display="http://www.w3.org/1999/xhtml">
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>walteral_GEOG572_Lab05</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" >
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <!--<script src="https://d3js.org/d3.v5.min.js"></script>-->
-  <link rel="stylesheet" href="http://dc-js.github.io/dc.js/css/dc.css">
-  <link href="https://fonts.googleapis.com/css?family=Artifika|Cinzel+Decorative" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
+    <meta charset="UTF-8">
+    <title>Transboundary Freshwater Dispute Database</title>
+    <!doctype html>
+    <html lang="en" xmlns:display="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>TFDD</title>
 
 
-    <script src="https://dc-js.github.io/dc.js/js/d3.js"></script>
-    <script src="https://dc-js.github.io/dc.js/js/crossfilter.js"></script>
-    <script src="https://dc-js.github.io/dc.js/js/dc.js"></script>
-    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="shortcut icon" href="assets/img/TFDDicon.JPG" type="image/x-icon">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css">
 
-  <style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <!--<script src="https://d3js.org/d3.v5.min.js"></script>-->
+        <link rel="stylesheet" href="http://dc-js.github.io/dc.js/css/dc.css">
+        <link href="https://fonts.googleapis.com/css?family=Artifika|Cinzel+Decorative" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
+        <!--<script src="https://d3js.org/d3.v4.min.js"></script>-->
 
-    html, body {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        background-color: #3e3e3e;
-        font-family: 'Artifika', serif;
-        font-size:16px;
-        position: relative
+        <script src="https://dc-js.github.io/dc.js/js/d3.js"></script>
+        <script src="https://dc-js.github.io/dc.js/js/crossfilter.js"></script>
+        <script src="https://dc-js.github.io/dc.js/js/dc.js"></script>
+        <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="shortcut icon" href="assets/img/TFDDicon.JPG" type="image/x-icon">
 
-    }
+        <style>
 
-    .intro {
-        height: 100%;
-        width:100%;
-        margin: auto;
-        background: url(https://images.pexels.com/photos/66090/pexels-photo-66090.jpeg?cs=srgb&dl=adventure-bushcraft-camping-66090.jpg&fm=jpg) no-repeat 50% 50%;
-        display: table;
-        top: 0;
-        background-size: cover;
-    }
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                background-color: #3e3e3e;
+                font-family: 'Artifika', serif;
+                font-size: 12px;
+                position: relative
 
-    .intro .inner {
-        display: table-cell;
-        vertical-align: middle;
-        width: 100%;
-        max-width: none;
+            }
 
-    }
+            .intro {
+                height: 100%;
+                width: 100%;
+                margin: auto;
+                background: url(https://images.pexels.com/photos/66090/pexels-photo-66090.jpeg?cs=srgb&dl=adventure-bushcraft-camping-66090.jpg&fm=jpg) no-repeat 50% 50%;
+                display: table;
+                top: 0;
+                background-size: cover;
+            }
 
-    .content {
-        max-width: 500px;
-        margin: 0 auto;
-        text-align: center;
+            .intro .inner {
+                display: table-cell;
+                vertical-align: middle;
+                width: 100%;
+                max-width: none;
 
-    }
+            }
 
-    .content h1 {
-        font-family: 'Cinzel Decorative', cursive;
-        color: #FFFFFF;
-        text-shadow: 6px 8px 300px #000000;
-        font-size: 500%;
-    }
-    .btn{
-        color: #f5f2f9;
-        border-radius: 9px;
-        font-family: 'Cinzel Decorative', cursive;
-        font-size: 100%;
-        padding: 10px 20px;
-        fill: #FFFFFF;
-        border: solid #badcf9 3px;
-        text-decoration: none;
-        text-transform: uppercase;
+            .content {
+                max-width: 500px;
+                margin: 0 auto;
+                text-align: center;
 
-    }
+            }
 
-    .btn:hover{
-        color: #fff;
-        border: solid #fff 3px;
-    }
+            .content h1 {
+                font-family: 'Cinzel Decorative', cursive;
+                color: #FFFFFF;
+                text-shadow: 6px 8px 300px #000000;
+                font-size: 500%;
+            }
 
-    .dc-chart .pie-slice.external {
-        fill: #FFFFFF;
-    }
+            .btn {
+                color: #f5f2f9;
+                border-radius: 9px;
+                font-family: 'Cinzel Decorative', cursive;
+                font-size: 100%;
+                padding: 10px 20px;
+                fill: #FFFFFF;
+                border: solid #badcf9 3px;
+                text-decoration: none;
+                text-transform: uppercase;
 
+            }
 
-    .dc-data-count {
-      position: relative;
-      margin: 0 auto;
-    }
+            .btn:hover {
+                color: #fff;
+                border: solid #fff 3px;
+            }
 
-    .map {
-      width: 70%;
-      height: 100%;
-      left: 0px;
-        position: absolute;
+            .dc-chart .pie-slice.external {
+                fill: #FFFFFF;
+            }
 
-    }
-    .side-menu {
-        width:30%;
-        height: 300px;
-        right: 0px;
-        position: absolute;
-    }
-    .icon {
-        font-size: 16px;
-        color: #FFFFFF;
-        position: absolute;
-        font-family: 'Cinzel Decorative', cursive;
-    }
+            .dc-data-count {
+                position: relative;
+                margin: 0 auto;
+            }
 
+            .map {
+                width: 70%;
+                height: 70%;
+                left: 0px;
+                top: 0px;
+                position: absolute;
 
-    .scrollbar-black::-webkit-scrollbar-track {
-      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-      background-color: #F5F5F5;
-      border-radius: 10px; }
+            }
 
-    .scrollbar {
+            .side-menu {
+                width: 30%;
 
-      float: left;
-      height: 25%;
-      width: 65px;
-      background: #fff;
-      overflow-y: scroll;
-      margin-bottom: 25px;
-    }
-    .force-overflow {
-      min-height: 350px;
-    }
+                right: 0px;
+                position: absolute;
+                max-height: 100%;
+            }
 
-    .scrollbar-primary::-webkit-scrollbar {
-      width: 12px;
-      background-color: #F5F5F5; }
+            .icon {
+                font-size: 16px;
+                color: #FFFFFF;
+                position: absolute;
+                font-family: 'Cinzel Decorative', cursive;
+            }
 
-    .scrollbar-primary::-webkit-scrollbar-thumb {
-      border-radius: 10px;
-      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-      background-color: #180ef4; }
+            .scrollbar-black::-webkit-scrollbar-track {
+                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+                background-color: #F5F5F5;
+                border-radius: 10px;
+            }
 
+            .scrollbar {
 
-  </style>
+                float: left;
+                height: 25%;
+                width: 65px;
+                background: #fff;
+                overflow-y: scroll;
+                margin-bottom: 25px;
+            }
 
+            .force-overflow {
+                min-height: 350px;
+            }
 
+            .scrollbar-primary::-webkit-scrollbar {
+                width: 12px;
+                background-color: #F5F5F5;
+            }
 
-</head>
+            .scrollbar-primary::-webkit-scrollbar-thumb {
+                border-radius: 10px;
+                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+                background-color: #180ef4;
+            }
 
+            .clear {
+                font-size: 14px;
+                left: 0px;
+                top:0px;
+
+            }
+
+        </style>
+    </head>
 <body>
-
-
-<div class="intro">
-
-    <i class="fab fa-github fa-lg" style="color: #fff; right: 5px; top:5px; position: absolute">
-        <a style='color: #FFFFFF; padding: 5px; font-family:Cinzel Decorative;' href="https://github.com/hannahfriedrich/TFDDGeoViz">Github</a></i>
-    <i class="fab fa-facebook fa-lg" style="color: #fff; right: 5px; top:25px; position: absolute">
-        <a style='color: #FFFFFF; padding: 5px; font-family:Cinzel Decorative;' href="https://github.com/hannahfriedrich/TFDDGeoViz">Facebook</a></i>
-    <i class="fa fa-info-circle" style="color: #fff; left: 5px; top:5px; font-size: large; position: absolute"><a data-toggle="modal" data-target="#aboutModal" class='icon'; style='color: #FFFFFF; padding: 5px'>About</a></i>
-    <i class="fa fa-plus-circle" style="color: #fff; left: 5px; top:25px; font-size: large; position: absolute"><a data-toggle="modal" data-target="#creditModal" class='icon'; style='color: #FFFFFF; padding: 5px'>Credit</a></i>
-
-
-    <div class="inner">
-        <div class="content">
-            <h1>Transnational Fresh Water Dispute Database</h1>
-            <a class="btn" href="map.html"> Get Started</a>
+<nav class="navbar navbar-inverse" style="z-index: 1000; font-size: 20px">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                TFDD</a>
         </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Unit Layer <span
+                    class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="javascript:cover(base)">Basins</a></li>
+                    <li><a href="javascript:cover(bcu)">Basin/Country Unit</a></li>
+                    <li><a href="javascript:cover(world)">Country</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Topic Layer <span
+                    class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Population Density</a></li>
+                    <li><a href="#">Land Cover</a></li>
+                    <li><a href="#">Runoff</a></li>
+                    <li><a href="#">Climate</a></li>
+                    <li><a href="#">Water Stress</a></li>
 
+                </ul>
+            </li>
+
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Treaties</a></li>
+            <li><a href="#">RBOs</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!--<a id="backbutton"><i class="fa fa-arrow-left"style="z-index: 1010;top: 10%;left: 20px; position:static; height:50px;width:50px"></i></a>-->
+<div id="map" class="map"></div>
+
+<a id="backbutton" href="javascript: cover(base)"><i class="fa fa-arrow-circle-left fa-2x"  style="z-index:1000;color: #2f3942; left: 5px; top:75px;position: absolute;"></i></a>
+
+<div id="data-table" class="container scrollbar "
+     style="width: 70%; height: 30%; margin-bottom: 0px; position: absolute;  bottom: 0px; left: 0px;">
+    <!--<input class="form-control" id="myInput" type="text" placeholder="Search...">-->
+    <!--<span class="col-sm-2">BCODE</span>-->
+    <!--<span class="col-sm-4">Basin Name</span>-->
+    <!--<span class="col-sm-3">Area (Km2)</span>-->
+    <!--<span class="col-sm-2">Population Density</span>-->
+    <!--<span class="col-sm-1">Existing Dams</span>-->
+    <!--<table id="myTable" class="table table-hover dc-data-table table-condensed force-overflow"></table>-->
+
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="javascript:treatyTable()" >Treaty</a></li>
+        <li><a data-toggle="tab" href="javascript:rboTable() ">RBO</a></li>
+        <li><a data-toggle="tab" href="javascript: eventsTable()">Events</a></li>
+        <!--<li><a data-toggle="tab" href="#menu3">Menu 3</a></li>-->
+    </ul>
+
+    <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+            <input class="form-control" id="myInput" type="text" placeholder="Search...">
+            <table class="table table-bordered table-striped" id="myTable"> </table>
+        </div>
+        <div id="menu1" class="tab-pane fade">
+            <table class="table table-bordered table-striped" id="myTable2"> </table>
+        </div>
+        <div id="menu2" class="tab-pane fade">
+            <table class="table table-bordered table-striped" id="myTable3"> </table>
+        </div>
+        <div id="menu3" class="tab-pane fade">
+
+        </div>
     </div>
 </div>
 
 
-<!-- Modal -->
-<div class="modal fade" id="aboutModal" role="dialog">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
 
-                <h4 class="modal-title">About</h4>
+<div class="container side-menu">
+    <div id="1">
+        <div class="row">
+            <div class="col-sm-12 dc-data-count" style="color: #afb6bc">
+                <span class="filter-count"></span> selected out of <span class="total-count"></span> records |
+                <a href="javascript:dc.filterAll();dcrederAll();">Reset All</a>
             </div>
-            <div class="modal-body">
-                <p>The Freshwater Transnational Dispute Database is a global collection of treaties used to settle water disputes.
-                </p>
+            <br>
 
+            <div class="col-sm-4" style="color: #afb6bc">Basin Selected: <br> <span class= "clear" id="basinName"> Please Select a Basin</span>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <br>
+            <div class="col-sm-8" id="popCount" style="text-align: center;">
+                <strong style="color: #afb6bc"> Population Density per Basin</strong>
+                <span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
+                <a class="reset" href="javascript:popdimChart.filterAll();dc.redrawAll();"
+                   style="display:none;">reset</a>
+                <div class="clearfix"></div>
             </div>
+            <br>
         </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-4" style="color: #afb6bc">Basin Country Unit Selected:<span class= "clear"id="bcuName"> Please Select a Basin</span>
+            </div>
+            <div class="col-sm-8" id="areaChart" style="text-align: center;">
+                <strong style="color: #afb6bc"> Land Area per Basin (km<sup>2</sup>)</strong>
+                <span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
+                <a class="reset" href="javascript:areadimChart.filterAll();dc.redrawAll();"
+                   style="display:none;">reset</a>
+                <div class="clearfix"></div>
+            </div>
+
+        </div>
+        <div class="col-sm-4" style="color: #afb6bc">Number of Dams in the Basin: <span class= "clear" id="damCounts"> </span></div>
+        <!--</div>-->
     </div>
+
+
+    <div id="2">
+        <div class="row">
+            <div class="col-sm-12 dc-data-count" style="color: #afb6bc">
+                <span class="filter-count"></span> selected out of <span class="total-count"></span> records |
+                <a href="javascript:dc.filterAll();dcrederAll();">Reset All</a>
+            </div>
+            <br>
+
+            <div class="col-sm-4" style="color: #afb6bc">Basin Selected: <br> <span class= "clear" id="basinName2"style="font-size: 14px"> Please Select a Basin</span>
+            </div>
+            <br>
+            <div class="col-sm-8" id="popCount2" style="text-align: center;">
+                <strong style="color: #afb6bc"> Population Density per Basin</strong>
+                <span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
+                <a class="reset" href="javascript:popdimChart2.filterAll();dc.redrawAll();"
+                   style="display:none;">reset</a>
+                <div class="clearfix"></div>
+            </div>
+            <br>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-4" style="color: #afb6bc">Basin Country Unit Selected:<span class= "clear" id="bcuName2" style="font-size: 14px"> Please Select a Basin</span>
+            </div>
+            <div class="col-sm-8" id="areaChart2" style="text-align: center;">
+                <strong style="color: #afb6bc"> Land Area per Basin (km<sup>2</sup>)</strong>
+                <span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
+                <a class="reset" href="javascript:areadimChart2.filterAll();dc.redrawAll();"
+                   style="display:none;">reset</a>
+                <div class="clearfix"></div>
+            </div>
+
+        </div>
+        <div class="col-sm-4" style="color: #afb6bc; padding-left: 0px">Number of Dams in the Basin: <span class= "clear" id="damCount" style="font-size: 14px"> </span></div>
+        <!--</div>-->
+    </div>
+    <!--<div id="2">-->
+
+        <!--<div class="col-sm-4" style="color: #afb6bc">Basin Selected: <br> <span id="basinName2"> Please Select a Basin</span>-->
+        <!--</div>-->
+        <!--<div class="col-sm-8" id="popCount2" style="text-align: center;">-->
+            <!--<div class="clearfix"></div>-->
+        <!--</div>-->
+
+    <!--</div>-->
+
 </div>
-<div class="modal fade" id="creditModal" role="dialog">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
 
-                <h4 class="modal-title">About</h4>
-            </div>
-            <div class="modal-body">
-                <p> Administrators</p>
-                <p>Aaron T. Wolf, Ph.D.
-                    Program Co-Director
-                    Program in Water Conflict Management and Transformation
-                    Oregon State University
-                    College of Earth, Ocean, and Atmospheric Sciences
-                    104 CEOAS Admin Building
-                    Corvallis, OR 97331
-                    E-mail: wolfa[a]geo.oregonstate.edu
-                    Phone: (541) 737-2722
-                    Fax: (541) 737-1200</p>
-
-                <p>
-                    Lynette de Silva
-                    Program Co-Director
-                    Program in Water Conflict Management and Transformation
-                    Oregon State University
-                    College of Earth, Ocean, and Atmospheric Sciences
-                    104 CEOAS Admin Building
-                    Corvallis, OR 97331
-                    E-mail: desilval[a]geo.oregonstate.edu
-                    Phone: (541) 737-7013
-                    Fax: (541) 737-1200
-                </p>
-                <p>
-                    Melissa McCracken
-                    Database Manager
-                    Transboundary Freshwater Dispute Database
-                    Oregon State University
-                    College of Earth, Ocean, and Atmospheric Sciences
-                    104 CEOAS Admin Building
-                    Corvallis, OR 97331
-                    E-mail: mccrackm[a]oregonstate.edu
-                </p>
-                <br><br>
-                <p>Website creators</p>
-                <p> The project is created by Hannah Friedrich, Govanni Svevo and Alex Walters</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
 </div>
 <script src="script.js"></script>
 
