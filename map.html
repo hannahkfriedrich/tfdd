@@ -39,7 +39,7 @@
                 padding: 0;
                 background-color: #3e3e3e;
                 font-family: 'Artifika', serif;
-                font-size: 12px;
+                font-size: 16px;
                 position: relative
 
             }
@@ -98,6 +98,7 @@
                 fill: #FFFFFF;
             }
 
+
             .dc-data-count {
                 position: relative;
                 margin: 0 auto;
@@ -118,6 +119,9 @@
                 right: 0px;
                 position: absolute;
                 max-height: 100%;
+            }
+            #myTable {
+                width: fit-content;
             }
 
             .icon {
@@ -162,8 +166,61 @@
                 font-size: 14px;
                 left: 0px;
                 top:0px;
+            }
+
+            /*table, thead, tbody, th, td, tr {*/
+                /*display: inline-block;*/
+            /*}*/
+
+            /* Hide table headers (but not display: none;, for accessibility) */
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            tr {
+                border: 1px solid #070707;
+                width: 100%;
+            }
+
+            /*td {*/
+                /*!* Behave  like a "row" *!*/
+                /*border: none;*/
+                /*border-bottom: 1px solid #eee;*/
+                /*position: relative;*/
+                /*padding-left: 50%;*/
+            /*}*/
+
+            td:before {
+                /* Now like a table header */
+                position: fixed;
+                display: inline-block;
+                /* Top/left values mimic padding */
+                top: 6px;
+                left: 6px;
+                /*width: 45%;*/
+                padding-right: 15px;
+                padding-left: 15px;
+                white-space: nowrap;
 
             }
+
+            td {
+                width: 50px;
+                border: black;
+                text-anchor: middle;
+            }
+            /*!**/
+            /*Label the data*/
+            /**!*/
+            /*td:before {*/
+                /*content: attr(data-th) ": ";*/
+                /*font-weight: bold;*/
+                /*width: 6.5em;*/
+                /*display: inline-block;*/
+            /*}*/
+
 
         </style>
     </head>
@@ -171,8 +228,7 @@
 <nav class="navbar navbar-inverse" style="z-index: 1000; font-size: 20px">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">
-                TFDD</a>
+            <a class="navbar-brand" style="padding-top: 7px" href="http://transboundarywaters.science.oregonstate.edu/" target="_blank"><img src="assets/img/TFDDicon.JPG" style="width: 50px;"></img></a>
         </div>
         <ul class="nav navbar-nav">
             <li class="active"><a href="index.html">Home</a></li>
@@ -189,7 +245,8 @@
                 <ul class="dropdown-menu">
                     <li><a href="#">Population Density</a></li>
                     <li><a href="#">Land Cover</a></li>
-                    <li><a href="#">Runoff</a></li>
+                    <li><a href="javascript:giam() ">Irrigation</a></li>
+                    <li><a href="javascript: gmrca()">Rain Fall</a></li>
                     <li><a href="#">Climate</a></li>
                     <li><a href="#">Water Stress</a></li>
 
@@ -198,7 +255,7 @@
 
             <li><a href="#">Events</a></li>
             <li><a href="#">Treaties</a></li>
-            <li><a href="#">RBOs</a></li>
+
         </ul>
     </div>
 </nav>
@@ -218,28 +275,39 @@
     <!--<span class="col-sm-1">Existing Dams</span>-->
     <!--<table id="myTable" class="table table-hover dc-data-table table-condensed force-overflow"></table>-->
 
-    <ul class="nav nav-tabs">
-        <li class="active"><a data-toggle="tab" href="javascript:treatyTable()" >Treaty</a></li>
-        <li><a data-toggle="tab" href="javascript:rboTable() ">RBO</a></li>
-        <li><a data-toggle="tab" href="javascript: eventsTable()">Events</a></li>
-        <!--<li><a data-toggle="tab" href="#menu3">Menu 3</a></li>-->
-    </ul>
+    <!--<ul class="nav nav-tabs">-->
+        <!--<li class="active"><a data-toggle="tab" href="javascript:treatyTable()" >Treaty</a></li>-->
+        <!--<li><a data-toggle="tab" href="javascript:rboTable() ">RBO</a></li>-->
+        <!--<li><a data-toggle="tab" href="javascript: eventsTable()">Events</a></li>-->
+        <!--&lt;!&ndash;<li><a data-toggle="tab" href="#menu3">Menu 3</a></li>&ndash;&gt;-->
+    <!--</ul>-->
 
-    <div class="tab-content">
-        <div id="home" class="tab-pane fade in active">
+    <!--<div class="tab-content">-->
+        <!--<div id="home" class="tab-pane fade in active">-->
             <input class="form-control" id="myInput" type="text" placeholder="Search...">
-            <table class="table table-bordered table-striped" id="myTable"> </table>
-        </div>
-        <div id="menu1" class="tab-pane fade">
-            <table class="table table-bordered table-striped" id="myTable2"> </table>
-        </div>
-        <div id="menu2" class="tab-pane fade">
-            <table class="table table-bordered table-striped" id="myTable3"> </table>
-        </div>
-        <div id="menu3" class="tab-pane fade">
-
-        </div>
+    <div class="row">
+        <div class="col-sm-4"><strong>Basin Name</strong></div>
     </div>
+    <div class="row">
+        <div class="col-sm-2"><strong>BCODE</strong></div>
+        <div class="col-sm-2"><strong>Area Km<sup>2</sup></strong></div>
+        <div class="col-md-2"><strong>Pop Den</strong></div>
+        <div class="col-md-2"><strong>Dams Exist</strong></div>
+        <div class="col-sm-3"><strong>Country Name</strong></div>
+        <div class="col-sm-1"><strong>RBO</strong></div>
+    </div>
+            <table class="table table-bordered table-striped" style="display:inline-table; width: 1000px" id="myTable"> </table>
+        <!--</div>-->
+        <!--<div id="menu1" class="tab-pane fade">-->
+            <!--<table class="table table-bordered table-striped" id="myTable2"> </table>-->
+        <!--</div>-->
+        <!--<div id="menu2" class="tab-pane fade">-->
+            <!--<table class="table table-bordered table-striped" id="myTable3"> </table>-->
+        <!--</div>-->
+        <!--<div id="menu3" class="tab-pane fade">-->
+
+        <!--</div>-->
+    <!--</div>-->
 </div>
 
 
@@ -247,15 +315,18 @@
 <div class="container side-menu">
     <div id="1">
         <div class="row">
-            <div class="col-sm-12 dc-data-count" style="color: #afb6bc">
+            <div class="col-sm-12 dc-data-count" style="color: #afb6bc; padding-bottom: 20px;">
                 <span class="filter-count"></span> selected out of <span class="total-count"></span> records |
                 <a href="javascript:dc.filterAll();dcrederAll();">Reset All</a>
             </div>
-            <br>
 
-            <div class="col-sm-4" style="color: #afb6bc">Basin Selected: <br> <span class= "clear" id="basinName"> Please Select a Basin</span>
+            <div class="row"></div>
+            <div class="row"></div>
+
+
+            <div class="col-sm-4" style="color: #afb6bc; font-size: 18px;">Basin Selected: <br> <span class= "clear" id="basinName"> Please Select a Basin</span>
             </div>
-            <br>
+
             <div class="col-sm-8" id="popCount" style="text-align: center;">
                 <strong style="color: #afb6bc"> Population Density per Basin</strong>
                 <span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
@@ -265,10 +336,11 @@
             </div>
             <br>
         </div>
-        <br>
         <div class="row">
-            <div class="col-sm-4" style="color: #afb6bc">Basin Country Unit Selected:<span class= "clear"id="bcuName"> Please Select a Basin</span>
-            </div>
+            <div class="col-sm-4" style="color: #afb6bc; padding-top: 20px; padding-bottom:20px">Number of Dams in the Basin: <span class= "clear" id="damCounts"> </span></div>
+
+            <!--<div class="col-sm-4" style="color: #afb6bc">Basin Country Unit Selected:<span class= "clear"id="bcuName"> Please Select a Basin</span>-->
+            <!--</div>-->
             <div class="col-sm-8" id="areaChart" style="text-align: center;">
                 <strong style="color: #afb6bc"> Land Area per Basin (km<sup>2</sup>)</strong>
                 <span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
@@ -278,14 +350,16 @@
             </div>
 
         </div>
-        <div class="col-sm-4" style="color: #afb6bc">Number of Dams in the Basin: <span class= "clear" id="damCounts"> </span></div>
-        <!--</div>-->
+        <div class="row" style="width: 100%; background-color: #FFFFFF; height: available">
+            <h1> Landcover map here</h1>
+
+        </div>
     </div>
 
 
     <div id="2">
         <div class="row">
-            <div class="col-sm-12 dc-data-count" style="color: #afb6bc">
+            <div class="col-sm-12 dc-data-count" style="color: #afb6bc;padding-bottom: 20px;">
                 <span class="filter-count"></span> selected out of <span class="total-count"></span> records |
                 <a href="javascript:dc.filterAll();dcrederAll();">Reset All</a>
             </div>
@@ -305,8 +379,8 @@
         </div>
         <br>
         <div class="row">
-            <div class="col-sm-4" style="color: #afb6bc">Basin Country Unit Selected:<span class= "clear" id="bcuName2" style="font-size: 14px"> Please Select a Basin</span>
-            </div>
+            <div class="col-sm-4" style="color: #afb6bc; padding-top: 20px; padding-bottom:20px">Number of Dams in the Basin: <span class= "clear" id="damCount"> </span></div>
+
             <div class="col-sm-8" id="areaChart2" style="text-align: center;">
                 <strong style="color: #afb6bc"> Land Area per Basin (km<sup>2</sup>)</strong>
                 <span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
@@ -316,19 +390,12 @@
             </div>
 
         </div>
-        <div class="col-sm-4" style="color: #afb6bc; padding-left: 0px">Number of Dams in the Basin: <span class= "clear" id="damCount" style="font-size: 14px"> </span></div>
+        <!--<div class="col-sm-12" style="color: #afb6bc; padding-left: 0px;">Number of Dams in the Basin: <span class= "clear" id="damCount"> </span></div>-->
         <!--</div>-->
     </div>
-    <!--<div id="2">-->
+    <div class="row">
 
-        <!--<div class="col-sm-4" style="color: #afb6bc">Basin Selected: <br> <span id="basinName2"> Please Select a Basin</span>-->
-        <!--</div>-->
-        <!--<div class="col-sm-8" id="popCount2" style="text-align: center;">-->
-            <!--<div class="clearfix"></div>-->
-        <!--</div>-->
-
-    <!--</div>-->
-
+    </div>
 </div>
 
 </div>
