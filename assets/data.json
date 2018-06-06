@@ -1,0 +1,5035 @@
+﻿{
+    "nodes": [
+        {
+            "id": "Cape Verde",
+            "group": "Africa",
+            "value": "1",
+            "lat": "16.002082",
+            "lon": "-24.013197"
+        },
+        {
+            "id": "Gambia",
+            "group": "Africa",
+            "value": "9",
+            "lat": "13.443182",
+            "lon": "-15.310139"
+        },
+        {
+            "id": "Guinea-Bissau",
+            "group": "Africa",
+            "value": "2",
+            "lat": "11.803749",
+            "lon": "-15.180413"
+        },
+        {
+            "id": "Senegal",
+            "group": "Africa",
+            "value": "21",
+            "lat": "14.497401",
+            "lon": "-14.452362"
+        },
+        {
+            "id": "Sierra Leone",
+            "group": "Africa",
+            "value": "4",
+            "lat": "8.460555",
+            "lon": "-11.779889"
+        },
+        {
+            "id": "Mauritania",
+            "group": "Africa",
+            "value": "16",
+            "lat": "21.00789",
+            "lon": "-10.940835"
+        },
+        {
+            "id": "Guinea",
+            "group": "Africa",
+            "value": "22",
+            "lat": "9.945587",
+            "lon": "-9.696645"
+        },
+        {
+            "id": "Liberia",
+            "group": "Africa",
+            "value": "3",
+            "lat": "6.428055",
+            "lon": "-9.429499"
+        },
+        {
+            "id": "Morocco",
+            "group": "Africa",
+            "value": "2",
+            "lat": "31.791702",
+            "lon": "-7.09262"
+        },
+        {
+            "id": "Ivory Coast",
+            "group": "Africa",
+            "value": "15",
+            "lat": "7.539989",
+            "lon": "-5.54708"
+        },
+        {
+            "id": "Mali",
+            "group": "Africa",
+            "value": "28",
+            "lat": "17.570692",
+            "lon": "-3.996166"
+        },
+        {
+            "id": "Burkina Faso",
+            "group": "Africa",
+            "value": "14",
+            "lat": "12.238333",
+            "lon": "-1.561593"
+        },
+        {
+            "id": "Ghana",
+            "group": "Africa",
+            "value": "5",
+            "lat": "7.946527",
+            "lon": "-1.023194"
+        },
+        {
+            "id": "Togo",
+            "group": "Africa",
+            "value": "4",
+            "lat": "8.619543",
+            "lon": "0.824782"
+        },
+        {
+            "id": "Algeria",
+            "group": "Africa",
+            "value": "5",
+            "lat": "28.033886",
+            "lon": "1.659626"
+        },
+        {
+            "id": "Benin",
+            "group": "Africa",
+            "value": "17",
+            "lat": "9.30769",
+            "lon": "2.315834"
+        },
+        {
+            "id": "Sao Tome and Principe",
+            "group": "Africa",
+            "value": "1",
+            "lat": "0.18636",
+            "lon": "6.613081"
+        },
+        {
+            "id": "Niger",
+            "group": "Africa",
+            "value": "20",
+            "lat": "17.607789",
+            "lon": "8.081666"
+        },
+        {
+            "id": "Nigeria",
+            "group": "Africa",
+            "value": "18",
+            "lat": "9.081999",
+            "lon": "8.675277"
+        },
+        {
+            "id": "Tunisia",
+            "group": "Africa",
+            "value": "2",
+            "lat": "33.886917",
+            "lon": "9.537499"
+        },
+        {
+            "id": "Equatorial Guinea",
+            "group": "Africa",
+            "value": "1",
+            "lat": "1.650801",
+            "lon": "10.267895"
+        },
+        {
+            "id": "Gabon",
+            "group": "Africa",
+            "value": "2",
+            "lat": "-0.803689",
+            "lon": "11.609444"
+        },
+        {
+            "id": "Cameroon",
+            "group": "Africa",
+            "value": "15",
+            "lat": "7.369722",
+            "lon": "12.354722"
+        },
+        {
+            "id": "Congo, Republic of",
+            "group": "Africa",
+            "value": "2",
+            "lat": "-0.228021",
+            "lon": "15.827659"
+        },
+        {
+            "id": "Libya",
+            "group": "Africa",
+            "value": "6",
+            "lat": "26.3351",
+            "lon": "17.228331"
+        },
+        {
+            "id": "Angola",
+            "group": "Africa",
+            "value": "12",
+            "lat": "-11.202692",
+            "lon": "17.873887"
+        },
+        {
+            "id": "Namibia",
+            "group": "Africa",
+            "value": "18",
+            "lat": "-22.95764",
+            "lon": "18.49041"
+        },
+        {
+            "id": "Chad",
+            "group": "Africa",
+            "value": "17",
+            "lat": "15.454166",
+            "lon": "18.732207"
+        },
+        {
+            "id": "Central African Republic",
+            "group": "Africa",
+            "value": "3",
+            "lat": "6.611111",
+            "lon": "20.939444"
+        },
+        {
+            "id": "Congo, Democratic Republic",
+            "group": "Africa",
+            "value": "11",
+            "lat": "-4.038333",
+            "lon": "21.758664"
+        },
+        {
+            "id": "South Africa",
+            "group": "Africa",
+            "value": "29",
+            "lat": "-30.559482",
+            "lon": "22.937506"
+        },
+        {
+            "id": "Botswana",
+            "group": "Africa",
+            "value": "13",
+            "lat": "-22.328474",
+            "lon": "24.684866"
+        },
+        {
+            "id": "Zambia",
+            "group": "Africa",
+            "value": "14",
+            "lat": "-13.133897",
+            "lon": "27.849332"
+        },
+        {
+            "id": "Lesotho",
+            "group": "Africa",
+            "value": "10",
+            "lat": "-29.609988",
+            "lon": "28.233608"
+        },
+        {
+            "id": "Zimbabwe",
+            "group": "Africa",
+            "value": "9",
+            "lat": "-19.015438",
+            "lon": "29.154857"
+        },
+        {
+            "id": "Rwanda",
+            "group": "Africa",
+            "value": "8",
+            "lat": "-1.940278",
+            "lon": "29.873888"
+        },
+        {
+            "id": "Burundi",
+            "group": "Africa",
+            "value": "8",
+            "lat": "-3.373056",
+            "lon": "29.918886"
+        },
+        {
+            "id": "South Sudan",
+            "group": "Africa",
+            "value": "3",
+            "lat": "30.1",
+            "lon": "8.1"
+        },
+        {
+            "id": "Sudan",
+            "group": "Africa",
+            "value": "15",
+            "lat": "12.862807",
+            "lon": "30.217636"
+        },
+        {
+            "id": "Egypt",
+            "group": "Africa",
+            "value": "19",
+            "lat": "26.820553",
+            "lon": "30.802498"
+        },
+        {
+            "id": "Swaziland",
+            "group": "Africa",
+            "value": "14",
+            "lat": "-26.522503",
+            "lon": "31.465866"
+        },
+        {
+            "id": "Uganda",
+            "group": "Africa",
+            "value": "14",
+            "lat": "1.373333",
+            "lon": "32.290275"
+        },
+        {
+            "id": "Malawi",
+            "group": "Africa",
+            "value": "11",
+            "lat": "-13.254308",
+            "lon": "34.301525"
+        },
+        {
+            "id": "Tanzania",
+            "group": "Africa",
+            "value": "18",
+            "lat": "-6.369028",
+            "lon": "34.888822"
+        },
+        {
+            "id": "Mozambique",
+            "group": "Africa",
+            "value": "25",
+            "lat": "-18.665695",
+            "lon": "35.529562"
+        },
+        {
+            "id": "Kenya",
+            "group": "Africa",
+            "value": "11",
+            "lat": "-0.023559",
+            "lon": "37.906193"
+        },
+        {
+            "id": "Eritrea",
+            "group": "Africa",
+            "value": "5",
+            "lat": "15.179384",
+            "lon": "39.782334"
+        },
+        {
+            "id": "Ethiopia",
+            "group": "Africa",
+            "value": "11",
+            "lat": "9.145",
+            "lon": "40.489673"
+        },
+        {
+            "id": "Djibouti",
+            "group": "Africa",
+            "value": "1",
+            "lat": "11.825138",
+            "lon": "42.590275"
+        },
+        {
+            "id": "Comoros",
+            "group": "Africa",
+            "value": "1",
+            "lat": "-11.875001",
+            "lon": "43.872219"
+        },
+        {
+            "id": "Somalia",
+            "group": "Africa",
+            "value": "3",
+            "lat": "5.152149",
+            "lon": "46.199616"
+        },
+        {
+            "id": "Madagascar",
+            "group": "Africa",
+            "value": "2",
+            "lat": "-18.766947",
+            "lon": "46.869107"
+        },
+        {
+            "id": "Seychelles",
+            "group": "Africa",
+            "value": "2",
+            "lat": "-4.679574",
+            "lon": "55.491977"
+        },
+        {
+            "id": "Mauritius",
+            "group": "Africa",
+            "value": "2",
+            "lat": "-20.348404",
+            "lon": "57.552152"
+        },
+        {
+            "id": "Israel",
+            "group": "Asia",
+            "value": "9",
+            "lat": "31.046051",
+            "lon": "34.851612"
+        },
+        {
+            "id": "West Bank",
+            "group": "Asia",
+            "value": "1",
+            "lat": "31.952162",
+            "lon": "35.233154"
+        },
+        {
+            "id": "Turkey",
+            "group": "Asia",
+            "value": "11",
+            "lat": "38.963745",
+            "lon": "35.243322"
+        },
+        {
+            "id": "Lebanon",
+            "group": "Asia",
+            "value": "8",
+            "lat": "33.854721",
+            "lon": "35.862285"
+        },
+        {
+            "id": "Jordan",
+            "group": "Asia",
+            "value": "4",
+            "lat": "30.585164",
+            "lon": "36.238414"
+        },
+        {
+            "id": "Syria",
+            "group": "Asia",
+            "value": "18",
+            "lat": "34.802075",
+            "lon": "38.996815"
+        },
+        {
+            "id": "Iraq",
+            "group": "Asia",
+            "value": "9",
+            "lat": "33.223191",
+            "lon": "43.679291"
+        },
+        {
+            "id": "Kuwait",
+            "group": "Asia",
+            "value": "1",
+            "lat": "29.31166",
+            "lon": "47.481766"
+        },
+        {
+            "id": "Azerbaijan",
+            "group": "Asia",
+            "value": "4",
+            "lat": "40.143105",
+            "lon": "47.576927"
+        },
+        {
+            "id": "Yemen",
+            "group": "Asia",
+            "value": "1",
+            "lat": "15.552727",
+            "lon": "48.516388"
+        },
+        {
+            "id": "Iran",
+            "group": "Asia",
+            "value": "16",
+            "lat": "32.427908",
+            "lon": "53.688046"
+        },
+        {
+            "id": "Turkmenistan",
+            "group": "Asia",
+            "value": "12",
+            "lat": "38.969719",
+            "lon": "59.556278"
+        },
+        {
+            "id": "Uzbekistan",
+            "group": "Asia",
+            "value": "16",
+            "lat": "41.377491",
+            "lon": "64.585262"
+        },
+        {
+            "id": "Kazakhstan",
+            "group": "Asia",
+            "value": "27",
+            "lat": "48.019573",
+            "lon": "66.923684"
+        },
+        {
+            "id": "Afghanistan",
+            "group": "Asia",
+            "value": "3",
+            "lat": "33.93911",
+            "lon": "67.709953"
+        },
+        {
+            "id": "Pakistan",
+            "group": "Asia",
+            "value": "5",
+            "lat": "30.375321",
+            "lon": "69.345116"
+        },
+        {
+            "id": "Tajikistan",
+            "group": "Asia",
+            "value": "10",
+            "lat": "38.861034",
+            "lon": "71.276093"
+        },
+        {
+            "id": "Kyrgyzstan",
+            "group": "Asia",
+            "value": "18",
+            "lat": "41.20438",
+            "lon": "74.766098"
+        },
+        {
+            "id": "India",
+            "group": "Asia",
+            "value": "28",
+            "lat": "20.593684",
+            "lon": "78.96288"
+        },
+        {
+            "id": "Nepal",
+            "group": "Asia",
+            "value": "5",
+            "lat": "28.394857",
+            "lon": "84.124008"
+        },
+        {
+            "id": "Bangladesh",
+            "group": "Asia",
+            "value": "10",
+            "lat": "23.684994",
+            "lon": "90.356331"
+        },
+        {
+            "id": "Bhutan",
+            "group": "Asia",
+            "value": "1",
+            "lat": "27.514162",
+            "lon": "90.433601"
+        },
+        {
+            "id": "Myanmar",
+            "group": "Asia",
+            "value": "3",
+            "lat": "21.913965",
+            "lon": "95.956223"
+        },
+        {
+            "id": "Thailand",
+            "group": "Asia",
+            "value": "11",
+            "lat": "15.870032",
+            "lon": "100.992541"
+        },
+        {
+            "id": "Malaysia",
+            "group": "Asia",
+            "value": "1",
+            "lat": "4.210484",
+            "lon": "101.975766"
+        },
+        {
+            "id": "Laos",
+            "group": "Asia",
+            "value": "10",
+            "lat": "19.85627",
+            "lon": "102.495496"
+        },
+        {
+            "id": "Mongolia",
+            "group": "Asia",
+            "value": "9",
+            "lat": "46.862496",
+            "lon": "103.846656"
+        },
+        {
+            "id": "China",
+            "group": "Asia",
+            "value": "17",
+            "lat": "35.86166",
+            "lon": "104.195397"
+        },
+        {
+            "id": "Cambodia",
+            "group": "Asia",
+            "value": "6",
+            "lat": "12.565679",
+            "lon": "104.990963"
+        },
+        {
+            "id": "Russia",
+            "group": "Asia",
+            "value": "55",
+            "lat": "61.52401",
+            "lon": "105.318756"
+        },
+        {
+            "id": "Vietnam",
+            "group": "Asia",
+            "value": "8",
+            "lat": "14.058324",
+            "lon": "108.277199"
+        },
+        {
+            "id": "Indonesia",
+            "group": "Asia",
+            "value": "2",
+            "lat": "-0.789275",
+            "lon": "113.921327"
+        },
+        {
+            "id": "Korea, Democratic People's Republic",
+            "group": "Asia",
+            "value": "5",
+            "lat": "40.339852",
+            "lon": "127.510093"
+        },
+        {
+            "id": "Papua New Guinea",
+            "group": "Asia",
+            "value": "2",
+            "lat": "-6.314993",
+            "lon": "143.95555"
+        },
+        {
+            "id": "Portugal",
+            "group": "Europe",
+            "value": "25",
+            "lat": "39.399872",
+            "lon": "-8.224454"
+        },
+        {
+            "id": "Spain",
+            "group": "Europe",
+            "value": "33",
+            "lat": "40.463667",
+            "lon": "-3.74922"
+        },
+        {
+            "id": "France",
+            "group": "Europe",
+            "value": "75",
+            "lat": "46.227638",
+            "lon": "2.213749"
+        },
+        {
+            "id": "Switzerland",
+            "group": "Europe",
+            "value": "48",
+            "lat": "46.818188",
+            "lon": "8.227512"
+        },
+        {
+            "id": "Norway",
+            "group": "Europe",
+            "value": "16",
+            "lat": "60.472024",
+            "lon": "8.468946"
+        },
+        {
+            "id": "Liechtenstein",
+            "group": "Europe",
+            "value": "3",
+            "lat": "47.166",
+            "lon": "9.555373"
+        },
+        {
+            "id": "Germany",
+            "group": "Europe",
+            "value": "55",
+            "lat": "51.165691",
+            "lon": "10.451526"
+        },
+        {
+            "id": "Italy",
+            "group": "Europe",
+            "value": "26",
+            "lat": "41.87194",
+            "lon": "12.56738"
+        },
+        {
+            "id": "Austria",
+            "group": "Europe",
+            "value": "26",
+            "lat": "47.516231",
+            "lon": "14.550072"
+        },
+        {
+            "id": "Slovenia",
+            "group": "Europe",
+            "value": "24",
+            "lat": "46.151241",
+            "lon": "14.995463"
+        },
+        {
+            "id": "Croatia",
+            "group": "Europe",
+            "value": "21",
+            "lat": "45.1",
+            "lon": "15.2"
+        },
+        {
+            "id": "Czech Republic",
+            "group": "Europe",
+            "value": "25",
+            "lat": "49.817492",
+            "lon": "15.472962"
+        },
+        {
+            "id": "Bosnia and Herzegovina",
+            "group": "Europe",
+            "value": "18",
+            "lat": "43.915886",
+            "lon": "17.679076"
+        },
+        {
+            "id": "Poland",
+            "group": "Europe",
+            "value": "29",
+            "lat": "51.919438",
+            "lon": "19.145136"
+        },
+        {
+            "id": "Montenegro",
+            "group": "Europe",
+            "value": "19",
+            "lat": "42.708678",
+            "lon": "19.37439"
+        },
+        {
+            "id": "Hungary",
+            "group": "Europe",
+            "value": "17",
+            "lat": "47.162494",
+            "lon": "19.503304"
+        },
+        {
+            "id": "Slovakia",
+            "group": "Europe",
+            "value": "17",
+            "lat": "48.669026",
+            "lon": "19.699024"
+        },
+        {
+            "id": "Albania",
+            "group": "Europe",
+            "value": "4",
+            "lat": "41.153332",
+            "lon": "20.168331"
+        },
+        {
+            "id": "Serbia",
+            "group": "Europe",
+            "value": "26",
+            "lat": "44.016521",
+            "lon": "21.005859"
+        },
+        {
+            "id": "Macedonia",
+            "group": "Europe",
+            "value": "26",
+            "lat": "41.608635",
+            "lon": "21.745275"
+        },
+        {
+            "id": "Lithuania",
+            "group": "Europe",
+            "value": "9",
+            "lat": "55.169438",
+            "lon": "23.881275"
+        },
+        {
+            "id": "Latvia",
+            "group": "Europe",
+            "value": "6",
+            "lat": "56.879635",
+            "lon": "24.603189"
+        },
+        {
+            "id": "Romania",
+            "group": "Europe",
+            "value": "20",
+            "lat": "45.943161",
+            "lon": "24.96676"
+        },
+        {
+            "id": "Bulgaria",
+            "group": "Europe",
+            "value": "20",
+            "lat": "42.733883",
+            "lon": "25.48583"
+        },
+        {
+            "id": "Byelarus",
+            "group": "Europe",
+            "value": "13",
+            "lat": "53.709807",
+            "lon": "27.953389"
+        },
+        {
+            "id": "Moldova",
+            "group": "Europe",
+            "value": "13",
+            "lat": "47.411631",
+            "lon": "28.369885"
+        },
+        {
+            "id": "Ukraine",
+            "group": "Europe",
+            "value": "27",
+            "lat": "48.379433",
+            "lon": "31.16558"
+        },
+        {
+            "id": "Georgia",
+            "group": "Asia",
+            "value": "3",
+            "lat": "42.315407",
+            "lon": "43.356892"
+        },
+        {
+            "id": "Armenia",
+            "group": "Asia",
+            "value": "3",
+            "lat": "40.069099",
+            "lon": "45.038189"
+        },
+        {
+            "id": "Ireland",
+            "group": "Europe",
+            "value": "1",
+            "lat": "53.41291",
+            "lon": "-8.24389"
+        },
+        {
+            "id": "United Kingdom",
+            "group": "Europe",
+            "value": "10",
+            "lat": "55.378051",
+            "lon": "-3.435973"
+        },
+        {
+            "id": "Belgium",
+            "group": "Europe",
+            "value": "20",
+            "lat": "50.503887",
+            "lon": "4.469936"
+        },
+        {
+            "id": "Netherlands",
+            "group": "Europe",
+            "value": "21",
+            "lat": "52.132633",
+            "lon": "5.291266"
+        },
+        {
+            "id": "Luxembourg",
+            "group": "Europe",
+            "value": "23",
+            "lat": "49.815273",
+            "lon": "6.129583"
+        },
+        {
+            "id": "Denmark",
+            "group": "Europe",
+            "value": "2",
+            "lat": "56.26392",
+            "lon": "9.501785"
+        },
+        {
+            "id": "Malta",
+            "group": "Europe",
+            "value": "1",
+            "lat": "35.937496",
+            "lon": "14.375416"
+        },
+        {
+            "id": "Sweden",
+            "group": "Europe",
+            "value": "5",
+            "lat": "60.128161",
+            "lon": "18.643501"
+        },
+        {
+            "id": "Greece",
+            "group": "Europe",
+            "value": "18",
+            "lat": "39.074208",
+            "lon": "21.824312"
+        },
+        {
+            "id": "Estonia",
+            "group": "Europe",
+            "value": "4",
+            "lat": "58.595272",
+            "lon": "25.013607"
+        },
+        {
+            "id": "Finland",
+            "group": "Europe",
+            "value": "28",
+            "lat": "61.92411",
+            "lon": "25.748151"
+        },
+        {
+            "id": "Cyprus",
+            "group": "Europe",
+            "value": "1",
+            "lat": "35.126413",
+            "lon": "33.429859"
+        },
+        {
+            "id": "Canada",
+            "group": "North America",
+            "value": "50",
+            "lat": "56.130366",
+            "lon": "-106.346771"
+        },
+        {
+            "id": "Mexico",
+            "group": "North America",
+            "value": "66",
+            "lat": "23.634501",
+            "lon": "-102.552784"
+        },
+        {
+            "id": "United States of America",
+            "group": "North America",
+            "value": "111",
+            "lat": "37.09024",
+            "lon": "-95.712891"
+        },
+        {
+            "id": "Guatemala",
+            "group": "North America",
+            "value": "12",
+            "lat": "15.783471",
+            "lon": "-90.230759"
+        },
+        {
+            "id": "El Salvador",
+            "group": "North America",
+            "value": "6",
+            "lat": "13.794185",
+            "lon": "-88.89653"
+        },
+        {
+            "id": "Honduras",
+            "group": "North America",
+            "value": "3",
+            "lat": "15.199999",
+            "lon": "-86.241905"
+        },
+        {
+            "id": "Nicaragua",
+            "group": "North America",
+            "value": "3",
+            "lat": "12.865416",
+            "lon": "-85.207229"
+        },
+        {
+            "id": "Costa Rica",
+            "group": "North America",
+            "value": "3",
+            "lat": "9.748917",
+            "lon": "-83.753428"
+        },
+        {
+            "id": "Panama",
+            "group": "North America",
+            "value": "2",
+            "lat": "8.537981",
+            "lon": "-80.782127"
+        },
+        {
+            "id": "Haiti",
+            "group": "North America",
+            "value": "7",
+            "lat": "18.971187",
+            "lon": "-72.285215"
+        },
+        {
+            "id": "Dominican Republic",
+            "group": "North America",
+            "value": "8",
+            "lat": "18.735693",
+            "lon": "-70.162651"
+        },
+        {
+            "id": "Fraser",
+            "group": "Basin",
+            "value": "5",
+            "lat": "52.38494354",
+            "lon": "-122.4018261"
+        },
+        {
+            "id": "Skagit",
+            "group": "Basin",
+            "value": "5",
+            "lat": "48.60615941",
+            "lon": "-121.346182"
+        },
+        {
+            "id": "Columbia",
+            "group": "Basin",
+            "value": "5",
+            "lat": "46.25880702",
+            "lon": "-117.1723396"
+        },
+        {
+            "id": "Tijuana",
+            "group": "Basin",
+            "value": "5",
+            "lat": "32.47459963",
+            "lon": "-116.4899657"
+        },
+        {
+            "id": "Colorado",
+            "group": "Basin",
+            "value": "5",
+            "lat": "36.47166505",
+            "lon": "-110.8030196"
+        },
+        {
+            "id": "Yaqui",
+            "group": "Basin",
+            "value": "5",
+            "lat": "29.42419414",
+            "lon": "-109.0641481"
+        },
+        {
+            "id": "Rio Grande (North America)",
+            "group": "Basin",
+            "value": "5",
+            "lat": "30.7625012",
+            "lon": "-103.9055466"
+        },
+        {
+            "id": "Nelson-Saskatchewan",
+            "group": "Basin",
+            "value": "5",
+            "lat": "51.4091864",
+            "lon": "-102.2133783"
+        },
+        {
+            "id": "Mississippi",
+            "group": "Basin",
+            "value": "5",
+            "lat": "40.76933083",
+            "lon": "-96.72436833"
+        },
+        {
+            "id": "Coatan Achute",
+            "group": "Basin",
+            "value": "5",
+            "lat": "15.08325363",
+            "lon": "-92.20988595"
+        },
+        {
+            "id": "Suchiate",
+            "group": "Basin",
+            "value": "5",
+            "lat": "14.93574567",
+            "lon": "-92.04163176"
+        },
+        {
+            "id": "Grijalva",
+            "group": "Basin",
+            "value": "5",
+            "lat": "16.63927848",
+            "lon": "-91.71453101"
+        },
+        {
+            "id": "Candelaria",
+            "group": "Basin",
+            "value": "5",
+            "lat": "18.11289371",
+            "lon": "-90.54703694"
+        },
+        {
+            "id": "Paz",
+            "group": "Basin",
+            "value": "5",
+            "lat": "14.05912315",
+            "lon": "-89.89802789"
+        },
+        {
+            "id": "Hondo",
+            "group": "Basin",
+            "value": "5",
+            "lat": "17.83353409",
+            "lon": "-89.13911501"
+        },
+        {
+            "id": "Lempa",
+            "group": "Basin",
+            "value": "5",
+            "lat": "14.07360792",
+            "lon": "-88.92177047"
+        },
+        {
+            "id": "San Juan",
+            "group": "Basin",
+            "value": "5",
+            "lat": "11.45359375",
+            "lon": "-85.18023705"
+        },
+        {
+            "id": "St. Lawrence",
+            "group": "Basin",
+            "value": "5",
+            "lat": "45.60346042",
+            "lon": "-80.91360824"
+        },
+        {
+            "id": "Zarumilla",
+            "group": "Basin",
+            "value": "5",
+            "lat": "-3.687378195",
+            "lon": "-80.17951535"
+        },
+        {
+            "id": "Tumbes",
+            "group": "Basin",
+            "value": "5",
+            "lat": "-3.86099501",
+            "lon": "-80.03144368"
+        },
+        {
+            "id": "Chira",
+            "group": "Basin",
+            "value": "5",
+            "lat": "-4.497800602",
+            "lon": "-80.00389643"
+        },
+        {
+            "id": "Artibonite",
+            "group": "Basin",
+            "value": "5",
+            "lat": "19.06055334",
+            "lon": "-71.94954289"
+        },
+        {
+            "id": "Pedernales",
+            "group": "Basin",
+            "value": "5",
+            "lat": "18.19397501",
+            "lon": "-71.75465782"
+        },
+        {
+            "id": "Massacre",
+            "group": "Basin",
+            "value": "5",
+            "lat": "19.50390925",
+            "lon": "-71.71794029"
+        },
+        {
+            "id": "Lake Titicaca-Poopo System",
+            "group": "Basin",
+            "value": "5",
+            "lat": "-16.73848559",
+            "lon": "-68.88706882"
+        },
+        {
+            "id": "St. John (North America)",
+            "group": "Basin",
+            "value": "5",
+            "lat": "46.6174806",
+            "lon": "-67.83045522"
+        },
+        {
+            "id": "St. Croix",
+            "group": "Basin",
+            "value": "5",
+            "lat": "45.39693244",
+            "lon": "-67.58795077"
+        },
+        {
+            "id": "Amazon",
+            "group": "Basin",
+            "value": "5",
+            "lat": "-6.646287321",
+            "lon": "-64.42542878"
+        },
+        {
+            "id": "La Plata",
+            "group": "Basin",
+            "value": "5",
+            "lat": "-23.93910893",
+            "lon": "-56.43211359"
+        },
+        {
+            "id": "Maroni",
+            "group": "Basin",
+            "value": "5",
+            "lat": "3.454262049",
+            "lon": "-54.48242335"
+        },
+        {
+            "id": "Chuy",
+            "group": "Basin",
+            "value": "5",
+            "lat": "-33.60160073",
+            "lon": "-53.30656167"
+        },
+        {
+            "id": "Lagoon Dos Patos-Lagoon Mirim",
+            "group": "Basin",
+            "value": "5",
+            "lat": "-30.85502913",
+            "lon": "-52.79275143"
+        },
+        {
+            "id": "Geba-Corubal",
+            "group": "Basin",
+            "value": "5",
+            "lat": "12.03453722",
+            "lon": "-13.73172082"
+        },
+        {
+            "id": "Gambia Basin",
+            "group": "Basin",
+            "value": "5",
+            "lat": "13.31069795",
+            "lon": "-13.56486115"
+        },
+        {
+            "id": "Great Scarcies",
+            "group": "Basin",
+            "value": "5",
+            "lat": "9.759450992",
+            "lon": "-12.65014985"
+        },
+        {
+            "id": "Senegal Basin",
+            "group": "Basin",
+            "value": "5",
+            "lat": "15.01878655",
+            "lon": "-10.9271139"
+        },
+        {
+            "id": "Moa",
+            "group": "Basin",
+            "value": "5",
+            "lat": "8.398752677",
+            "lon": "-10.48162389"
+        },
+        {
+            "id": "Unknown_South America",
+            "group": "Basin",
+            "value": "5",
+            "lat": "-10.1",
+            "lon": "-55.1"
+        },
+        {
+            "id": "Lima",
+            "group": "Basin",
+            "value": "5",
+            "lat": "41.92857195",
+            "lon": "-8.11662624"
+        },
+        {
+            "id": "Mino",
+            "group": "Basin",
+            "value": "5",
+            "lat": "42.58701922",
+            "lon": "-7.397223356"
+        },
+        {
+            "id": "Douro/Duero",
+            "group": "Basin",
+            "value": "5",
+            "lat": "41.62252191",
+            "lon": "-5.360005473"
+        },
+        {
+            "id": "Guadiana",
+            "group": "Basin",
+            "value": "5",
+            "lat": "38.79704935",
+            "lon": "-5.316308234"
+        },
+        {
+            "id": "Tagus/Tejo",
+            "group": "Basin",
+            "value": "5",
+            "lat": "40.08511589",
+            "lon": "-5.158049631"
+        },
+        {
+            "id": "Bidasoa",
+            "group": "Basin",
+            "value": "5",
+            "lat": "43.16893031",
+            "lon": "-1.636334853"
+        },
+        {
+            "id": "Volta",
+            "group": "Basin",
+            "value": "5",
+            "lat": "10.45306492",
+            "lon": "-1.42072476"
+        },
+        {
+            "id": "Ebro",
+            "group": "Basin",
+            "value": "5",
+            "lat": "41.93527218",
+            "lon": "-0.880517633"
+        },
+        {
+            "id": "General_Africa",
+            "group": "Basin",
+            "value": "5",
+            "lat": "1.1",
+            "lon": "25.1"
+        },
+        {
+            "id": "Garonne",
+            "group": "Basin",
+            "value": "5",
+            "lat": "44.34477039",
+            "lon": "1.423719407"
+        },
+        {
+            "id": "Oueme",
+            "group": "Basin",
+            "value": "5",
+            "lat": "8.373655966",
+            "lon": "2.396457297"
+        },
+        {
+            "id": "Seine",
+            "group": "Basin",
+            "value": "5",
+            "lat": "48.66250131",
+            "lon": "3.325070456"
+        },
+        {
+            "id": "Niger Basin",
+            "group": "Basin",
+            "value": "5",
+            "lat": "13.76878467",
+            "lon": "3.521670252"
+        },
+        {
+            "id": "Schelde",
+            "group": "Basin",
+            "value": "5",
+            "lat": "50.71430354",
+            "lon": "3.858699868"
+        },
+        {
+            "id": "Rhone",
+            "group": "Basin",
+            "value": "5",
+            "lat": "45.72065322",
+            "lon": "5.723425974"
+        },
+        {
+            "id": "Unknown_Africa",
+            "group": "Basin",
+            "value": "5",
+            "lat": "6.1",
+            "lon": "25.1"
+        },
+        {
+            "id": "Roia",
+            "group": "Basin",
+            "value": "5",
+            "lat": "44.00245114",
+            "lon": "7.53433139"
+        },
+        {
+            "id": "Rhine-Meuse",
+            "group": "Basin",
+            "value": "5",
+            "lat": "49.42381273",
+            "lon": "7.6883687"
+        },
+        {
+            "id": "Po",
+            "group": "Basin",
+            "value": "5",
+            "lat": "45.28338971",
+            "lon": "9.135428881"
+        },
+        {
+            "id": "Glama",
+            "group": "Basin",
+            "value": "5",
+            "lat": "61.36130048",
+            "lon": "10.4746515"
+        },
+        {
+            "id": "Elbe",
+            "group": "Basin",
+            "value": "5",
+            "lat": "51.3232168",
+            "lon": "12.91409381"
+        },
+        {
+            "id": "Klaralven",
+            "group": "Basin",
+            "value": "5",
+            "lat": "59.70466322",
+            "lon": "12.96057882"
+        },
+        {
+            "id": "Isonzo",
+            "group": "Basin",
+            "value": "5",
+            "lat": "46.08754531",
+            "lon": "13.65363488"
+        },
+        {
+            "id": "Kunene",
+            "group": "Basin",
+            "value": "5",
+            "lat": "-15.50110394",
+            "lon": "14.59387395"
+        },
+        {
+            "id": "Groundwater",
+            "group": "Basin",
+            "value": "5",
+            "lat": "15.1",
+            "lon": "30.1"
+        },
+        {
+            "id": "Lake Chad",
+            "group": "Basin",
+            "value": "5",
+            "lat": "15.5571542",
+            "lon": "16.22136703"
+        },
+        {
+            "id": "Oder/Odra",
+            "group": "Basin",
+            "value": "5",
+            "lat": "51.8159823",
+            "lon": "16.86927637"
+        },
+        {
+            "id": "General",
+            "group": "Basin",
+            "value": "5",
+            "lat": "-20.1",
+            "lon": "40.1"
+        },
+        {
+            "id": "Drin",
+            "group": "Basin",
+            "value": "5",
+            "lat": "42.12381096",
+            "lon": "20.11322502"
+        },
+        {
+            "id": "Vijose",
+            "group": "Basin",
+            "value": "5",
+            "lat": "40.20310924",
+            "lon": "20.31864168"
+        },
+        {
+            "id": "Danube",
+            "group": "Basin",
+            "value": "5",
+            "lat": "46.35151447",
+            "lon": "20.32113962"
+        },
+        {
+            "id": "Lake Prespa",
+            "group": "Basin",
+            "value": "5",
+            "lat": "40.71874828",
+            "lon": "20.41635813"
+        },
+        {
+            "id": "Lava/Pregel",
+            "group": "Basin",
+            "value": "5",
+            "lat": "54.28509225",
+            "lon": "21.40749726"
+        },
+        {
+            "id": "Vistula/Wista",
+            "group": "Basin",
+            "value": "5",
+            "lat": "51.72040328",
+            "lon": "21.47143769"
+        },
+        {
+            "id": "Okavango",
+            "group": "Basin",
+            "value": "5",
+            "lat": "-19.62073459",
+            "lon": "21.57321472"
+        },
+        {
+            "id": "Vardar",
+            "group": "Basin",
+            "value": "5",
+            "lat": "41.60049769",
+            "lon": "21.81995427"
+        },
+        {
+            "id": "Torne/Tornealven",
+            "group": "Basin",
+            "value": "5",
+            "lat": "67.81655287",
+            "lon": "22.1107019"
+        },
+        {
+            "id": "Orange",
+            "group": "Basin",
+            "value": "5",
+            "lat": "-27.35823305",
+            "lon": "22.49818638"
+        },
+        {
+            "id": "Congo/Zaire",
+            "group": "Basin",
+            "value": "5",
+            "lat": "-2.52479027",
+            "lon": "22.91150871"
+        },
+        {
+            "id": "Struma",
+            "group": "Basin",
+            "value": "5",
+            "lat": "41.70572946",
+            "lon": "23.20531849"
+        },
+        {
+            "id": "Nestos",
+            "group": "Basin",
+            "value": "5",
+            "lat": "41.57010927",
+            "lon": "24.05565206"
+        },
+        {
+            "id": "Lielupe",
+            "group": "Basin",
+            "value": "5",
+            "lat": "56.2898785",
+            "lon": "24.25271943"
+        },
+        {
+            "id": "Neman",
+            "group": "Basin",
+            "value": "5",
+            "lat": "54.40763708",
+            "lon": "24.92540637"
+        },
+        {
+            "id": "Maritsa",
+            "group": "Basin",
+            "value": "5",
+            "lat": "41.88343338",
+            "lon": "25.84865588"
+        },
+        {
+            "id": "Tana",
+            "group": "Basin",
+            "value": "5",
+            "lat": "69.49435055",
+            "lon": "25.89885599"
+        },
+        {
+            "id": "Dniester",
+            "group": "Basin",
+            "value": "5",
+            "lat": "48.50436837",
+            "lon": "26.64904287"
+        },
+        {
+            "id": "Kemi",
+            "group": "Basin",
+            "value": "5",
+            "lat": "67.30903201",
+            "lon": "26.81481949"
+        },
+        {
+            "id": "Pasvik",
+            "group": "Basin",
+            "value": "5",
+            "lat": "68.95466024",
+            "lon": "27.61851568"
+        },
+        {
+            "id": "Rezvaya",
+            "group": "Basin",
+            "value": "5",
+            "lat": "41.91591274",
+            "lon": "27.62997861"
+        },
+        {
+            "id": "Zambezi",
+            "group": "Basin",
+            "value": "5",
+            "lat": "-14.92584709",
+            "lon": "27.71954081"
+        },
+        {
+            "id": "Narva",
+            "group": "Basin",
+            "value": "5",
+            "lat": "57.87821987",
+            "lon": "27.99342412"
+        },
+        {
+            "id": "Oulu",
+            "group": "Basin",
+            "value": "5",
+            "lat": "64.58833845",
+            "lon": "28.46668978"
+        },
+        {
+            "id": "Daugava",
+            "group": "Basin",
+            "value": "5",
+            "lat": "55.86622908",
+            "lon": "29.02006383"
+        },
+        {
+            "id": "Kogilnik",
+            "group": "Basin",
+            "value": "5",
+            "lat": "46.36116317",
+            "lon": "29.14351489"
+        },
+        {
+            "id": "Limpopo",
+            "group": "Basin",
+            "value": "5",
+            "lat": "-23.32518526",
+            "lon": "29.4434334"
+        },
+        {
+            "id": "Naatamo",
+            "group": "Basin",
+            "value": "5",
+            "lat": "69.64601522",
+            "lon": "29.52485104"
+        },
+        {
+            "id": "Sarata",
+            "group": "Basin",
+            "value": "5",
+            "lat": "46.30491795",
+            "lon": "29.60499279"
+        },
+        {
+            "id": "Unknown_North America",
+            "group": "Basin",
+            "value": "5",
+            "lat": "30.1",
+            "lon": "-100.1"
+        },
+        {
+            "id": "Tuloma",
+            "group": "Basin",
+            "value": "5",
+            "lat": "68.46176958",
+            "lon": "30.88032354"
+        },
+        {
+            "id": "Olanga",
+            "group": "Basin",
+            "value": "5",
+            "lat": "65.28780493",
+            "lon": "31.20163518"
+        },
+        {
+            "id": "Maputo",
+            "group": "Basin",
+            "value": "5",
+            "lat": "-26.93308469",
+            "lon": "31.25956768"
+        },
+        {
+            "id": "Dnieper",
+            "group": "Basin",
+            "value": "5",
+            "lat": "51.30444089",
+            "lon": "31.42545451"
+        },
+        {
+            "id": "Incomati",
+            "group": "Basin",
+            "value": "5",
+            "lat": "-25.266488",
+            "lon": "31.57205025"
+        },
+        {
+            "id": "Vuoksa",
+            "group": "Basin",
+            "value": "5",
+            "lat": "60.78085538",
+            "lon": "31.76844069"
+        },
+        {
+            "id": "Nile",
+            "group": "Basin",
+            "value": "5",
+            "lat": "11.65159365",
+            "lon": "31.88852067"
+        },
+        {
+            "id": "Umbeluzi",
+            "group": "Basin",
+            "value": "5",
+            "lat": "-26.11589949",
+            "lon": "32.09990969"
+        },
+        {
+            "id": "General_North America",
+            "group": "Basin",
+            "value": "5",
+            "lat": "35.1",
+            "lon": "-100.1"
+        },
+        {
+            "id": "Jordan Basin",
+            "group": "Basin",
+            "value": "5",
+            "lat": "31.52082663",
+            "lon": "35.6569518"
+        },
+        {
+            "id": "Nahr El Kebir",
+            "group": "Basin",
+            "value": "5",
+            "lat": "35.7480596",
+            "lon": "36.00410812"
+        },
+        {
+            "id": "An Nahr Al Kabir",
+            "group": "Basin",
+            "value": "5",
+            "lat": "34.68247998",
+            "lon": "36.26342413"
+        },
+        {
+            "id": "Lake Turkana",
+            "group": "Basin",
+            "value": "5",
+            "lat": "5.011826437",
+            "lon": "36.39072915"
+        },
+        {
+            "id": "Asi/Orontes",
+            "group": "Basin",
+            "value": "5",
+            "lat": "35.39195761",
+            "lon": "36.65137922"
+        },
+        {
+            "id": "Ruvuma",
+            "group": "Basin",
+            "value": "5",
+            "lat": "-12.08122104",
+            "lon": "36.93931822"
+        },
+        {
+            "id": "Gash",
+            "group": "Basin",
+            "value": "5",
+            "lat": "14.81455935",
+            "lon": "38.09191671"
+        },
+        {
+            "id": "General_Asia",
+            "group": "Basin",
+            "value": "5",
+            "lat": "40.1",
+            "lon": "100.1"
+        },
+        {
+            "id": "Don",
+            "group": "Basin",
+            "value": "5",
+            "lat": "49.8623953",
+            "lon": "41.10437582"
+        },
+        {
+            "id": "Juba-Shibeli",
+            "group": "Basin",
+            "value": "5",
+            "lat": "4.138159378",
+            "lon": "41.25962764"
+        },
+        {
+            "id": "Tigris-Euphrates/Shatt al Arab",
+            "group": "Basin",
+            "value": "5",
+            "lat": "34.59819774",
+            "lon": "43.23360697"
+        },
+        {
+            "id": "General_Europe",
+            "group": "Basin",
+            "value": "5",
+            "lat": "45.1",
+            "lon": "10.1"
+        },
+        {
+            "id": "Unknown_Asia",
+            "group": "Basin",
+            "value": "5",
+            "lat": "45.1",
+            "lon": "100.1"
+        },
+        {
+            "id": "Kura-Araks",
+            "group": "Basin",
+            "value": "5",
+            "lat": "40.27918627",
+            "lon": "45.49321316"
+        },
+        {
+            "id": "Volga",
+            "group": "Basin",
+            "value": "5",
+            "lat": "56.05384398",
+            "lon": "47.37739881"
+        },
+        {
+            "id": "Unknown_Europe",
+            "group": "Basin",
+            "value": "5",
+            "lat": "50.1",
+            "lon": "10.1"
+        },
+        {
+            "id": "Oral/Ural",
+            "group": "Basin",
+            "value": "5",
+            "lat": "51.33791472",
+            "lon": "56.1604216"
+        },
+        {
+            "id": "Atrak",
+            "group": "Basin",
+            "value": "5",
+            "lat": "37.78821379",
+            "lon": "56.38468616"
+        },
+        {
+            "id": "Helmand",
+            "group": "Basin",
+            "value": "5",
+            "lat": "31.72983802",
+            "lon": "64.30044208"
+        },
+        {
+            "id": "Aral Sea",
+            "group": "Basin",
+            "value": "5",
+            "lat": "41.41665632",
+            "lon": "66.31604273"
+        },
+        {
+            "id": "Talas",
+            "group": "Basin",
+            "value": "5",
+            "lat": "43.27540035",
+            "lon": "71.00107583"
+        },
+        {
+            "id": "Shu/Chu",
+            "group": "Basin",
+            "value": "5",
+            "lat": "43.57660008",
+            "lon": "72.9730092"
+        },
+        {
+            "id": "Indus",
+            "group": "Basin",
+            "value": "5",
+            "lat": "32.32275809",
+            "lon": "73.26218371"
+        },
+        {
+            "id": "Ob",
+            "group": "Basin",
+            "value": "5",
+            "lat": "56.65203548",
+            "lon": "74.48578669"
+        },
+        {
+            "id": "Ili/Kunes He",
+            "group": "Basin",
+            "value": "5",
+            "lat": "45.59222764",
+            "lon": "77.64962925"
+        },
+        {
+            "id": "Ganges-Brahmaputra-Meghna",
+            "group": "Basin",
+            "value": "5",
+            "lat": "26.85640657",
+            "lon": "85.41663351"
+        },
+        {
+            "id": "Pu Lun T'o",
+            "group": "Basin",
+            "value": "5",
+            "lat": "46.66925222",
+            "lon": "89.26386954"
+        },
+        {
+            "id": "Fenney",
+            "group": "Basin",
+            "value": "5",
+            "lat": "23.111384",
+            "lon": "91.63430576"
+        },
+        {
+            "id": "Karnaphuli",
+            "group": "Basin",
+            "value": "5",
+            "lat": "22.87854979",
+            "lon": "92.25496906"
+        },
+        {
+            "id": "Har Us Nur",
+            "group": "Basin",
+            "value": "5",
+            "lat": "48.36442682",
+            "lon": "93.27453145"
+        },
+        {
+            "id": "Lake Ubsa-Nur",
+            "group": "Basin",
+            "value": "5",
+            "lat": "50.03235369",
+            "lon": "94.54095771"
+        },
+        {
+            "id": "Jenisej/Yenisey",
+            "group": "Basin",
+            "value": "5",
+            "lat": "58.47772072",
+            "lon": "98.13801201"
+        },
+        {
+            "id": "Golok",
+            "group": "Basin",
+            "value": "5",
+            "lat": "6.021734073",
+            "lon": "101.9556537"
+        },
+        {
+            "id": "Mekong",
+            "group": "Basin",
+            "value": "5",
+            "lat": "18.74029271",
+            "lon": "102.6753729"
+        },
+        {
+            "id": "Amur",
+            "group": "Basin",
+            "value": "5",
+            "lat": "49.47644314",
+            "lon": "125.7131446"
+        },
+        {
+            "id": "Yalu",
+            "group": "Basin",
+            "value": "5",
+            "lat": "41.09405457",
+            "lon": "126.3169904"
+        },
+        {
+            "id": "Tumen",
+            "group": "Basin",
+            "value": "5",
+            "lat": "42.7546636",
+            "lon": "129.5977741"
+        },
+        {
+            "id": "Fly",
+            "group": "Basin",
+            "value": "5",
+            "lat": "-6.613077065",
+            "lon": "141.9807747"
+        },
+        {
+            "id": "Sepik",
+            "group": "Basin",
+            "value": "5",
+            "lat": "-4.412046757",
+            "lon": "142.7323494"
+        },
+        {
+            "id": "Ecuador",
+            "group": "South America",
+            "value": "14",
+            "lat": "-1.831239",
+            "lon": "-78.183406"
+        },
+        {
+            "id": "Peru",
+            "group": "South America",
+            "value": "20",
+            "lat": "-9.189967",
+            "lon": "-75.015152"
+        },
+        {
+            "id": "Colombia",
+            "group": "South America",
+            "value": "1",
+            "lat": "4.570868",
+            "lon": "-74.297333"
+        },
+        {
+            "id": "Chile",
+            "group": "South America",
+            "value": "3",
+            "lat": "-35.675147",
+            "lon": "-71.542969"
+        },
+        {
+            "id": "Venezuela",
+            "group": "South America",
+            "value": "2",
+            "lat": "6.42375",
+            "lon": "-66.58973"
+        },
+        {
+            "id": "Argentina",
+            "group": "South America",
+            "value": "24",
+            "lat": "-38.416097",
+            "lon": "-63.616672"
+        },
+        {
+            "id": "Bolivia",
+            "group": "South America",
+            "value": "11",
+            "lat": "-16.290154",
+            "lon": "-63.588653"
+        },
+        {
+            "id": "Guyana",
+            "group": "South America",
+            "value": "1",
+            "lat": "4.860416",
+            "lon": "-58.93018"
+        },
+        {
+            "id": "Paraguay",
+            "group": "South America",
+            "value": "15",
+            "lat": "-23.442503",
+            "lon": "-58.443832"
+        },
+        {
+            "id": "Suriname",
+            "group": "South America",
+            "value": "1",
+            "lat": "3.919305",
+            "lon": "-56.027783"
+        },
+        {
+            "id": "Uruguay",
+            "group": "South America",
+            "value": "21",
+            "lat": "-32.522779",
+            "lon": "-55.765835"
+        },
+        {
+            "id": "French Guiana",
+            "group": "South America",
+            "value": "1",
+            "lat": "3.933889",
+            "lon": "-53.125782"
+        },
+        {
+            "id": "Brazil",
+            "group": "South America",
+            "value": "28",
+            "lat": "-14.235004",
+            "lon": "-51.92528"
+        }
+    ],
+    "links": [
+        {
+            "source": "Afghanistan",
+            "target": "Aral Sea",
+            "count": "1"
+        },
+        {
+            "source": "Afghanistan",
+            "target": "Helmand",
+            "count": "1"
+        },
+        {
+            "source": "Afghanistan",
+            "target": "Indus",
+            "count": "1"
+        },
+        {
+            "source": "Albania",
+            "target": "Danube",
+            "count": "1"
+        },
+        {
+            "source": "Albania",
+            "target": "Drin",
+            "count": "1"
+        },
+        {
+            "source": "Albania",
+            "target": "Lake Prespa",
+            "count": "1"
+        },
+        {
+            "source": "Albania",
+            "target": "Vijose",
+            "count": "1"
+        },
+        {
+            "source": "Algeria",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Algeria",
+            "target": "Niger Basin",
+            "count": "3"
+        },
+        {
+            "source": "Angola",
+            "target": "Congo/Zaire",
+            "count": "2"
+        },
+        {
+            "source": "Angola",
+            "target": "General_Africa",
+            "count": "3"
+        },
+        {
+            "source": "Angola",
+            "target": "Kunene",
+            "count": "4"
+        },
+        {
+            "source": "Angola",
+            "target": "Okavango",
+            "count": "1"
+        },
+        {
+            "source": "Angola",
+            "target": "Unknown_Africa",
+            "count": "1"
+        },
+        {
+            "source": "Angola",
+            "target": "Zambezi",
+            "count": "1"
+        },
+        {
+            "source": "Argentina",
+            "target": "La Plata",
+            "count": "21"
+        },
+        {
+            "source": "Argentina",
+            "target": "Unknown_South America",
+            "count": "3"
+        },
+        {
+            "source": "Armenia",
+            "target": "General_Europe",
+            "count": "1"
+        },
+        {
+            "source": "Armenia",
+            "target": "Kura-Araks",
+            "count": "2"
+        },
+        {
+            "source": "Austria",
+            "target": "Danube",
+            "count": "12"
+        },
+        {
+            "source": "Austria",
+            "target": "Elbe",
+            "count": "2"
+        },
+        {
+            "source": "Austria",
+            "target": "General",
+            "count": "1"
+        },
+        {
+            "source": "Austria",
+            "target": "Rhine-Meuse",
+            "count": "8"
+        },
+        {
+            "source": "Austria",
+            "target": "Unknown_Europe",
+            "count": "3"
+        },
+        {
+            "source": "Azerbaijan",
+            "target": "General_Asia",
+            "count": "1"
+        },
+        {
+            "source": "Azerbaijan",
+            "target": "General_Europe",
+            "count": "1"
+        },
+        {
+            "source": "Azerbaijan",
+            "target": "Kura-Araks",
+            "count": "2"
+        },
+        {
+            "source": "Bangladesh",
+            "target": "Fenney",
+            "count": "1"
+        },
+        {
+            "source": "Bangladesh",
+            "target": "Ganges-Brahmaputra-Meghna",
+            "count": "8"
+        },
+        {
+            "source": "Bangladesh",
+            "target": "Karnaphuli",
+            "count": "1"
+        },
+        {
+            "source": "Belgium",
+            "target": "General",
+            "count": "1"
+        },
+        {
+            "source": "Belgium",
+            "target": "General_Europe",
+            "count": "1"
+        },
+        {
+            "source": "Belgium",
+            "target": "Rhine-Meuse",
+            "count": "12"
+        },
+        {
+            "source": "Belgium",
+            "target": "Schelde",
+            "count": "3"
+        },
+        {
+            "source": "Belgium",
+            "target": "Seine",
+            "count": "1"
+        },
+        {
+            "source": "Belgium",
+            "target": "Unknown_Europe",
+            "count": "2"
+        },
+        {
+            "source": "Benin",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Benin",
+            "target": "Niger Basin",
+            "count": "11"
+        },
+        {
+            "source": "Benin",
+            "target": "Oueme",
+            "count": "1"
+        },
+        {
+            "source": "Benin",
+            "target": "Volta",
+            "count": "3"
+        },
+        {
+            "source": "Bhutan",
+            "target": "Ganges-Brahmaputra-Meghna",
+            "count": "1"
+        },
+        {
+            "source": "Bolivia",
+            "target": "Amazon",
+            "count": "4"
+        },
+        {
+            "source": "Bolivia",
+            "target": "La Plata",
+            "count": "1"
+        },
+        {
+            "source": "Bolivia",
+            "target": "Lake Titicaca-Poopo System",
+            "count": "5"
+        },
+        {
+            "source": "Bolivia",
+            "target": "Unknown_South America",
+            "count": "1"
+        },
+        {
+            "source": "Bosnia and Herzegovina",
+            "target": "Danube",
+            "count": "18"
+        },
+        {
+            "source": "Botswana",
+            "target": "General_Africa",
+            "count": "4"
+        },
+        {
+            "source": "Botswana",
+            "target": "Limpopo",
+            "count": "2"
+        },
+        {
+            "source": "Botswana",
+            "target": "Okavango",
+            "count": "2"
+        },
+        {
+            "source": "Botswana",
+            "target": "Orange",
+            "count": "2"
+        },
+        {
+            "source": "Botswana",
+            "target": "Zambezi",
+            "count": "3"
+        },
+        {
+            "source": "Brazil",
+            "target": "Amazon",
+            "count": "4"
+        },
+        {
+            "source": "Brazil",
+            "target": "Chuy",
+            "count": "2"
+        },
+        {
+            "source": "Brazil",
+            "target": "La Plata",
+            "count": "14"
+        },
+        {
+            "source": "Brazil",
+            "target": "Lagoon Dos Patos-Lagoon Mirim",
+            "count": "5"
+        },
+        {
+            "source": "Brazil",
+            "target": "Unknown_South America",
+            "count": "3"
+        },
+        {
+            "source": "Bulgaria",
+            "target": "Danube",
+            "count": "5"
+        },
+        {
+            "source": "Bulgaria",
+            "target": "General_Europe",
+            "count": "1"
+        },
+        {
+            "source": "Bulgaria",
+            "target": "Maritsa",
+            "count": "2"
+        },
+        {
+            "source": "Bulgaria",
+            "target": "Nestos",
+            "count": "3"
+        },
+        {
+            "source": "Bulgaria",
+            "target": "Rezvaya",
+            "count": "1"
+        },
+        {
+            "source": "Bulgaria",
+            "target": "Struma",
+            "count": "5"
+        },
+        {
+            "source": "Bulgaria",
+            "target": "Unknown_Europe",
+            "count": "3"
+        },
+        {
+            "source": "Burkina Faso",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Burkina Faso",
+            "target": "Niger Basin",
+            "count": "9"
+        },
+        {
+            "source": "Burkina Faso",
+            "target": "Volta",
+            "count": "3"
+        },
+        {
+            "source": "Burundi",
+            "target": "Congo/Zaire",
+            "count": "3"
+        },
+        {
+            "source": "Burundi",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Burundi",
+            "target": "Nile",
+            "count": "3"
+        },
+        {
+            "source": "Byelarus",
+            "target": "Daugava",
+            "count": "3"
+        },
+        {
+            "source": "Byelarus",
+            "target": "Dnieper",
+            "count": "2"
+        },
+        {
+            "source": "Byelarus",
+            "target": "Narva",
+            "count": "1"
+        },
+        {
+            "source": "Byelarus",
+            "target": "Neman",
+            "count": "2"
+        },
+        {
+            "source": "Byelarus",
+            "target": "Unknown_Europe",
+            "count": "1"
+        },
+        {
+            "source": "Byelarus",
+            "target": "Vistula/Wista",
+            "count": "4"
+        },
+        {
+            "source": "Cambodia",
+            "target": "Mekong",
+            "count": "6"
+        },
+        {
+            "source": "Cameroon",
+            "target": "Congo/Zaire",
+            "count": "1"
+        },
+        {
+            "source": "Cameroon",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Cameroon",
+            "target": "Lake Chad",
+            "count": "3"
+        },
+        {
+            "source": "Cameroon",
+            "target": "Niger Basin",
+            "count": "9"
+        },
+        {
+            "source": "Canada",
+            "target": "Columbia",
+            "count": "9"
+        },
+        {
+            "source": "Canada",
+            "target": "Fraser",
+            "count": "2"
+        },
+        {
+            "source": "Canada",
+            "target": "Mississippi",
+            "count": "2"
+        },
+        {
+            "source": "Canada",
+            "target": "Nelson-Saskatchewan",
+            "count": "2"
+        },
+        {
+            "source": "Canada",
+            "target": "Rhone",
+            "count": "1"
+        },
+        {
+            "source": "Canada",
+            "target": "Skagit",
+            "count": "2"
+        },
+        {
+            "source": "Canada",
+            "target": "St. Croix",
+            "count": "1"
+        },
+        {
+            "source": "Canada",
+            "target": "St. John (North America)",
+            "count": "3"
+        },
+        {
+            "source": "Canada",
+            "target": "St. Lawrence",
+            "count": "27"
+        },
+        {
+            "source": "Canada",
+            "target": "Unknown_North America",
+            "count": "1"
+        },
+        {
+            "source": "Cape Verde",
+            "target": "General_Africa",
+            "count": "1"
+        },
+        {
+            "source": "Central African Republic",
+            "target": "Congo/Zaire",
+            "count": "1"
+        },
+        {
+            "source": "Central African Republic",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Chad",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Chad",
+            "target": "Groundwater",
+            "count": "2"
+        },
+        {
+            "source": "Chad",
+            "target": "Lake Chad",
+            "count": "3"
+        },
+        {
+            "source": "Chad",
+            "target": "Niger Basin",
+            "count": "10"
+        },
+        {
+            "source": "Chile",
+            "target": "Lake Titicaca-Poopo System",
+            "count": "1"
+        },
+        {
+            "source": "Chile",
+            "target": "Unknown_South America",
+            "count": "2"
+        },
+        {
+            "source": "China",
+            "target": "Amur",
+            "count": "4"
+        },
+        {
+            "source": "China",
+            "target": "Ili/Kunes He",
+            "count": "2"
+        },
+        {
+            "source": "China",
+            "target": "Mekong",
+            "count": "2"
+        },
+        {
+            "source": "China",
+            "target": "Ob",
+            "count": "2"
+        },
+        {
+            "source": "China",
+            "target": "Pu Lun T'o",
+            "count": "1"
+        },
+        {
+            "source": "China",
+            "target": "Tumen",
+            "count": "2"
+        },
+        {
+            "source": "China",
+            "target": "Unknown_Asia",
+            "count": "1"
+        },
+        {
+            "source": "China",
+            "target": "Yalu",
+            "count": "3"
+        },
+        {
+            "source": "Colombia",
+            "target": "Amazon",
+            "count": "1"
+        },
+        {
+            "source": "Comoros",
+            "target": "General_Africa",
+            "count": "1"
+        },
+        {
+            "source": "Congo, Democratic Republic",
+            "target": "Congo/Zaire",
+            "count": "5"
+        },
+        {
+            "source": "Congo, Democratic Republic",
+            "target": "General_Africa",
+            "count": "3"
+        },
+        {
+            "source": "Congo, Democratic Republic",
+            "target": "Nile",
+            "count": "2"
+        },
+        {
+            "source": "Congo, Democratic Republic",
+            "target": "Unknown_Africa",
+            "count": "1"
+        },
+        {
+            "source": "Congo, Republic of",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Costa Rica",
+            "target": "General_North America",
+            "count": "2"
+        },
+        {
+            "source": "Costa Rica",
+            "target": "San Juan",
+            "count": "1"
+        },
+        {
+            "source": "Croatia",
+            "target": "Danube",
+            "count": "21"
+        },
+        {
+            "source": "Cyprus",
+            "target": "General",
+            "count": "1"
+        },
+        {
+            "source": "Czech Republic",
+            "target": "Danube",
+            "count": "10"
+        },
+        {
+            "source": "Czech Republic",
+            "target": "Elbe",
+            "count": "7"
+        },
+        {
+            "source": "Czech Republic",
+            "target": "General",
+            "count": "1"
+        },
+        {
+            "source": "Czech Republic",
+            "target": "Oder/Odra",
+            "count": "4"
+        },
+        {
+            "source": "Czech Republic",
+            "target": "Unknown_Europe",
+            "count": "3"
+        },
+        {
+            "source": "Denmark",
+            "target": "General",
+            "count": "1"
+        },
+        {
+            "source": "Denmark",
+            "target": "Unknown_Europe",
+            "count": "1"
+        },
+        {
+            "source": "Djibouti",
+            "target": "General_Africa",
+            "count": "1"
+        },
+        {
+            "source": "Dominican Republic",
+            "target": "Artibonite",
+            "count": "3"
+        },
+        {
+            "source": "Dominican Republic",
+            "target": "General_North America",
+            "count": "1"
+        },
+        {
+            "source": "Dominican Republic",
+            "target": "Massacre",
+            "count": "2"
+        },
+        {
+            "source": "Dominican Republic",
+            "target": "Pedernales",
+            "count": "2"
+        },
+        {
+            "source": "Ecuador",
+            "target": "Amazon",
+            "count": "2"
+        },
+        {
+            "source": "Ecuador",
+            "target": "Chira",
+            "count": "3"
+        },
+        {
+            "source": "Ecuador",
+            "target": "Tumbes",
+            "count": "3"
+        },
+        {
+            "source": "Ecuador",
+            "target": "Unknown_Europe",
+            "count": "1"
+        },
+        {
+            "source": "Ecuador",
+            "target": "Unknown_South America",
+            "count": "1"
+        },
+        {
+            "source": "Ecuador",
+            "target": "Zarumilla",
+            "count": "4"
+        },
+        {
+            "source": "Egypt",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Egypt",
+            "target": "Groundwater",
+            "count": "3"
+        },
+        {
+            "source": "Egypt",
+            "target": "Jordan Basin",
+            "count": "1"
+        },
+        {
+            "source": "Egypt",
+            "target": "Nile",
+            "count": "11"
+        },
+        {
+            "source": "Egypt",
+            "target": "Unknown_Africa",
+            "count": "2"
+        },
+        {
+            "source": "El Salvador",
+            "target": "General_North America",
+            "count": "2"
+        },
+        {
+            "source": "El Salvador",
+            "target": "Lempa",
+            "count": "2"
+        },
+        {
+            "source": "El Salvador",
+            "target": "Paz",
+            "count": "1"
+        },
+        {
+            "source": "El Salvador",
+            "target": "Unknown_North America",
+            "count": "1"
+        },
+        {
+            "source": "Equatorial Guinea",
+            "target": "General_Africa",
+            "count": "1"
+        },
+        {
+            "source": "Eritrea",
+            "target": "Gash",
+            "count": "2"
+        },
+        {
+            "source": "Eritrea",
+            "target": "General_Africa",
+            "count": "1"
+        },
+        {
+            "source": "Eritrea",
+            "target": "Nile",
+            "count": "2"
+        },
+        {
+            "source": "Estonia",
+            "target": "General",
+            "count": "1"
+        },
+        {
+            "source": "Estonia",
+            "target": "Narva",
+            "count": "2"
+        },
+        {
+            "source": "Estonia",
+            "target": "Unknown_Europe",
+            "count": "1"
+        },
+        {
+            "source": "Ethiopia",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Ethiopia",
+            "target": "Juba-Shibeli",
+            "count": "2"
+        },
+        {
+            "source": "Ethiopia",
+            "target": "Lake Turkana",
+            "count": "1"
+        },
+        {
+            "source": "Ethiopia",
+            "target": "Nile",
+            "count": "5"
+        },
+        {
+            "source": "Ethiopia",
+            "target": "Unknown_Africa",
+            "count": "1"
+        },
+        {
+            "source": "Finland",
+            "target": "General",
+            "count": "1"
+        },
+        {
+            "source": "Finland",
+            "target": "Kemi",
+            "count": "2"
+        },
+        {
+            "source": "Finland",
+            "target": "Naatamo",
+            "count": "2"
+        },
+        {
+            "source": "Finland",
+            "target": "Olanga",
+            "count": "2"
+        },
+        {
+            "source": "Finland",
+            "target": "Oulu",
+            "count": "1"
+        },
+        {
+            "source": "Finland",
+            "target": "Pasvik",
+            "count": "8"
+        },
+        {
+            "source": "Finland",
+            "target": "Tana",
+            "count": "2"
+        },
+        {
+            "source": "Finland",
+            "target": "Torne/Tornealven",
+            "count": "2"
+        },
+        {
+            "source": "Finland",
+            "target": "Tuloma",
+            "count": "1"
+        },
+        {
+            "source": "Finland",
+            "target": "Unknown_Europe",
+            "count": "3"
+        },
+        {
+            "source": "Finland",
+            "target": "Vuoksa",
+            "count": "4"
+        },
+        {
+            "source": "France",
+            "target": "Bidasoa",
+            "count": "2"
+        },
+        {
+            "source": "France",
+            "target": "Ebro",
+            "count": "1"
+        },
+        {
+            "source": "France",
+            "target": "Garonne",
+            "count": "4"
+        },
+        {
+            "source": "France",
+            "target": "General",
+            "count": "1"
+        },
+        {
+            "source": "France",
+            "target": "General_Europe",
+            "count": "1"
+        },
+        {
+            "source": "France",
+            "target": "Po",
+            "count": "1"
+        },
+        {
+            "source": "France",
+            "target": "Rhine-Meuse",
+            "count": "30"
+        },
+        {
+            "source": "France",
+            "target": "Rhone",
+            "count": "14"
+        },
+        {
+            "source": "France",
+            "target": "Roia",
+            "count": "2"
+        },
+        {
+            "source": "France",
+            "target": "Schelde",
+            "count": "4"
+        },
+        {
+            "source": "France",
+            "target": "Seine",
+            "count": "1"
+        },
+        {
+            "source": "France",
+            "target": "Unknown_Africa",
+            "count": "6"
+        },
+        {
+            "source": "France",
+            "target": "Unknown_Asia",
+            "count": "1"
+        },
+        {
+            "source": "France",
+            "target": "Unknown_Europe",
+            "count": "6"
+        },
+        {
+            "source": "France",
+            "target": "Volta",
+            "count": "1"
+        },
+        {
+            "source": "French Guiana",
+            "target": "Maroni",
+            "count": "1"
+        },
+        {
+            "source": "Gabon",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Gambia",
+            "target": "Gambia Basin",
+            "count": "7"
+        },
+        {
+            "source": "Gambia",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Georgia",
+            "target": "General_Europe",
+            "count": "1"
+        },
+        {
+            "source": "Georgia",
+            "target": "Kura-Araks",
+            "count": "2"
+        },
+        {
+            "source": "Germany",
+            "target": "Danube",
+            "count": "8"
+        },
+        {
+            "source": "Germany",
+            "target": "Elbe",
+            "count": "8"
+        },
+        {
+            "source": "Germany",
+            "target": "General",
+            "count": "1"
+        },
+        {
+            "source": "Germany",
+            "target": "General_Europe",
+            "count": "1"
+        },
+        {
+            "source": "Germany",
+            "target": "Oder/Odra",
+            "count": "3"
+        },
+        {
+            "source": "Germany",
+            "target": "Rhine-Meuse",
+            "count": "30"
+        },
+        {
+            "source": "Germany",
+            "target": "Unknown_Europe",
+            "count": "4"
+        },
+        {
+            "source": "Ghana",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Ghana",
+            "target": "Volta",
+            "count": "3"
+        },
+        {
+            "source": "Greece",
+            "target": "General",
+            "count": "1"
+        },
+        {
+            "source": "Greece",
+            "target": "Lake Prespa",
+            "count": "3"
+        },
+        {
+            "source": "Greece",
+            "target": "Maritsa",
+            "count": "1"
+        },
+        {
+            "source": "Greece",
+            "target": "Nestos",
+            "count": "3"
+        },
+        {
+            "source": "Greece",
+            "target": "Struma",
+            "count": "5"
+        },
+        {
+            "source": "Greece",
+            "target": "Unknown_Europe",
+            "count": "2"
+        },
+        {
+            "source": "Greece",
+            "target": "Vardar",
+            "count": "2"
+        },
+        {
+            "source": "Greece",
+            "target": "Vijose",
+            "count": "1"
+        },
+        {
+            "source": "Guatemala",
+            "target": "Candelaria",
+            "count": "1"
+        },
+        {
+            "source": "Guatemala",
+            "target": "Coatan Achute",
+            "count": "1"
+        },
+        {
+            "source": "Guatemala",
+            "target": "General_North America",
+            "count": "2"
+        },
+        {
+            "source": "Guatemala",
+            "target": "Grijalva",
+            "count": "1"
+        },
+        {
+            "source": "Guatemala",
+            "target": "Hondo",
+            "count": "1"
+        },
+        {
+            "source": "Guatemala",
+            "target": "Lempa",
+            "count": "2"
+        },
+        {
+            "source": "Guatemala",
+            "target": "Paz",
+            "count": "1"
+        },
+        {
+            "source": "Guatemala",
+            "target": "Suchiate",
+            "count": "1"
+        },
+        {
+            "source": "Guatemala",
+            "target": "Unknown_North America",
+            "count": "2"
+        },
+        {
+            "source": "Guinea",
+            "target": "Gambia Basin",
+            "count": "4"
+        },
+        {
+            "source": "Guinea",
+            "target": "Geba-Corubal",
+            "count": "1"
+        },
+        {
+            "source": "Guinea",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Guinea",
+            "target": "Niger Basin",
+            "count": "9"
+        },
+        {
+            "source": "Guinea",
+            "target": "Senegal Basin",
+            "count": "5"
+        },
+        {
+            "source": "Guinea",
+            "target": "Great Scarcies",
+            "count": "1"
+        },
+        {
+            "source": "Guinea-Bissau",
+            "target": "Geba-Corubal",
+            "count": "1"
+        },
+        {
+            "source": "Guinea-Bissau",
+            "target": "General_Africa",
+            "count": "1"
+        },
+        {
+            "source": "Guyana",
+            "target": "Amazon",
+            "count": "1"
+        },
+        {
+            "source": "Haiti",
+            "target": "Artibonite",
+            "count": "3"
+        },
+        {
+            "source": "Haiti",
+            "target": "Massacre",
+            "count": "2"
+        },
+        {
+            "source": "Haiti",
+            "target": "Pedernales",
+            "count": "2"
+        },
+        {
+            "source": "Honduras",
+            "target": "General_North America",
+            "count": "2"
+        },
+        {
+            "source": "Honduras",
+            "target": "Lempa",
+            "count": "1"
+        },
+        {
+            "source": "Hungary",
+            "target": "Danube",
+            "count": "14"
+        },
+        {
+            "source": "Hungary",
+            "target": "General",
+            "count": "1"
+        },
+        {
+            "source": "Hungary",
+            "target": "Unknown_Europe",
+            "count": "2"
+        },
+        {
+            "source": "India",
+            "target": "Fenney",
+            "count": "1"
+        },
+        {
+            "source": "India",
+            "target": "Ganges-Brahmaputra-Meghna",
+            "count": "17"
+        },
+        {
+            "source": "India",
+            "target": "Indus",
+            "count": "9"
+        },
+        {
+            "source": "India",
+            "target": "Karnaphuli",
+            "count": "1"
+        },
+        {
+            "source": "Indonesia",
+            "target": "Fly",
+            "count": "1"
+        },
+        {
+            "source": "Indonesia",
+            "target": "Sepik",
+            "count": "1"
+        },
+        {
+            "source": "Iran",
+            "target": "Atrak",
+            "count": "2"
+        },
+        {
+            "source": "Iran",
+            "target": "General_Asia",
+            "count": "1"
+        },
+        {
+            "source": "Iran",
+            "target": "Helmand",
+            "count": "1"
+        },
+        {
+            "source": "Iran",
+            "target": "Kura-Araks",
+            "count": "4"
+        },
+        {
+            "source": "Iran",
+            "target": "Tigris-Euphrates/Shatt al Arab",
+            "count": "4"
+        },
+        {
+            "source": "Iran",
+            "target": "Unknown_Asia",
+            "count": "4"
+        },
+        {
+            "source": "Iraq",
+            "target": "Tigris-Euphrates/Shatt al Arab",
+            "count": "7"
+        },
+        {
+            "source": "Iraq",
+            "target": "Unknown_Asia",
+            "count": "2"
+        },
+        {
+            "source": "Ireland",
+            "target": "General",
+            "count": "1"
+        },
+        {
+            "source": "Israel",
+            "target": "Jordan Basin",
+            "count": "9"
+        },
+        {
+            "source": "Italy",
+            "target": "Danube",
+            "count": "2"
+        },
+        {
+            "source": "Italy",
+            "target": "General",
+            "count": "1"
+        },
+        {
+            "source": "Italy",
+            "target": "General_Europe",
+            "count": "1"
+        },
+        {
+            "source": "Italy",
+            "target": "Isonzo",
+            "count": "3"
+        },
+        {
+            "source": "Italy",
+            "target": "Po",
+            "count": "7"
+        },
+        {
+            "source": "Italy",
+            "target": "Rhine-Meuse",
+            "count": "4"
+        },
+        {
+            "source": "Italy",
+            "target": "Rhone",
+            "count": "1"
+        },
+        {
+            "source": "Italy",
+            "target": "Roia",
+            "count": "2"
+        },
+        {
+            "source": "Italy",
+            "target": "Unknown_Africa",
+            "count": "1"
+        },
+        {
+            "source": "Italy",
+            "target": "Unknown_Europe",
+            "count": "4"
+        },
+        {
+            "source": "Ivory Coast",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Ivory Coast",
+            "target": "Niger Basin",
+            "count": "10"
+        },
+        {
+            "source": "Ivory Coast",
+            "target": "Volta",
+            "count": "3"
+        },
+        {
+            "source": "Jordan",
+            "target": "Jordan Basin",
+            "count": "4"
+        },
+        {
+            "source": "Kazakhstan",
+            "target": "Aral Sea",
+            "count": "11"
+        },
+        {
+            "source": "Kazakhstan",
+            "target": "General_Asia",
+            "count": "1"
+        },
+        {
+            "source": "Kazakhstan",
+            "target": "General_Europe",
+            "count": "1"
+        },
+        {
+            "source": "Kazakhstan",
+            "target": "Ili/Kunes He",
+            "count": "2"
+        },
+        {
+            "source": "Kazakhstan",
+            "target": "Ob",
+            "count": "4"
+        },
+        {
+            "source": "Kazakhstan",
+            "target": "Oral/Ural",
+            "count": "1"
+        },
+        {
+            "source": "Kazakhstan",
+            "target": "Shu/Chu",
+            "count": "2"
+        },
+        {
+            "source": "Kazakhstan",
+            "target": "Talas",
+            "count": "2"
+        },
+        {
+            "source": "Kazakhstan",
+            "target": "Unknown_Asia",
+            "count": "1"
+        },
+        {
+            "source": "Kazakhstan",
+            "target": "Volga",
+            "count": "2"
+        },
+        {
+            "source": "Kenya",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Kenya",
+            "target": "Juba-Shibeli",
+            "count": "3"
+        },
+        {
+            "source": "Kenya",
+            "target": "Lake Turkana",
+            "count": "1"
+        },
+        {
+            "source": "Kenya",
+            "target": "Nile",
+            "count": "5"
+        },
+        {
+            "source": "Korea, Democratic People's Republic",
+            "target": "Tumen",
+            "count": "2"
+        },
+        {
+            "source": "Korea, Democratic People's Republic",
+            "target": "Yalu",
+            "count": "3"
+        },
+        {
+            "source": "Kuwait",
+            "target": "Unknown_Asia",
+            "count": "1"
+        },
+        {
+            "source": "Kyrgyzstan",
+            "target": "Aral Sea",
+            "count": "10"
+        },
+        {
+            "source": "Kyrgyzstan",
+            "target": "General_Europe",
+            "count": "1"
+        },
+        {
+            "source": "Kyrgyzstan",
+            "target": "Ili/Kunes He",
+            "count": "1"
+        },
+        {
+            "source": "Kyrgyzstan",
+            "target": "Shu/Chu",
+            "count": "2"
+        },
+        {
+            "source": "Kyrgyzstan",
+            "target": "Talas",
+            "count": "2"
+        },
+        {
+            "source": "Kyrgyzstan",
+            "target": "Unknown_Asia",
+            "count": "2"
+        },
+        {
+            "source": "Laos",
+            "target": "Mekong",
+            "count": "10"
+        },
+        {
+            "source": "Latvia",
+            "target": "Daugava",
+            "count": "2"
+        },
+        {
+            "source": "Latvia",
+            "target": "General",
+            "count": "1"
+        },
+        {
+            "source": "Latvia",
+            "target": "Lielupe",
+            "count": "1"
+        },
+        {
+            "source": "Latvia",
+            "target": "Narva",
+            "count": "1"
+        },
+        {
+            "source": "Latvia",
+            "target": "Neman",
+            "count": "1"
+        },
+        {
+            "source": "Lebanon",
+            "target": "An Nahr Al Kabir",
+            "count": "2"
+        },
+        {
+            "source": "Lebanon",
+            "target": "Asi/Orontes",
+            "count": "2"
+        },
+        {
+            "source": "Lebanon",
+            "target": "Jordan Basin",
+            "count": "4"
+        },
+        {
+            "source": "Lesotho",
+            "target": "General_Africa",
+            "count": "4"
+        },
+        {
+            "source": "Lesotho",
+            "target": "Orange",
+            "count": "6"
+        },
+        {
+            "source": "Liberia",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Liberia",
+            "target": "Moa",
+            "count": "1"
+        },
+        {
+            "source": "Libya",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Libya",
+            "target": "Groundwater",
+            "count": "3"
+        },
+        {
+            "source": "Libya",
+            "target": "Unknown_Africa",
+            "count": "1"
+        },
+        {
+            "source": "Liechtenstein",
+            "target": "Rhine-Meuse",
+            "count": "3"
+        },
+        {
+            "source": "Lithuania",
+            "target": "Daugava",
+            "count": "2"
+        },
+        {
+            "source": "Lithuania",
+            "target": "General",
+            "count": "1"
+        },
+        {
+            "source": "Lithuania",
+            "target": "Lielupe",
+            "count": "1"
+        },
+        {
+            "source": "Lithuania",
+            "target": "Neman",
+            "count": "5"
+        },
+        {
+            "source": "Luxembourg",
+            "target": "General",
+            "count": "1"
+        },
+        {
+            "source": "Luxembourg",
+            "target": "General_Europe",
+            "count": "1"
+        },
+        {
+            "source": "Luxembourg",
+            "target": "Rhine-Meuse",
+            "count": "18"
+        },
+        {
+            "source": "Luxembourg",
+            "target": "Unknown_Europe",
+            "count": "3"
+        },
+        {
+            "source": "Macedonia",
+            "target": "Danube",
+            "count": "17"
+        },
+        {
+            "source": "Macedonia",
+            "target": "Drin",
+            "count": "1"
+        },
+        {
+            "source": "Macedonia",
+            "target": "Lake Prespa",
+            "count": "2"
+        },
+        {
+            "source": "Macedonia",
+            "target": "Struma",
+            "count": "4"
+        },
+        {
+            "source": "Macedonia",
+            "target": "Vardar",
+            "count": "2"
+        },
+        {
+            "source": "Madagascar",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Malawi",
+            "target": "Congo/Zaire",
+            "count": "1"
+        },
+        {
+            "source": "Malawi",
+            "target": "General_Africa",
+            "count": "4"
+        },
+        {
+            "source": "Malawi",
+            "target": "Ruvuma",
+            "count": "1"
+        },
+        {
+            "source": "Malawi",
+            "target": "Zambezi",
+            "count": "5"
+        },
+        {
+            "source": "Malaysia",
+            "target": "Golok",
+            "count": "1"
+        },
+        {
+            "source": "Mali",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Mali",
+            "target": "Niger Basin",
+            "count": "12"
+        },
+        {
+            "source": "Mali",
+            "target": "Senegal Basin",
+            "count": "11"
+        },
+        {
+            "source": "Mali",
+            "target": "Volta",
+            "count": "3"
+        },
+        {
+            "source": "Malta",
+            "target": "General",
+            "count": "1"
+        },
+        {
+            "source": "Mauritania",
+            "target": "General_Africa",
+            "count": "3"
+        },
+        {
+            "source": "Mauritania",
+            "target": "Niger Basin",
+            "count": "2"
+        },
+        {
+            "source": "Mauritania",
+            "target": "Senegal Basin",
+            "count": "11"
+        },
+        {
+            "source": "Mauritius",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Mexico",
+            "target": "Candelaria",
+            "count": "1"
+        },
+        {
+            "source": "Mexico",
+            "target": "Coatan Achute",
+            "count": "1"
+        },
+        {
+            "source": "Mexico",
+            "target": "Colorado",
+            "count": "24"
+        },
+        {
+            "source": "Mexico",
+            "target": "Grijalva",
+            "count": "1"
+        },
+        {
+            "source": "Mexico",
+            "target": "Hondo",
+            "count": "1"
+        },
+        {
+            "source": "Mexico",
+            "target": "Rio Grande (North America)",
+            "count": "22"
+        },
+        {
+            "source": "Mexico",
+            "target": "Suchiate",
+            "count": "1"
+        },
+        {
+            "source": "Mexico",
+            "target": "Tijuana",
+            "count": "9"
+        },
+        {
+            "source": "Mexico",
+            "target": "Unknown_North America",
+            "count": "3"
+        },
+        {
+            "source": "Mexico",
+            "target": "Yaqui",
+            "count": "3"
+        },
+        {
+            "source": "Moldova",
+            "target": "Danube",
+            "count": "8"
+        },
+        {
+            "source": "Moldova",
+            "target": "Dniester",
+            "count": "2"
+        },
+        {
+            "source": "Moldova",
+            "target": "General_Europe",
+            "count": "1"
+        },
+        {
+            "source": "Moldova",
+            "target": "Kogilnik",
+            "count": "1"
+        },
+        {
+            "source": "Moldova",
+            "target": "Sarata",
+            "count": "1"
+        },
+        {
+            "source": "Mongolia",
+            "target": "Amur",
+            "count": "2"
+        },
+        {
+            "source": "Mongolia",
+            "target": "Har Us Nur",
+            "count": "1"
+        },
+        {
+            "source": "Mongolia",
+            "target": "Jenisej/Yenisey",
+            "count": "2"
+        },
+        {
+            "source": "Mongolia",
+            "target": "Lake Ubsa-Nur",
+            "count": "1"
+        },
+        {
+            "source": "Mongolia",
+            "target": "Ob",
+            "count": "1"
+        },
+        {
+            "source": "Mongolia",
+            "target": "Pu Lun T'o",
+            "count": "2"
+        },
+        {
+            "source": "Montenegro",
+            "target": "Danube",
+            "count": "18"
+        },
+        {
+            "source": "Montenegro",
+            "target": "Drin",
+            "count": "1"
+        },
+        {
+            "source": "Morocco",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Mozambique",
+            "target": "General_Africa",
+            "count": "3"
+        },
+        {
+            "source": "Mozambique",
+            "target": "Incomati",
+            "count": "4"
+        },
+        {
+            "source": "Mozambique",
+            "target": "Limpopo",
+            "count": "2"
+        },
+        {
+            "source": "Mozambique",
+            "target": "Maputo",
+            "count": "3"
+        },
+        {
+            "source": "Mozambique",
+            "target": "Ruvuma",
+            "count": "1"
+        },
+        {
+            "source": "Mozambique",
+            "target": "Umbeluzi",
+            "count": "1"
+        },
+        {
+            "source": "Mozambique",
+            "target": "Unknown_Africa",
+            "count": "1"
+        },
+        {
+            "source": "Mozambique",
+            "target": "Zambezi",
+            "count": "10"
+        },
+        {
+            "source": "Myanmar",
+            "target": "Mekong",
+            "count": "2"
+        },
+        {
+            "source": "Myanmar",
+            "target": "Unknown_Asia",
+            "count": "1"
+        },
+        {
+            "source": "Namibia",
+            "target": "General_Africa",
+            "count": "3"
+        },
+        {
+            "source": "Namibia",
+            "target": "Kunene",
+            "count": "4"
+        },
+        {
+            "source": "Namibia",
+            "target": "Okavango",
+            "count": "2"
+        },
+        {
+            "source": "Namibia",
+            "target": "Orange",
+            "count": "4"
+        },
+        {
+            "source": "Namibia",
+            "target": "Unknown_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Namibia",
+            "target": "Zambezi",
+            "count": "3"
+        },
+        {
+            "source": "Nepal",
+            "target": "Ganges-Brahmaputra-Meghna",
+            "count": "5"
+        },
+        {
+            "source": "Netherlands",
+            "target": "General",
+            "count": "1"
+        },
+        {
+            "source": "Netherlands",
+            "target": "Rhine-Meuse",
+            "count": "15"
+        },
+        {
+            "source": "Netherlands",
+            "target": "Schelde",
+            "count": "2"
+        },
+        {
+            "source": "Netherlands",
+            "target": "Unknown_Europe",
+            "count": "3"
+        },
+        {
+            "source": "Nicaragua",
+            "target": "General_North America",
+            "count": "2"
+        },
+        {
+            "source": "Nicaragua",
+            "target": "San Juan",
+            "count": "1"
+        },
+        {
+            "source": "Niger",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Niger",
+            "target": "Lake Chad",
+            "count": "3"
+        },
+        {
+            "source": "Niger",
+            "target": "Niger Basin",
+            "count": "14"
+        },
+        {
+            "source": "Niger",
+            "target": "Unknown_Africa",
+            "count": "1"
+        },
+        {
+            "source": "Nigeria",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Nigeria",
+            "target": "Lake Chad",
+            "count": "3"
+        },
+        {
+            "source": "Nigeria",
+            "target": "Niger Basin",
+            "count": "11"
+        },
+        {
+            "source": "Nigeria",
+            "target": "Oueme",
+            "count": "1"
+        },
+        {
+            "source": "Nigeria",
+            "target": "Unknown_Africa",
+            "count": "1"
+        },
+        {
+            "source": "Norway",
+            "target": "Glama",
+            "count": "1"
+        },
+        {
+            "source": "Norway",
+            "target": "Klaralven",
+            "count": "1"
+        },
+        {
+            "source": "Norway",
+            "target": "Naatamo",
+            "count": "2"
+        },
+        {
+            "source": "Norway",
+            "target": "Pasvik",
+            "count": "6"
+        },
+        {
+            "source": "Norway",
+            "target": "Tana",
+            "count": "2"
+        },
+        {
+            "source": "Norway",
+            "target": "Torne/Tornealven",
+            "count": "2"
+        },
+        {
+            "source": "Norway",
+            "target": "Unknown_Europe",
+            "count": "2"
+        },
+        {
+            "source": "Pakistan",
+            "target": "Indus",
+            "count": "3"
+        },
+        {
+            "source": "Pakistan",
+            "target": "Unknown_Asia",
+            "count": "2"
+        },
+        {
+            "source": "Panama",
+            "target": "General_North America",
+            "count": "2"
+        },
+        {
+            "source": "Papua New Guinea",
+            "target": "Fly",
+            "count": "1"
+        },
+        {
+            "source": "Papua New Guinea",
+            "target": "Sepik",
+            "count": "1"
+        },
+        {
+            "source": "Paraguay",
+            "target": "La Plata",
+            "count": "15"
+        },
+        {
+            "source": "Peru",
+            "target": "Amazon",
+            "count": "2"
+        },
+        {
+            "source": "Peru",
+            "target": "Chira",
+            "count": "3"
+        },
+        {
+            "source": "Peru",
+            "target": "Lake Titicaca-Poopo System",
+            "count": "6"
+        },
+        {
+            "source": "Peru",
+            "target": "Tumbes",
+            "count": "3"
+        },
+        {
+            "source": "Peru",
+            "target": "Unknown_Europe",
+            "count": "1"
+        },
+        {
+            "source": "Peru",
+            "target": "Unknown_South America",
+            "count": "1"
+        },
+        {
+            "source": "Peru",
+            "target": "Zarumilla",
+            "count": "4"
+        },
+        {
+            "source": "Poland",
+            "target": "Danube",
+            "count": "4"
+        },
+        {
+            "source": "Poland",
+            "target": "Dniester",
+            "count": "2"
+        },
+        {
+            "source": "Poland",
+            "target": "Elbe",
+            "count": "4"
+        },
+        {
+            "source": "Poland",
+            "target": "General",
+            "count": "1"
+        },
+        {
+            "source": "Poland",
+            "target": "Lava/Pregel",
+            "count": "1"
+        },
+        {
+            "source": "Poland",
+            "target": "Neman",
+            "count": "3"
+        },
+        {
+            "source": "Poland",
+            "target": "Oder/Odra",
+            "count": "6"
+        },
+        {
+            "source": "Poland",
+            "target": "Unknown_Europe",
+            "count": "3"
+        },
+        {
+            "source": "Poland",
+            "target": "Vistula/Wista",
+            "count": "5"
+        },
+        {
+            "source": "Portugal",
+            "target": "Douro/Duero",
+            "count": "6"
+        },
+        {
+            "source": "Portugal",
+            "target": "General",
+            "count": "1"
+        },
+        {
+            "source": "Portugal",
+            "target": "Guadiana",
+            "count": "3"
+        },
+        {
+            "source": "Portugal",
+            "target": "Lima",
+            "count": "2"
+        },
+        {
+            "source": "Portugal",
+            "target": "Mino",
+            "count": "6"
+        },
+        {
+            "source": "Portugal",
+            "target": "Tagus/Tejo",
+            "count": "3"
+        },
+        {
+            "source": "Portugal",
+            "target": "Unknown_Africa",
+            "count": "1"
+        },
+        {
+            "source": "Portugal",
+            "target": "Unknown_Europe",
+            "count": "3"
+        },
+        {
+            "source": "Romania",
+            "target": "Danube",
+            "count": "19"
+        },
+        {
+            "source": "Romania",
+            "target": "Unknown_Europe",
+            "count": "1"
+        },
+        {
+            "source": "Russia",
+            "target": "Amur",
+            "count": "4"
+        },
+        {
+            "source": "Russia",
+            "target": "Daugava",
+            "count": "4"
+        },
+        {
+            "source": "Russia",
+            "target": "Dnieper",
+            "count": "2"
+        },
+        {
+            "source": "Russia",
+            "target": "Don",
+            "count": "1"
+        },
+        {
+            "source": "Russia",
+            "target": "General_Asia",
+            "count": "1"
+        },
+        {
+            "source": "Russia",
+            "target": "General_Europe",
+            "count": "1"
+        },
+        {
+            "source": "Russia",
+            "target": "Har Us Nur",
+            "count": "1"
+        },
+        {
+            "source": "Russia",
+            "target": "Jenisej/Yenisey",
+            "count": "2"
+        },
+        {
+            "source": "Russia",
+            "target": "Kemi",
+            "count": "2"
+        },
+        {
+            "source": "Russia",
+            "target": "Lake Ubsa-Nur",
+            "count": "1"
+        },
+        {
+            "source": "Russia",
+            "target": "Lava/Pregel",
+            "count": "1"
+        },
+        {
+            "source": "Russia",
+            "target": "Narva",
+            "count": "4"
+        },
+        {
+            "source": "Russia",
+            "target": "Neman",
+            "count": "5"
+        },
+        {
+            "source": "Russia",
+            "target": "Ob",
+            "count": "3"
+        },
+        {
+            "source": "Russia",
+            "target": "Olanga",
+            "count": "2"
+        },
+        {
+            "source": "Russia",
+            "target": "Oral/Ural",
+            "count": "1"
+        },
+        {
+            "source": "Russia",
+            "target": "Oulu",
+            "count": "1"
+        },
+        {
+            "source": "Russia",
+            "target": "Pasvik",
+            "count": "6"
+        },
+        {
+            "source": "Russia",
+            "target": "Pu Lun T'o",
+            "count": "1"
+        },
+        {
+            "source": "Russia",
+            "target": "Tuloma",
+            "count": "1"
+        },
+        {
+            "source": "Russia",
+            "target": "Tumen",
+            "count": "2"
+        },
+        {
+            "source": "Russia",
+            "target": "Unknown_Asia",
+            "count": "1"
+        },
+        {
+            "source": "Russia",
+            "target": "Unknown_Europe",
+            "count": "2"
+        },
+        {
+            "source": "Russia",
+            "target": "Volga",
+            "count": "2"
+        },
+        {
+            "source": "Russia",
+            "target": "Vuoksa",
+            "count": "4"
+        },
+        {
+            "source": "Rwanda",
+            "target": "Congo/Zaire",
+            "count": "2"
+        },
+        {
+            "source": "Rwanda",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Rwanda",
+            "target": "Nile",
+            "count": "4"
+        },
+        {
+            "source": "Sao Tome and Principe",
+            "target": "General_Africa",
+            "count": "1"
+        },
+        {
+            "source": "Senegal",
+            "target": "Gambia Basin",
+            "count": "7"
+        },
+        {
+            "source": "Senegal",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Senegal",
+            "target": "Senegal Basin",
+            "count": "12"
+        },
+        {
+            "source": "Serbia",
+            "target": "Danube",
+            "count": "19"
+        },
+        {
+            "source": "Serbia",
+            "target": "Drin",
+            "count": "1"
+        },
+        {
+            "source": "Serbia",
+            "target": "Struma",
+            "count": "4"
+        },
+        {
+            "source": "Serbia",
+            "target": "Vardar",
+            "count": "2"
+        },
+        {
+            "source": "Seychelles",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Sierra Leone",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Sierra Leone",
+            "target": "Great Scarcies",
+            "count": "1"
+        },
+        {
+            "source": "Sierra Leone",
+            "target": "Moa",
+            "count": "1"
+        },
+        {
+            "source": "Slovakia",
+            "target": "Danube",
+            "count": "11"
+        },
+        {
+            "source": "Slovakia",
+            "target": "General",
+            "count": "1"
+        },
+        {
+            "source": "Slovakia",
+            "target": "Unknown_Europe",
+            "count": "2"
+        },
+        {
+            "source": "Slovakia",
+            "target": "Vistula/Wista",
+            "count": "3"
+        },
+        {
+            "source": "Slovenia",
+            "target": "Danube",
+            "count": "19"
+        },
+        {
+            "source": "Slovenia",
+            "target": "General",
+            "count": "1"
+        },
+        {
+            "source": "Slovenia",
+            "target": "Isonzo",
+            "count": "3"
+        },
+        {
+            "source": "Slovenia",
+            "target": "Unknown_Europe",
+            "count": "1"
+        },
+        {
+            "source": "Somalia",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Somalia",
+            "target": "Juba-Shibeli",
+            "count": "1"
+        },
+        {
+            "source": "South Africa",
+            "target": "General_Africa",
+            "count": "3"
+        },
+        {
+            "source": "South Africa",
+            "target": "Incomati",
+            "count": "7"
+        },
+        {
+            "source": "South Africa",
+            "target": "Limpopo",
+            "count": "4"
+        },
+        {
+            "source": "South Africa",
+            "target": "Maputo",
+            "count": "4"
+        },
+        {
+            "source": "South Africa",
+            "target": "Orange",
+            "count": "8"
+        },
+        {
+            "source": "South Africa",
+            "target": "Umbeluzi",
+            "count": "1"
+        },
+        {
+            "source": "South Africa",
+            "target": "Unknown_Africa",
+            "count": "2"
+        },
+        {
+            "source": "South Sudan",
+            "target": "Nile",
+            "count": "3"
+        },
+        {
+            "source": "Spain",
+            "target": "Bidasoa",
+            "count": "2"
+        },
+        {
+            "source": "Spain",
+            "target": "Douro/Duero",
+            "count": "6"
+        },
+        {
+            "source": "Spain",
+            "target": "Ebro",
+            "count": "1"
+        },
+        {
+            "source": "Spain",
+            "target": "Garonne",
+            "count": "4"
+        },
+        {
+            "source": "Spain",
+            "target": "General",
+            "count": "1"
+        },
+        {
+            "source": "Spain",
+            "target": "Guadiana",
+            "count": "3"
+        },
+        {
+            "source": "Spain",
+            "target": "Lima",
+            "count": "2"
+        },
+        {
+            "source": "Spain",
+            "target": "Mino",
+            "count": "6"
+        },
+        {
+            "source": "Spain",
+            "target": "Tagus/Tejo",
+            "count": "3"
+        },
+        {
+            "source": "Spain",
+            "target": "Unknown_Africa",
+            "count": "1"
+        },
+        {
+            "source": "Spain",
+            "target": "Unknown_Europe",
+            "count": "4"
+        },
+        {
+            "source": "Sudan",
+            "target": "Gash",
+            "count": "2"
+        },
+        {
+            "source": "Sudan",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Sudan",
+            "target": "Groundwater",
+            "count": "2"
+        },
+        {
+            "source": "Sudan",
+            "target": "Nile",
+            "count": "9"
+        },
+        {
+            "source": "Suriname",
+            "target": "Maroni",
+            "count": "1"
+        },
+        {
+            "source": "Swaziland",
+            "target": "General_Africa",
+            "count": "4"
+        },
+        {
+            "source": "Swaziland",
+            "target": "Incomati",
+            "count": "5"
+        },
+        {
+            "source": "Swaziland",
+            "target": "Maputo",
+            "count": "3"
+        },
+        {
+            "source": "Swaziland",
+            "target": "Unknown_Africa",
+            "count": "1"
+        },
+        {
+            "source": "Swaziland",
+            "target": "Unknown_Europe",
+            "count": "1"
+        },
+        {
+            "source": "Sweden",
+            "target": "General",
+            "count": "1"
+        },
+        {
+            "source": "Sweden",
+            "target": "Glama",
+            "count": "1"
+        },
+        {
+            "source": "Sweden",
+            "target": "Klaralven",
+            "count": "1"
+        },
+        {
+            "source": "Sweden",
+            "target": "Torne/Tornealven",
+            "count": "2"
+        },
+        {
+            "source": "Switzerland",
+            "target": "Danube",
+            "count": "1"
+        },
+        {
+            "source": "Switzerland",
+            "target": "Po",
+            "count": "6"
+        },
+        {
+            "source": "Switzerland",
+            "target": "Rhine-Meuse",
+            "count": "24"
+        },
+        {
+            "source": "Switzerland",
+            "target": "Rhone",
+            "count": "16"
+        },
+        {
+            "source": "Switzerland",
+            "target": "Unknown_Europe",
+            "count": "1"
+        },
+        {
+            "source": "Syria",
+            "target": "An Nahr Al Kabir",
+            "count": "2"
+        },
+        {
+            "source": "Syria",
+            "target": "Asi/Orontes",
+            "count": "3"
+        },
+        {
+            "source": "Syria",
+            "target": "Jordan Basin",
+            "count": "6"
+        },
+        {
+            "source": "Syria",
+            "target": "Nahr El Kebir",
+            "count": "1"
+        },
+        {
+            "source": "Syria",
+            "target": "Tigris-Euphrates/Shatt al Arab",
+            "count": "6"
+        },
+        {
+            "source": "Tajikistan",
+            "target": "Aral Sea",
+            "count": "6"
+        },
+        {
+            "source": "Tajikistan",
+            "target": "General_Europe",
+            "count": "1"
+        },
+        {
+            "source": "Tajikistan",
+            "target": "Unknown_Asia",
+            "count": "3"
+        },
+        {
+            "source": "Tanzania",
+            "target": "Congo/Zaire",
+            "count": "3"
+        },
+        {
+            "source": "Tanzania",
+            "target": "General_Africa",
+            "count": "4"
+        },
+        {
+            "source": "Tanzania",
+            "target": "Nile",
+            "count": "8"
+        },
+        {
+            "source": "Tanzania",
+            "target": "Ruvuma",
+            "count": "1"
+        },
+        {
+            "source": "Tanzania",
+            "target": "Zambezi",
+            "count": "2"
+        },
+        {
+            "source": "Thailand",
+            "target": "Golok",
+            "count": "1"
+        },
+        {
+            "source": "Thailand",
+            "target": "Mekong",
+            "count": "10"
+        },
+        {
+            "source": "Togo",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Togo",
+            "target": "Volta",
+            "count": "2"
+        },
+        {
+            "source": "Tunisia",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Turkey",
+            "target": "Asi/Orontes",
+            "count": "1"
+        },
+        {
+            "source": "Turkey",
+            "target": "Maritsa",
+            "count": "1"
+        },
+        {
+            "source": "Turkey",
+            "target": "Nahr El Kebir",
+            "count": "1"
+        },
+        {
+            "source": "Turkey",
+            "target": "Rezvaya",
+            "count": "1"
+        },
+        {
+            "source": "Turkey",
+            "target": "Tigris-Euphrates/Shatt al Arab",
+            "count": "5"
+        },
+        {
+            "source": "Turkey",
+            "target": "Unknown_Asia",
+            "count": "1"
+        },
+        {
+            "source": "Turkey",
+            "target": "Unknown_Europe",
+            "count": "1"
+        },
+        {
+            "source": "Turkmenistan",
+            "target": "Aral Sea",
+            "count": "6"
+        },
+        {
+            "source": "Turkmenistan",
+            "target": "Atrak",
+            "count": "2"
+        },
+        {
+            "source": "Turkmenistan",
+            "target": "General_Asia",
+            "count": "1"
+        },
+        {
+            "source": "Turkmenistan",
+            "target": "General_Europe",
+            "count": "1"
+        },
+        {
+            "source": "Turkmenistan",
+            "target": "Kura-Araks",
+            "count": "2"
+        },
+        {
+            "source": "Uganda",
+            "target": "General_Africa",
+            "count": "2"
+        },
+        {
+            "source": "Uganda",
+            "target": "Nile",
+            "count": "12"
+        },
+        {
+            "source": "Ukraine",
+            "target": "Danube",
+            "count": "12"
+        },
+        {
+            "source": "Ukraine",
+            "target": "Dnieper",
+            "count": "2"
+        },
+        {
+            "source": "Ukraine",
+            "target": "Dniester",
+            "count": "3"
+        },
+        {
+            "source": "Ukraine",
+            "target": "Don",
+            "count": "1"
+        },
+        {
+            "source": "Ukraine",
+            "target": "General_Europe",
+            "count": "1"
+        },
+        {
+            "source": "Ukraine",
+            "target": "Kogilnik",
+            "count": "1"
+        },
+        {
+            "source": "Ukraine",
+            "target": "Sarata",
+            "count": "1"
+        },
+        {
+            "source": "Ukraine",
+            "target": "Unknown_Africa",
+            "count": "1"
+        },
+        {
+            "source": "Ukraine",
+            "target": "Vistula/Wista",
+            "count": "5"
+        },
+        {
+            "source": "United Kingdom",
+            "target": "General",
+            "count": "1"
+        },
+        {
+            "source": "United Kingdom",
+            "target": "Nelson-Saskatchewan",
+            "count": "1"
+        },
+        {
+            "source": "United Kingdom",
+            "target": "Unknown_Africa",
+            "count": "6"
+        },
+        {
+            "source": "United Kingdom",
+            "target": "Unknown_Asia",
+            "count": "1"
+        },
+        {
+            "source": "United Kingdom",
+            "target": "Volta",
+            "count": "1"
+        },
+        {
+            "source": "United States of America",
+            "target": "Colorado",
+            "count": "24"
+        },
+        {
+            "source": "United States of America",
+            "target": "Columbia",
+            "count": "9"
+        },
+        {
+            "source": "United States of America",
+            "target": "Fraser",
+            "count": "2"
+        },
+        {
+            "source": "United States of America",
+            "target": "Mississippi",
+            "count": "2"
+        },
+        {
+            "source": "United States of America",
+            "target": "Nelson-Saskatchewan",
+            "count": "3"
+        },
+        {
+            "source": "United States of America",
+            "target": "Rio Grande (North America)",
+            "count": "23"
+        },
+        {
+            "source": "United States of America",
+            "target": "Skagit",
+            "count": "2"
+        },
+        {
+            "source": "United States of America",
+            "target": "St. Croix",
+            "count": "1"
+        },
+        {
+            "source": "United States of America",
+            "target": "St. John (North America)",
+            "count": "3"
+        },
+        {
+            "source": "United States of America",
+            "target": "St. Lawrence",
+            "count": "27"
+        },
+        {
+            "source": "United States of America",
+            "target": "Tijuana",
+            "count": "9"
+        },
+        {
+            "source": "United States of America",
+            "target": "Unknown_North America",
+            "count": "3"
+        },
+        {
+            "source": "United States of America",
+            "target": "Yaqui",
+            "count": "3"
+        },
+        {
+            "source": "Uruguay",
+            "target": "Chuy",
+            "count": "2"
+        },
+        {
+            "source": "Uruguay",
+            "target": "La Plata",
+            "count": "12"
+        },
+        {
+            "source": "Uruguay",
+            "target": "Lagoon Dos Patos-Lagoon Mirim",
+            "count": "5"
+        },
+        {
+            "source": "Uruguay",
+            "target": "Unknown_South America",
+            "count": "2"
+        },
+        {
+            "source": "Uzbekistan",
+            "target": "Aral Sea",
+            "count": "11"
+        },
+        {
+            "source": "Uzbekistan",
+            "target": "General_Europe",
+            "count": "1"
+        },
+        {
+            "source": "Uzbekistan",
+            "target": "Unknown_Asia",
+            "count": "4"
+        },
+        {
+            "source": "Venezuela",
+            "target": "Amazon",
+            "count": "1"
+        },
+        {
+            "source": "Venezuela",
+            "target": "Unknown_South America",
+            "count": "1"
+        },
+        {
+            "source": "Vietnam",
+            "target": "Mekong",
+            "count": "8"
+        },
+        {
+            "source": "West Bank",
+            "target": "Jordan Basin",
+            "count": "1"
+        },
+        {
+            "source": "Yemen",
+            "target": "Groundwater",
+            "count": "1"
+        },
+        {
+            "source": "Zambia",
+            "target": "Congo/Zaire",
+            "count": "3"
+        },
+        {
+            "source": "Zambia",
+            "target": "General_Africa",
+            "count": "4"
+        },
+        {
+            "source": "Zambia",
+            "target": "Zambezi",
+            "count": "7"
+        },
+        {
+            "source": "Zimbabwe",
+            "target": "General_Africa",
+            "count": "3"
+        },
+        {
+            "source": "Zimbabwe",
+            "target": "Unknown_Africa",
+            "count": "1"
+        },
+        {
+            "source": "Zimbabwe",
+            "target": "Zambezi",
+            "count": "5"
+        }
+    ]
+}
