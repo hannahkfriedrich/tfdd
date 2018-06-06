@@ -20,7 +20,7 @@
         <link href="https://fonts.googleapis.com/css?family=Artifika|Cinzel+Decorative" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
         <!--<script src="https://d3js.org/d3.v4.min.js"></script>-->
-
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.js"></script>-->
         <script src="https://dc-js.github.io/dc.js/js/d3.js"></script>
         <script src="https://dc-js.github.io/dc.js/js/crossfilter.js"></script>
         <script src="https://dc-js.github.io/dc.js/js/dc.js"></script>
@@ -29,6 +29,10 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="shortcut icon" href="assets/img/TFDDicon.JPG" type="image/x-icon">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.4.4/proj4.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4leaflet/1.0.2/proj4leaflet.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
         <style>
 
@@ -211,14 +215,10 @@
                 border: black;
                 text-anchor: middle;
             }
-            /*!**/
-            /*Label the data*/
-            /**!*/
-            /*td:before {*/
-                /*content: attr(data-th) ": ";*/
-                /*font-weight: bold;*/
-                /*width: 6.5em;*/
-                /*display: inline-block;*/
+            /*#myInput {*/
+                /*position: absolute;*/
+                /*width: 70%;*/
+                /*height: 30%;*/
             /*}*/
 
 
@@ -232,6 +232,10 @@
         </div>
         <ul class="nav navbar-nav">
             <li class="active"><a href="index.html">Home</a></li>
+
+            <li><a href="#">Events</a></li>
+            <li><a href="treaties.html">Treaties</a></li>
+
             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Unit Layer <span
                     class="caret"></span></a>
                 <ul class="dropdown-menu">
@@ -247,14 +251,14 @@
                     <li><a href="#">Land Cover</a></li>
                     <li><a href="javascript:giam() ">Irrigation</a></li>
                     <li><a href="javascript: gmrca()">Rain Fall</a></li>
-                    <li><a href="#">Climate</a></li>
-                    <li><a href="#">Water Stress</a></li>
-
+                    <li><a href="javascript:damBasin()">Dams</a></li>
+                    <li><a href="javascript: runoffBasin()">Runoff</a></li>
+                    <li><a href="javascript:consumBasin()">Consumption</a></li>
+                    <li><a href="javascript:withBasin()">Withdrawal</a></li>
+                    <li><a href="javascript:hydropolBasin()">Hydro Political Tension</a></li>
                 </ul>
-            </li>
 
-            <li><a href="#">Events</a></li>
-            <li><a href="treaties.html">Treaties</a></li>
+            </li>
 
         </ul>
     </div>
@@ -264,7 +268,7 @@
 <div id="map" class="map"></div>
 
 <a id="backbutton" href="javascript: cover(base)"><i class="fa fa-arrow-circle-left fa-2x"  style="z-index:1000;color: #2f3942; left: 5px; top:75px;position: absolute;"></i></a>
-
+<input style="position: absolute; z-index:2000; bottom:30%; width: 70%" class="form-control" id="myInput" type="text" placeholder="Search...">
 <div id="data-table" class="container scrollbar "
      style="width: 70%; height: 30%; margin-bottom: 0px; position: absolute;  bottom: 0px; left: 0px;">
     <!--<input class="form-control" id="myInput" type="text" placeholder="Search...">-->
@@ -284,7 +288,8 @@
 
     <!--<div class="tab-content">-->
         <!--<div id="home" class="tab-pane fade in active">-->
-            <input class="form-control" id="myInput" type="text" placeholder="Search...">
+
+
     <div class="row">
         <div class="col-sm-4"><strong>Basin Name</strong></div>
     </div>

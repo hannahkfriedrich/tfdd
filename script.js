@@ -8,7 +8,7 @@ var popdimChart = dc.pieChart("#popCount");
 var popdimChart2 = dc.pieChart("#popCount2");
 var visCount = dc.dataCount(".dc-data-count");
 var visTable = dc.dataTable("#myTable");
-var base = "assets/basins_simplified.geojson";
+var base = "assets/Basin310_Master_20180511.geojson";
 var bcu = 'assets/BCU_simplified.geojson';
 var world = 'assets/world.geojson';
 
@@ -21,7 +21,6 @@ var treaty = d3.csv('assets/WorkingMasterTreatiesDB_20180428.csv');
 
 var map = L.map('map', {zoomControl: false, scrollWheelZoom: true}).setView([40, 0], 1.5);
 // L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png').addTo(map);
-
 
 
 var cover = function (base) {
@@ -205,14 +204,15 @@ var cover = function (base) {
                     function (d) {
                         return d.properties.Dams_Exist
                     },
-                    function (d){
+                    function (d) {
                         return d.properties.adm0_name
                     },
                     function (d) {
                         return d.properties.rbo
                     }
-                ]);
-
+                ])
+                // .showGroups(false)
+                .size(325)
 
             dc.renderAll();
 
@@ -246,7 +246,7 @@ var cover = function (base) {
                     fillOpacity: 0.5
                 });
 
-                this.bindPopup (e.target.feature.properties.Basin_Name)
+                this.bindPopup(e.target.feature.properties.Basin_Name)
                 this.openPopup()
             }
 
@@ -302,6 +302,7 @@ var cover = function (base) {
                     mouseout: resetHighlight
                 });
             }
+
             function highlightFeature2(e) {
                 // e indicates the current event
                 // var layer = e.target; //the target capture the object which the event associates with
@@ -313,7 +314,7 @@ var cover = function (base) {
                     fillOpacity: 0.5
                 });
 
-                this.bindPopup (e.target.feature.properties.adm0_name)
+                this.bindPopup(e.target.feature.properties.adm0_name)
                 this.openPopup()
             }
 
@@ -349,32 +350,17 @@ var cover = function (base) {
                 return colors[id];
             }
 
+
             function style(feature) {
                 return {
-                    weight: 2,
+                    weight: 1,
                     opacity: 1,
                     color: 'black',
                     dashArray: '3',
                     fillOpacity: 0.7,
                     fillColor: setColor(feature.properties.PopDen2015),
-
-
                 }
             };
-
-
-            // function cleanChart(filter ){
-            //     var popdimfilters = popdimChart.filters();
-            //     var areadimfilters = areadimChart.filters();
-            //     var vistable = vistable.filters();
-            //     popdimChart.filter(null);
-            //     areadimChart.filter(null);
-            //     filter_basin.remove();
-            //     popdimChart.filter([popdimfilters]);
-            //     areadimChart.filter([areadimfilters]);
-            //     console.log('update charts');
-            //
-            // }
 
 
             function updateMapFilter() {
@@ -440,7 +426,7 @@ var cover = function (base) {
                 var basin = e.target();
                 zoomToFeature(basin)
             });
-            visTable.on('filtered', function(){
+            visTable.on('filtered', function () {
                 updateMap()
             });
 
@@ -451,106 +437,48 @@ var cover = function (base) {
         });
     })
 
-
-};
-
-var tabulate = function (data, columns) {
-    // $('.table').removeData()
-    var table = d3.select('.table').append('table');
-    var thead = table.append('thead');
-    var tbody = table.append('tbody');
-
-    thead.append('tr')
-        .selectAll('th')
-        .data(columns)
-        .enter()
-        .append('th')
-        .text(function (d) {
-            return d
-        });
-
-    var rows = tbody.selectAll('tr')
-        .data(data)
-        .enter()
-        .append('tr');
-
-    var cells = rows.selectAll('td')
-        .data(function (row) {
-            return columns.map(function (column) {
-                return {column: column, value: row[column]}
-            })
-        })
-        .enter()
-        .append('td')
-        .text(function (d) {
-            return d.value
-        })
-
-
-    // var cells = rows.selectAll('td')
-    //     .data(rows)
-    //     .enter()
-    //     .append('td')
-    //     .text(function (d) {
-    //         return d
-    //     })
-
-    return table;
-
 };
 //
-// var treatyTable = function () {
-//     d3.csv("assets/WorkingMasterTreatiesDB_20180428.csv").then(function (data) {
+// var tabulate = function (data, columns) {
+//     // $('.table').removeData()
+//     var table = d3.select('.table').append('table');
+//     var thead = table.append('thead');
+//     var tbody = table.append('tbody');
 //
-//         var columns = ['Basin Name', 'CCODE', 'Issue Area'];
+//     thead.append('tr')
+//         .selectAll('th')
+//         .data(columns)
+//         .enter()
+//         .append('th')
+//         .text(function (d) {
+//             return d
+//         });
 //
-//         tabulate(data, columns)
-//     })
-// }
-// var rboTable = function () {
+//     var rows = tbody.selectAll('tr')
+//         .data(data)
+//         .enter()
+//         .append('tr');
 //
-//     d3.csv("assets/TFDD_RBODatabase_20131015.csv").then(function (data) {
+//     var cells = rows.selectAll('td')
+//         .data(function (row) {
+//             return columns.map(function (column) {
+//                 return {column: column, value: row[column]}
+//             })
+//         })
+//         .enter()
+//         .append('td')
+//         .text(function (d) {
+//             return d.value
+//         })
 //
-//         var columns = ['RIV_NAME', 'RBO', 'AGREEMENT_NAME'];
-//         tabulate(data, columns)
-//     })
+//     return table;
+//
 // };
-// //
-// var eventsTable = function () {
-//     d3.csv("assets/EventMaster111710.csv").then(function (data) {
-//
-//         var columns = ['BCode', 'COUNTRY_LIST', 'EVENT_TYPE'];
-//         tabulate(data, columns)
-//     })
-// };
-/////////////////////////////////////////THE CALLS////////////////////////////////////////////////////////////////////
-var treatyTable = function () {
-    d3.csv("assets/WorkingMasterTreatiesDB_20180428.csv").then(function (data) {
 
-        var columns = ['Basin Name', 'CCODE','2010_TREATY_DocID'];
+/////////////////////////////////////////Tiles////////////////////////////////////////////////////////////////////
 
-        tabulate(data, columns)
-    })
-}
-var rboTable = function () {
-
-    d3.csv("assets/TFDD_RBODatabase_20131015.csv").then(function (data) {
-
-        var columns = ['RIV_NAME', 'RBO', 'AGREEMENT_NAME'];
-        tabulate(data, columns)
-    })
-};
-//
-var eventsTable = function () {
-    d3.csv("assets/EventMaster111710.csv").then(function (data) {
-
-        var columns = ['BCode', 'COUNTRY_LIST', 'EVENT_TYPE'];
-        tabulate(data, columns)
-    })
-};
-
-var giam = function() {
-    L.tileLayer('assets/giam/{z}/{x}/{y}.png', {
+var giam = function () {
+    L.tileLayer('assets/giam/giam/{z}/{x}/{y}.png', {
         maxZoom: 7,
         tms: false,
         attribution: 'Generated by QTiles'
@@ -564,9 +492,357 @@ var gmrca = function () {
     }).addTo(map);
 }
 
+//////////////////////////////////////////Topic Layers//////////////////////////////////////////////////////////////////
 
 
+function zoomToFeatureoutside(e) {
 
+    map.fitBounds(e.target.getBounds());
+}
+
+function resetHighlightoutside(e) {
+    b.resetStyle(e.target);
+    this.closePopup()
+    // $(".update").html("Hover over a state");
+}
+
+///////////////////////////////////////Dams/////////////////////////////////////////////////
+
+function onEachFeaturedams(feature, layer) {
+    layer.on({
+        mouseover: highlightFeaturedams,
+        click: zoomToFeatureoutside,
+        // mouseout: resetHighlightoutside
+    });
+}
+
+function highlightFeaturedams(e) {
+    this.bindPopup('Dams: ' + e.target.feature.properties.Dams_Exist)
+    this.openPopup()
+};
+
+
+// 3.3 add these event the layer obejct.
+
+function damColor(d) {
+    var id = 0;
+    if (d > 17) {
+        id = 5;
+    }
+    else if (d > 18 && d <= 59) {
+        id = 4;
+    }
+    else if (d > 60 && d <= 101) {
+        id = 3;
+    }
+    else if (d > 102 && d <= 185) {
+        id = 2;
+    }
+    else if (d > 186 && d <= 710) {
+        id = 1;
+    }
+    else {
+        id = 0;
+    }
+
+    return colors[id];
+}
+
+
+function damStyle(feature) {
+    return {
+        weight: 1,
+        opacity: 1,
+        color: 'black',
+        dashArray: '3',
+        fillOpacity: 0.7,
+        fillColor: damColor(feature.properties.Dams_Exist),
+    }
+};
+
+function damBasin() {
+    map.eachLayer(function (layer) {
+        map.removeLayer(layer);
+    });
+    L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png').addTo(map);
+    var dams = L.geoJSON.ajax('assets/Basin310_Master_20180511.geojson', {
+        style: damStyle,
+        onEachFeature: onEachFeaturedams,
+    }).addTo(map)
+}
+
+///////////////////////////////////////////////////Runoff/////////////////////////////////////////////////////////////
+function onEachFeaturerunoff(feature, layer) {
+    layer.on({
+        mouseover: highlightFeaturerunoff,
+        click: zoomToFeatureoutside,
+        // mouseout: resetHighlightoutside
+    });
+}
+
+function highlightFeaturerunoff(e) {
+    var list = 'Basin Name: ' + e.target.feature.properties.Basin_Name + '<br>' + 'Runoff:' + e.target.feature.properties.runoff_
+    // this.bindPopup ('Basin Name: ' + e.target.feature.properties.Basin_Name)
+    this.bindPopup(list)
+    this.openPopup()
+};
+
+
+// 3.3 add these event the layer obejct.
+
+function runoffColor(d) {
+    var id = 0;
+    //different runoff colors because 9999 is used as a null value, greys our the nulls
+    var colors_runoff = ['#afb6bc', '#919ba3', '#53626f', '#374e60', '#2f3942', '#f0f0f0']
+    if (d > 2778) {
+        id = 5;
+    }
+    else if (d > 1707 && d <= 2777) {
+        id = 4;
+    }
+    else if (d > 965 && d <= 1706) {
+        id = 3;
+    }
+    else if (d > 419 && d <= 964) {
+        id = 2;
+    }
+    else if (d > 1 && d <= 418) {
+        id = 1;
+    }
+    else {
+        id = 0;
+    }
+
+    return colors_runoff[id];
+}
+
+
+function runoffStyle(feature) {
+    return {
+        weight: 1,
+        opacity: 1,
+        color: 'black',
+        dashArray: '3',
+        fillOpacity: 0.7,
+        fillColor: runoffColor(feature.properties.runoff_),
+    }
+};
+
+function runoffBasin() {
+    map.eachLayer(function (layer) {
+        map.removeLayer(layer);
+    });
+    L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png').addTo(map);
+    L.geoJSON.ajax('assets/Basin310_Master_20180511.geojson', {
+        style: runoffStyle,
+        onEachFeature: onEachFeaturerunoff,
+    }).addTo(map)
+}
+
+///////////////////////////////////////////consumption////////////////////////////////////////////////////////////
+function onEachFeatureconsum(feature, layer) {
+    layer.on({
+        mouseover: highlightFeatureconsum,
+        click: zoomToFeatureoutside,
+        // mouseout: resetHighlightoutside
+    });
+}
+
+function highlightFeatureconsum(e) {
+    var list = 'Basin Name: ' + e.target.feature.properties.Basin_Name + '<br>' + 'Consumption: ' + e.target.feature.properties.consumption
+    // this.bindPopup ('Basin Name: ' + e.target.feature.properties.Basin_Name)
+    this.bindPopup(list)
+    this.openPopup()
+};
+
+
+// 3.3 add these event the layer obejct.
+
+function consumColor(d) {
+    var id = 0;
+    //different runoff colors because 9999 is used as a null value, greys our the nulls
+    var colors_runoff = ['#afb6bc', '#919ba3', '#53626f', '#374e60', '#2f3942', '#ffffff']
+    if (d > 170000) {
+        id = 5;
+    }
+    else if (d > 63357 && d <= 165389) {
+        id = 4;
+    }
+    else if (d > 20788 && d <= 63356) {
+        id = 3;
+    }
+    else if (d > 5553 && d <= 20787) {
+        id = 2;
+    }
+    else if (d > 1 && d <= 5552) {
+        id = 1;
+    }
+    else {
+        id = 0;
+    }
+
+    return colors_runoff[id];
+}
+
+
+function consumStyle(feature) {
+    return {
+        weight: 1,
+        opacity: 1,
+        color: 'black',
+        dashArray: '3',
+        fillOpacity: 0.7,
+        fillColor: consumColor(feature.properties.consumption),
+    }
+};
+
+function consumBasin() {
+    map.eachLayer(function (layer) {
+        map.removeLayer(layer);
+    });
+    L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png').addTo(map);
+    L.geoJSON.ajax('assets/Basin310_Master_20180511.geojson', {
+        style: consumStyle,
+        onEachFeature: onEachFeatureconsum,
+    }).addTo(map)
+}
+
+///////////////////////////////////////////withdrawal////////////////////////////////////////////////////////////
+function onEachFeaturewith(feature, layer) {
+    layer.on({
+        mouseover: highlightFeaturewith,
+        click: zoomToFeatureoutside,
+        // mouseout: resetHighlightoutside
+    });
+}
+
+function highlightFeaturewith(e) {
+    var list = 'Basin: ' + e.target.feature.properties.Basin_Name + '<br>' + 'Withdrawal: ' + e.target.feature.properties.withdrawl_
+    // this.bindPopup ('Basin Name: ' + e.target.feature.properties.Basin_Name)
+    this.bindPopup(list)
+    this.openPopup()
+};
+
+
+// 3.3 add these event the layer obejct.
+
+function withColor(d) {
+    var id = 0;
+    //different runoff colors because 9999 is used as a null value, greys our the nulls
+    var colors_runoff = ['#afb6bc', '#919ba3', '#53626f', '#374e60', '#2f3942', '#ffffff']
+    if (d > 600000) {
+        id = 5;
+    }
+    else if (d > 111709 && d <= 500084) {
+        id = 4;
+    }
+    else if (d > 55583 && d <= 111708) {
+        id = 3;
+    }
+    else if (d > 15871 && d <= 55582) {
+        id = 2;
+    }
+    else if (d > 1 && d <= 15871) {
+        id = 1;
+    }
+    else {
+        id = 0;
+    }
+
+    return colors_runoff[id];
+}
+
+
+function withStyle(feature) {
+    return {
+        weight: 1,
+        opacity: 1,
+        color: 'black',
+        dashArray: '3',
+        fillOpacity: 0.7,
+        fillColor: withColor(feature.properties.withdrawl_),
+    }
+};
+
+function withBasin() {
+    map.eachLayer(function (layer) {
+        map.removeLayer(layer);
+    });
+    L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png').addTo(map);
+    L.geoJSON.ajax('assets/Basin310_Master_20180511.geojson', {
+        style: withStyle,
+        onEachFeature: onEachFeaturewith,
+    }).addTo(map)
+}
+
+
+///////////////////////////////////////////withdrawal////////////////////////////////////////////////////////////
+function onEachFeaturehydropol(feature, layer) {
+    layer.on({
+        mouseover: highlightFeaturehydropol,
+        click: zoomToFeatureoutside,
+        // mouseout: resetHighlightoutside
+    });
+}
+
+function highlightFeaturehydropol(e) {
+    var list = 'Basin: ' + e.target.feature.properties.Basin_Name + '<br>' + 'Political Tension: ' + e.target.feature.properties.HydroPolTe_
+    // this.bindPopup ('Basin Name: ' + e.target.feature.properties.Basin_Name)
+    this.bindPopup(list)
+    this.openPopup()
+};
+
+
+// 3.3 add these event the layer obejct.
+
+function hydropolColor(d) {
+    var id = 0;
+    //different runoff colors because 9999 is used as a null value, greys our the nulls
+    var colors_runoff = ['#afb6bc', '#919ba3', '#53626f', '#374e60', '#2f3942', '#ffffff']
+    if (d > 600000) {
+        id = 5;
+    }
+    else if (d === 4) {
+        id = 4;
+    }
+    else if (d === 3) {
+        id = 3;
+    }
+    else if (d === 2) {
+        id = 2;
+    }
+    else if (d === 1) {
+        id = 1;
+    }
+    else {
+        id = 0;
+    }
+
+    return colors_runoff[id];
+}
+
+
+function hydropolStyle(feature) {
+    return {
+        weight: 1,
+        opacity: 1,
+        color: 'black',
+        dashArray: '3',
+        fillOpacity: 0.7,
+        fillColor: hydropolColor(feature.properties.HydroPolTe_),
+    }
+};
+
+function hydropolBasin() {
+    map.eachLayer(function (layer) {
+        map.removeLayer(layer);
+    });
+    L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png').addTo(map);
+    L.geoJSON.ajax('assets/Basin310_Master_20180511.geojson', {
+        style: hydropolStyle,
+        onEachFeature: onEachFeaturehydropol,
+    }).addTo(map)
+}
 
 cover(base);
 // treatyTable();
@@ -585,9 +861,13 @@ $(document).ready(function () {
         });
 
     });
+    $(".dc-table-column._0").on("click", function () {
+        console.log("boom")
+    });
 
 
 });
+
 
 window.onload = function () {
     console.log("window loaded")
@@ -607,4 +887,3 @@ window.onload = function () {
     }
 }
 
-document.body.style.zoom="90%"
