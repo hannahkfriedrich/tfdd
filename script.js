@@ -9,7 +9,7 @@ var popdimChart2 = dc.pieChart("#popCount2");
 var visCount = dc.dataCount(".dc-data-count");
 var visTable = dc.dataTable("#myTable");
 var base = "assets/Basin310_Master_20180511.geojson";
-var bcu = 'assets/BCU_simplified.geojson';
+var bcu = 'assets/BCU310_Master_20180511.geojson';
 var world = 'assets/world.geojson';
 
 var search = null;
@@ -843,6 +843,148 @@ function hydropolBasin() {
         onEachFeature: onEachFeaturehydropol,
     }).addTo(map)
 }
+
+
+///////////////////////////////////////////InstitVuln////////////////////////////////////////////////////////////
+function onEachFeatureInstitVuln(feature, layer) {
+    layer.on({
+        mouseover: highlightFeatureInstitVuln,
+        click: zoomToFeatureoutside,
+        // mouseout: resetHighlightoutside
+    });
+}
+
+function highlightFeatureInstitVuln(e) {
+    var list = 'Basin: ' + e.target.feature.properties.Basin_Name + '<br>' + 'Institutional' + '<br>' + 'Vulnerability: ' + e.target.feature.properties.InstitVuln
+    // this.bindPopup ('Basin Name: ' + e.target.feature.properties.Basin_Name)
+    this.bindPopup(list)
+    this.openPopup()
+};
+
+
+// 3.3 add these event the layer obejct.
+
+function InstitVulnColor(d) {
+    var id = 0;
+    //different runoff colors because 9999 is used as a null value, greys our the nulls
+    var colors_runoff = ['#afb6bc', '#919ba3', '#53626f', '#374e60', '#2f3942', '#ffffff']
+    if (d === '5') {
+        id = 4;
+    }
+    else if (d === '4') {
+        id = 3;
+    }
+    else if (d === '3') {
+        id = 2;
+    }
+    else if (d === '2') {
+        id = 1;
+    }
+    else if (d === '1') {
+        id = 0;
+    }
+    else {
+        id = 0;
+    }
+
+    return colors_runoff[id];
+}
+
+
+function InstitVulnStyle(feature) {
+    return {
+        weight: 1,
+        opacity: 1,
+        color: 'black',
+        dashArray: '3',
+        fillOpacity: 0.7,
+        fillColor: InstitVulnColor(feature.properties.InstitVuln),
+    }
+};
+
+function InstitVulnBasin() {
+    map.eachLayer(function (layer) {
+        map.removeLayer(layer);
+    });
+    L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png').addTo(map);
+    L.geoJSON.ajax('assets/BCU310_Master_20180511.geojson', {
+        style: InstitVulnStyle,
+        onEachFeature: onEachFeatureInstitVuln,
+    }).addTo(map)
+}
+
+
+///////////////////////////////////////////GDP////////////////////////////////////////////////////////////
+function onEachFeatureGDP(feature, layer) {
+    layer.on({
+        mouseover: highlightFeatureGDP,
+        click: zoomToFeatureoutside,
+        // mouseout: resetHighlightoutside
+    });
+}
+
+function highlightFeatureGDP(e) {
+    var list = 'Country: ' + e.target.feature.properties.adm0_name + '<br>' + 'GDP: ' + e.target.feature.properties.gdp_2016
+    // this.bindPopup ('Basin Name: ' + e.target.feature.properties.Basin_Name)
+    this.bindPopup(list)
+    this.openPopup()
+};
+
+
+// 3.3 add these event the layer obejct.
+
+function GDPColor(d) {
+    var id = 0;
+    //different runoff colors because 9999 is used as a null value, greys our the nulls
+    var colors_runoff = ['#afb6bc', '#919ba3', '#53626f', '#374e60', '#2f3942', '#ffffff']
+    if (d > 64176) {
+        id = 5;
+    }
+    else if (d > 45638&& d <= 64175) {
+        id = 4;
+    }
+    else if (d > 21650 && d <= 45637) {
+        id = 3;
+    }
+    else if (d > 6924 && d <= 21649) {
+        id = 2;
+    }
+    else if (d > 285 && d <= 6923) {
+        id = 1;
+    }
+    else {
+        id = 0;
+    }
+
+    return colors_runoff[id];
+}
+
+
+function GDPStyle(feature) {
+    return {
+        weight: 1,
+        opacity: 1,
+        color: 'black',
+        dashArray: '3',
+        fillOpacity: 0.7,
+        fillColor: GDPColor(feature.properties.gdp_2016),
+    }
+};
+
+function GDPBasin() {
+    map.eachLayer(function (layer) {
+        map.removeLayer(layer);
+    });
+    L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png').addTo(map);
+    L.geoJSON.ajax('assets/BCU310_Master_20180511.geojson', {
+        style: GDPStyle,
+        onEachFeature: onEachFeatureGDP,
+    }).addTo(map)
+}
+
+
+
+///////////////////////////////////////////////////call Cover/////////////////////////////////////////////////////////
 
 cover(base);
 // treatyTable();
