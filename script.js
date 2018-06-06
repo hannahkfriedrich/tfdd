@@ -517,8 +517,11 @@ function onEachFeaturedams(feature, layer) {
 }
 
 function highlightFeaturedams(e) {
-    this.bindPopup('Dams: ' + e.target.feature.properties.Dams_Exist)
+    var list = 'Basin Name: ' + e.target.feature.properties.Basin_Name + '<br>' + 'Dams: ' + e.target.feature.properties.Dams_Exist
+    // this.bindPopup ('Basin Name: ' + e.target.feature.properties.Basin_Name)
+    this.bindPopup(list)
     this.openPopup()
+
 };
 
 
