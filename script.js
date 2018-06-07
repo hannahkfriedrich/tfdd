@@ -31,7 +31,7 @@ var cover = function (base) {
 
     // L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png').addTo(map);
 
-   var gl = L.mapboxGL({
+   L.mapboxGL({
        accessToken: mapbox_token,
        style: 'assets/style.json',
        attribution: 'Created By <a href="https://github.com/hannahfriedrich/">Hannah Friedrich</a> based on the <a href="assets/license.txt">Mapbox basic style</a>'
@@ -580,7 +580,12 @@ function damBasin() {
     map.eachLayer(function (layer) {
         map.removeLayer(layer);
     });
-    L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png').addTo(map);
+    // L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png').addTo(map);
+    L.mapboxGL({
+        accessToken: mapbox_token,
+        style: 'assets/style.json',
+        attribution: 'Created By <a href="https://github.com/hannahfriedrich/">Hannah Friedrich</a> based on the <a href="assets/license.txt">Mapbox basic style</a>'
+    }).addTo(map);
     var dams = L.geoJSON.ajax('assets/Basin310_Master_20180511.geojson', {
         style: damStyle,
         onEachFeature: onEachFeaturedams,
@@ -648,7 +653,12 @@ function runoffBasin() {
     map.eachLayer(function (layer) {
         map.removeLayer(layer);
     });
-    L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png').addTo(map);
+    // L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png').addTo(map);
+    L.mapboxGL({
+        accessToken: mapbox_token,
+        style: 'assets/style.json',
+        attribution: 'Created By <a href="https://github.com/hannahfriedrich/">Hannah Friedrich</a> based on the <a href="assets/license.txt">Mapbox basic style</a>'
+    }).addTo(map);
     L.geoJSON.ajax('assets/Basin310_Master_20180511.geojson', {
         style: runoffStyle,
         onEachFeature: onEachFeaturerunoff,
@@ -716,7 +726,12 @@ function consumBasin() {
     map.eachLayer(function (layer) {
         map.removeLayer(layer);
     });
-    L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png').addTo(map);
+    L.mapboxGL({
+        accessToken: mapbox_token,
+        style: 'assets/style.json',
+        attribution: 'Created By <a href="https://github.com/hannahfriedrich/">Hannah Friedrich</a> based on the <a href="assets/license.txt">Mapbox basic style</a>'
+    }).addTo(map);
+    // L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png').addTo(map);
     L.geoJSON.ajax('assets/Basin310_Master_20180511.geojson', {
         style: consumStyle,
         onEachFeature: onEachFeatureconsum,
@@ -784,7 +799,12 @@ function withBasin() {
     map.eachLayer(function (layer) {
         map.removeLayer(layer);
     });
-    L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png').addTo(map);
+    // L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png').addTo(map);
+    L.mapboxGL({
+        accessToken: mapbox_token,
+        style: 'assets/style.json',
+        attribution: 'Created By <a href="https://github.com/hannahfriedrich/">Hannah Friedrich</a> based on the <a href="assets/license.txt">Mapbox basic style</a>'
+    }).addTo(map);
     L.geoJSON.ajax('assets/Basin310_Master_20180511.geojson', {
         style: withStyle,
         onEachFeature: onEachFeaturewith,
@@ -853,7 +873,12 @@ function hydropolBasin() {
     map.eachLayer(function (layer) {
         map.removeLayer(layer);
     });
-    L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png').addTo(map);
+    // L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png').addTo(map);
+    L.mapboxGL({
+        accessToken: mapbox_token,
+        style: 'assets/style.json',
+        attribution: 'Created By <a href="https://github.com/hannahfriedrich/">Hannah Friedrich</a> based on the <a href="assets/license.txt">Mapbox basic style</a>'
+    }).addTo(map);
     L.geoJSON.ajax('assets/Basin310_Master_20180511.geojson', {
         style: hydropolStyle,
         onEachFeature: onEachFeaturehydropol,
@@ -922,7 +947,12 @@ function InstitVulnBasin() {
     map.eachLayer(function (layer) {
         map.removeLayer(layer);
     });
-    L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png').addTo(map);
+    // L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png').addTo(map);
+    L.mapboxGL({
+        accessToken: mapbox_token,
+        style: 'assets/style.json',
+        attribution: 'Created By <a href="https://github.com/hannahfriedrich/">Hannah Friedrich</a> based on the <a href="assets/license.txt">Mapbox basic style</a>'
+    }).addTo(map);
     L.geoJSON.ajax('assets/BCU310_Master_20180511.geojson', {
         style: InstitVulnStyle,
         onEachFeature: onEachFeatureInstitVuln,
@@ -991,7 +1021,12 @@ function GDPBasin() {
     map.eachLayer(function (layer) {
         map.removeLayer(layer);
     });
-    L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png').addTo(map);
+    // L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png').addTo(map);
+    L.mapboxGL({
+        accessToken: mapbox_token,
+        style: 'assets/style.json',
+        attribution: 'Created By <a href="https://github.com/hannahfriedrich/">Hannah Friedrich</a> based on the <a href="assets/license.txt">Mapbox basic style</a>'
+    }).addTo(map);
     L.geoJSON.ajax('assets/BCU310_Master_20180511.geojson', {
         style: GDPStyle,
         onEachFeature: onEachFeatureGDP,
