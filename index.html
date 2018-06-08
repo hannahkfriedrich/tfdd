@@ -1,15 +1,15 @@
 <!doctype html>
-<html lang="en" xmlns:display="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:display="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>walteral_GEOG572_Lab05</title>
+    <title>Transboundary Freshwater Dispute Database</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!--<script src="https://d3js.org/d3.v5.min.js"></script>-->
     <link rel="stylesheet" href="https://dc-js.github.io/dc.js/css/dc.css">
-    <link href="https://fonts.googleapis.com/css?family=Artifika|Cinzel+Decorative" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rosario|Cinzel+Decorative" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
 
 
@@ -30,7 +30,7 @@
             margin: 0;
             padding: 0;
             background-color: #3e3e3e;
-            font-family: 'Artifika', serif;
+            font-family: 'Jaldi', sans-serif;
             font-size: 16px;
             position: relative;
             overflow: hidden;
@@ -72,7 +72,7 @@
         .btn {
             color: #919ba3;
             border-radius: 9px;
-            font-family: 'Cinzel Decorative', cursive;
+            font-family: 'Rosario', sans-serif;
             font-size: 100%;
             padding: 10px 20px;
             fill: #FFFFFF;
@@ -148,13 +148,18 @@
             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
             background-color: #180ef4;
         }
-.box1 {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-}
+        .box1 {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            border-radius: 0;
+            min-height: 100%;
+            min-width: 100%;
+            display: block;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+               }
 
 
     </style>
@@ -164,7 +169,7 @@
 
 <body>
 <div class="box1">
-    <video   preload="auto" autoplay loop muted="muted" volume="0" >
+    <video   preload="auto" autoplay loop muted="muted" volume="0">
         <source src="assets/img/Footage Of Nature Waterfalls.mp4" type="video/mp4">
 
     </video>
@@ -172,7 +177,8 @@
 
         <div class="content" style="z-index: 1000">
             <h1 style="text-align: center; text-shadow: black; box-shadow: black ">Transnational Fresh Water Dispute Database</h1>
-            <a class="btn" href="map.html" style="box-shadow: black;background-color: #2f3942; opacity: 0.6;"> <strong>Get Started </strong></a>
+            <a class="btn" href="http://transboundarywaters.science.oregonstate.edu/content/program-water-conflict-management-and-transformation" style="box-shadow: black;background-color: #2f3942; opacity: 0.6;"> <strong>Access Database </strong></a>
+            <a class="btn" href="map.html" style="box-shadow: black;background-color: #2f3942; opacity: 0.6;"> <strong>Access Map </strong></a>
         </div>
 
     </div>
@@ -181,13 +187,14 @@
 <div class="intro">
 
     <i class="fab fa-github fa-md" style="color: #FFFFFF; left: 5px; top:45px; position: absolute;font-size: large">
-        <a style='color: #FFFFFF; font-family:Cinzel Decorative;'
+        <a style='color: #FFFFFF; font-family:Rosario;'
            href="https://github.com/hannahfriedrich/TFDDGeoViz"><strong>Github</strong></a></i>
     <i class="fa fa-info-circle" style="color: #fff; left: 5px; top:5px; font-size: large; position: absolute"><a
-            data-toggle="modal" data-target="#aboutModal" class='icon' ; style='color: #FFFFFF; padding: 5px'>About</a></i>
-    <i class="fa fa-plus-circle" style="color: #fff; left: 5px; top:25px; font-size: large; position: absolute"><a
-            data-toggle="modal" data-target="#creditModal" class='icon' ;
-            style='color: #FFFFFF; padding: 5px'>Credit</a></i>
+            data-toggle="modal" data-target="#aboutModal" class='icon' ; style='color: #FFFFFF; padding: 5px; font-family: Rosario'>About</a></i>
+    <i class="fa fa-address-book" style="color: #fff; left: 5px; top: 85px; font-size: large; position: absolute" >
+        <a style='color: #FFFFFF; padding: 5px; font-family: Rosario' href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">Facebook</a>
+        </i>
+    </a>
 </div>
 
 
@@ -195,25 +202,6 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="aboutModal" role="dialog">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-
-                <h4 class="modal-title">About</h4>
-            </div>
-            <div class="modal-body">
-                <p>The Freshwater Transnational Dispute Database is a global collection of treaties used to settle water
-                    disputes.
-                </p>
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
 <div class="modal fade" id="creditModal" role="dialog">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -222,43 +210,7 @@
                 <h4 class="modal-title">About</h4>
             </div>
             <div class="modal-body">
-                <p> Administrators</p>
-                <p>Aaron T. Wolf, Ph.D.
-                    Program Co-Director
-                    Program in Water Conflict Management and Transformation
-                    Oregon State University
-                    College of Earth, Ocean, and Atmospheric Sciences
-                    104 CEOAS Admin Building
-                    Corvallis, OR 97331
-                    E-mail: wolfa[a]geo.oregonstate.edu
-                    Phone: (541) 737-2722
-                    Fax: (541) 737-1200</p>
 
-                <p>
-                    Lynette de Silva
-                    Program Co-Director
-                    Program in Water Conflict Management and Transformation
-                    Oregon State University
-                    College of Earth, Ocean, and Atmospheric Sciences
-                    104 CEOAS Admin Building
-                    Corvallis, OR 97331
-                    E-mail: desilval[a]geo.oregonstate.edu
-                    Phone: (541) 737-7013
-                    Fax: (541) 737-1200
-                </p>
-                <p>
-                    Melissa McCracken
-                    Database Manager
-                    Transboundary Freshwater Dispute Database
-                    Oregon State University
-                    College of Earth, Ocean, and Atmospheric Sciences
-                    104 CEOAS Admin Building
-                    Corvallis, OR 97331
-                    E-mail: mccrackm[a]oregonstate.edu
-                </p>
-                <br><br>
-                <p>Website creators</p>
-                <p> The project is created by Hannah Friedrich, Govanni Svevo and Alex Walters</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

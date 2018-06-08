@@ -28,7 +28,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link rel="shortcut icon" href="assets/img/TFDDicon.JPG" type="image/x-icon">
+        <link rel="shortcut icon" href="assets/img/tfdd_logo.png" type="image/x-icon">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.4.4/proj4.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4leaflet/1.0.2/proj4leaflet.min.js"></script>
@@ -50,7 +50,7 @@
                 padding: 0;
                 background-color: #3e3e3e;
                 font-family: 'Artifika', serif;
-                font-size: 16px;
+                font-size: 14px;
                 position: relative
 
             }
@@ -88,9 +88,9 @@
             }
 
             .btn {
-                color: #f5f2f9;
+                color: #919ba3;
                 border-radius: 9px;
-                font-family: 'Cinzel Decorative', cursive;
+                font-family: 'Rosario', sans-serif;
                 font-size: 100%;
                 padding: 10px 20px;
                 fill: #FFFFFF;
@@ -101,7 +101,7 @@
             }
 
             .btn:hover {
-                color: #fff;
+                color: #badcf9;
                 border: solid #fff 3px;
             }
 
@@ -117,7 +117,7 @@
 
             .map {
                 width: 70%;
-                height: 70%;
+                height: 66%;
                 left: 0px;
                 top: 0px;
                 position: absolute;
@@ -228,14 +228,46 @@
                 /*height: 30%;*/
             /*}*/
 
+            .legend {
+                line-height: 16px;
+                width: 140px;
+                color: #333333;
+                padding: 6px 8px;
+                background: white;
+                background: rgba(255,255,255,0.5);
+                box-shadow: 0 0 15px rgba(0,0,0,0.2);
+                border-radius: 5px;
+            }
+
+            .legend i {
+                width: 16px;
+                height: 16px;
+                float: left;
+                margin-right: 8px;
+                opacity: 0.9;
+            }
+
+            .legend img {
+                width: 16px;
+                height: 16px;
+                margin-right: 3px;
+                float: left;
+            }
+
+            .legend p {
+                font-size: 12px;
+                line-height: 16px;
+                margin: 0;
+            }
+
 
         </style>
     </head>
 <body>
-<nav class="navbar navbar-inverse" style="z-index: 1000; font-size: 20px">
+<nav class="navbar navbar-inverse" style="z-index: 1000; font-size: 16px">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" style="padding-top: 7px" href="http://transboundarywaters.science.oregonstate.edu/" target="_blank"><img src="assets/img/TFDDicon.JPG" style="width: 50px;"></img></a>
+            <a class="navbar-brand" style="padding-top: 7px" href="http://transboundarywaters.science.oregonstate.edu/" target="_blank"><img src="assets/img/tfdd_logo.png" style="width: 50px;"></img></a>
         </div>
         <ul class="nav navbar-nav">
             <li class="active"><a href="index.html">Home</a></li>
@@ -269,59 +301,158 @@
 
             </li>
 
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right" >
+            <li><a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">
+                <i class="fa fa-address-book" style="color: #afb6bc;" aria-hidden="true"></i>
+            </a></li>
+            <li><a style='color: #FFFFFF; font-family:Rosario;'
+                   href="https://github.com/hannahfriedrich/TFDDGeoViz"><i class="fab fa-github " style="color: #afb6bc;"></i></a></li>
+            <li><a data-toggle="modal" data-target="#aboutModal"  ; style='color: #afb6bc;'>
+                <i class="fa fa-info-circle" style="color: #afb6bc;"></i></a></li>
+            <li><a data-toggle="modal" data-target="#tutorialModal" style='color: #afb6bc;'>
+                <span style=" font-family: Rosario"></span> Tutorial</a></li>
         </ul>
     </div>
-</nav>
 
+
+</nav>
+<div class="modal fade" id="aboutModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <h4 class="modal-title">About</h4>
+            </div>
+            <div class="modal-body">
+                <p>The Transboundary Freshwater Dispute Database (TFDD) is an ongoing collection of transboundary freshwater
+                    basins and basin country units and associated treaties, events, and river basin organizations associated with such basins,
+                    BCUs, or countries. For more information on the TFDD and to download the database, visit <a href="http://transboundarywaters.science.oregonstate.edu/content/transboundary-freshwater-dispute-database"> here.</a></p>
+                <br>
+                <p>This geo-visualization was created by Hannah Friedrich, Giovanni Svevo, and Alex Walters for a joint project
+                    for Aaron Wolf's International Water Resources Management and Bo Zhao's Geovisual Analytics courses at Oregon State University.
+                    The goal of this geo-visualization is to take the existing TFDD database to create a geo-visualization to allow for a dynamic user
+                    experience in exploring the TFDD database and various global socio-economic, geographic, and water related variables.</p>
+                </br>
+
+                <p> <strong>Background and Sources for geospatial data</strong></p>
+                <br>
+                <p>Population Density from the GPWv4: <a href="http://sedac.ciesin.columbia.edu/data/collection/gpw-v4">Gridded Population of the World Version 4 </a></p>
+
+                <p>Land Cover: MODIS Land Cover using the <a href="https://explorer.earthengine.google.com/#detail/MODIS%2F051%2FMCD12Q1"> International Geosphere-Biosphere Programme (IGBP)</a> global vegetation classification scheme</p>
+
+                <p>Irrigation: Percent area irrigated/basin from the <a href="http://waterdata.iwmi.org/Applications/GIAM2000/giam.php">Global Irrigated Area Mapping (GIAM)</a>, which was last updated in 2000.</p>
+
+
+                <p>Rainfall sourced from <a href="http://waterdata.iwmi.org/Applications/GIAM2000/giam.php"> here</a></p>
+
+                <p>Dams: Count of existing dams in the basin, BCU</p>
+
+                <p>Runoff: <a href="http://www.bafg.de/GRDC/EN/01_GRDC/13_dtbse/database_node.html">Global Runnoff Database (GRDC)</a>. Last updated 2017.</p>
+
+
+                <p>Consumption:  </p>
+
+                <p>   Withdrawal:</p>
+
+                <p>Hydro-Political Tension: Risk of hydro-political tension based on the basic country unit (BCU) institutional vulnerability and infrastructure hazards. 1 being lowest risk, and 5 being the highest risk.</p>
+
+                <p>Institutional Vulnerability: Calculated based on the existence of five measures.</p>
+
+                <br>Gross Domestic Product sourced from <a href="https://data.worldbank.org/indicator/NY.GDP.PCAP.CD?view=map"> here.</a>
+                </br>
+
+                <h3>Contact</h3>
+
+                <p> Administrators</p>
+                <p>Aaron T. Wolf, Ph.D.
+                    Program Co-Director
+                    Program in Water Conflict Management and Transformation
+                    Oregon State University
+                    College of Earth, Ocean, and Atmospheric Sciences
+                    104 CEOAS Admin Building
+                    Corvallis, OR 97331
+                    E-mail: wolfa[a]geo.oregonstate.edu
+                    Phone: (541) 737-2722
+                    Fax: (541) 737-1200</p>
+
+                <p>
+                    Lynette de Silva
+                    Program Co-Director
+                    Program in Water Conflict Management and Transformation
+                    Oregon State University
+                    College of Earth, Ocean, and Atmospheric Sciences
+                    104 CEOAS Admin Building
+                    Corvallis, OR 97331
+                    E-mail: desilval[a]geo.oregonstate.edu
+                    Phone: (541) 737-7013
+                    Fax: (541) 737-1200
+                </p>
+                <p>
+                    Melissa McCracken
+                    Database Manager
+                    Transboundary Freshwater Dispute Database
+                    Oregon State University
+                    College of Earth, Ocean, and Atmospheric Sciences
+                    104 CEOAS Admin Building
+                    Corvallis, OR 97331
+                    E-mail: mccrackm[a]oregonstate.edu
+                </p>
+
+                </br><br>
+                <p>Website creators</p>
+                <p> The project is created by Hannah Friedrich, Govanni Svevo and Alex Walters</p>
+
+                <P>Thanks to Bo Zhao for his insight and assistance, and to Aaron Wolf and Melissa McCracken for familiarizing us with the TFDD database.</p>
+                </br>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="tutorialModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" style="font-family: Rosario">
+            <div class="modal-header">
+
+                <h4 class="modal-title">Tutorial</h4>
+            </div>
+            <div class="modal-body">
+                This is where the training will take place
+                <br><br>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 <!--<a id="backbutton"><i class="fa fa-arrow-left"style="z-index: 1010;top: 10%;left: 20px; position:static; height:50px;width:50px"></i></a>-->
 <div id="map" class="map"></div>
 
 <a id="backbutton" href="javascript: cover(base)"><i class="fa fa-arrow-circle-left fa-2x"  style="z-index:1000;color: #2f3942; left: 5px; top:75px;position: absolute;"></i></a>
-<input style="position: absolute; z-index:2000; bottom:30%; width: 70%" class="form-control" id="myInput" type="text" placeholder="Search...">
+<input style="position: absolute; z-index:1000; bottom:30%; width: 70%" class="form-control" id="myInput" type="text" placeholder="Search Database...">
 <div id="data-table" class="container scrollbar "
-     style="width: 70%; height: 30%; margin-bottom: 0px; position: absolute;  bottom: 0px; left: 0px;">
-    <!--<input class="form-control" id="myInput" type="text" placeholder="Search...">-->
-    <!--<span class="col-sm-2">BCODE</span>-->
-    <!--<span class="col-sm-4">Basin Name</span>-->
-    <!--<span class="col-sm-3">Area (Km2)</span>-->
-    <!--<span class="col-sm-2">Population Density</span>-->
-    <!--<span class="col-sm-1">Existing Dams</span>-->
-    <!--<table id="myTable" class="table table-hover dc-data-table table-condensed force-overflow"></table>-->
-
-    <!--<ul class="nav nav-tabs">-->
-        <!--<li class="active"><a data-toggle="tab" href="javascript:treatyTable()" >Treaty</a></li>-->
-        <!--<li><a data-toggle="tab" href="javascript:rboTable() ">RBO</a></li>-->
-        <!--<li><a data-toggle="tab" href="javascript: eventsTable()">Events</a></li>-->
-        <!--&lt;!&ndash;<li><a data-toggle="tab" href="#menu3">Menu 3</a></li>&ndash;&gt;-->
-    <!--</ul>-->
-
-    <!--<div class="tab-content">-->
-        <!--<div id="home" class="tab-pane fade in active">-->
-
-
-    <div class="row">
+     style="width: 70%; height: 30%; margin-bottom: 0px; position: absolute;  bottom: 0px; left: 0px; font-size: 12px">
+        <div class="row">
         <div class="col-sm-4"><strong>Basin Name</strong></div>
     </div>
     <div class="row">
-        <div class="col-sm-2"><strong>BCODE</strong></div>
-        <div class="col-sm-2"><strong>Area Km<sup>2</sup></strong></div>
-        <div class="col-md-2"><strong>Pop Den</strong></div>
+        <div class="col-sm-2"><strong>Basin Code</strong></div>
+        <div class="col-sm-2"><strong>Area (Km<sup>2</sup>)</strong></div>
+        <div class="col-md-2"><strong>Population Density (per km<sup>2</sup>)</strong></div>
         <div class="col-md-2"><strong>Dams Exist</strong></div>
         <div class="col-sm-3"><strong>Country Name</strong></div>
         <div class="col-sm-1"><strong>RBO</strong></div>
     </div>
             <table class="table table-bordered table-striped" style="display:inline-table; width: 1000px" id="myTable"> </table>
-        <!--</div>-->
-        <!--<div id="menu1" class="tab-pane fade">-->
-            <!--<table class="table table-bordered table-striped" id="myTable2"> </table>-->
-        <!--</div>-->
-        <!--<div id="menu2" class="tab-pane fade">-->
-            <!--<table class="table table-bordered table-striped" id="myTable3"> </table>-->
-        <!--</div>-->
-        <!--<div id="menu3" class="tab-pane fade">-->
 
-        <!--</div>-->
-    <!--</div>-->
 </div>
 
 
@@ -342,7 +473,7 @@
             </div>
 
             <div class="col-sm-8" id="popCount" style="text-align: center;">
-                <strong style="color: #afb6bc"> Population Density per Basin</strong>
+                <strong style="color: #afb6bc"> Population Density (per km<sup>2</sup>) per Basin</strong>
                 <span class="reset" style="display: none;">Selected: <span class="filter"></span></span>
                 <a class="reset" href="javascript:popdimChart.filterAll();dc.redrawAll();"
                    style="display:none;">reset</a>

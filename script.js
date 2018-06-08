@@ -1,3 +1,19 @@
+//fitbounds
+//intro slide - streach video
+//second button goes to TFDD  "access to Map"
+//change text to 'Access Database'
+//son serif for button fonts
+// map font and side menu fonts the same
+//combine about and credit section
+//facebook icon
+//turturial button on top of the map
+//icons in navbar
+//search bar add database
+//km2 in pop den
+//table pop den spell out
+//credits on bottom of landing page
+//add legend
+
 $("#2").hide();
 
 
@@ -20,6 +36,7 @@ var treaty = d3.csv('assets/WorkingMasterTreatiesDB_20180428.csv');
 // create a map object for us to input the map and it's components into.
 
 var map = L.map('map', {zoomControl: false, scrollWheelZoom: true}).setView([40, 0], 1.5);
+var legend = L.control({position: 'bottomright'});
 L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png').addTo(map);
 // mapbox_token = 'pk.eyJ1IjoiZnJpZWRyaWgiLCJhIjoiY2o4eGYyZzllMGtiYjMzcGp0cTM5NXZ0cCJ9.BPCA9enT7iq6naVIOEHK9w';
 //
@@ -241,6 +258,7 @@ var cover = function (base) {
             });
 
 
+
             function highlightFeature(e) {
                 // e indicates the current event
                 // var layer = e.target; //the target capture the object which the event associates with
@@ -335,27 +353,41 @@ var cover = function (base) {
             function setColor(pop) {
                 var id = 0;
                 if (pop > 150) {
-                    id = 5;
-                }
-                else if (pop > 125 && pop <= 150) {
                     id = 4;
                 }
-                else if (pop > 100 && pop <= 125) {
+                else if (pop > 125 && pop <= 150) {
                     id = 3;
                 }
-                else if (pop > 75 && pop <= 100) {
+                else if (pop > 100 && pop <= 125) {
                     id = 2;
                 }
-                else if (pop > 50 && pop <= 75) {
+                else if (pop > 75 && pop <= 100) {
                     id = 1;
                 }
-                else {
+                else if (pop > 50 && pop <= 75) {
                     id = 0;
                 }
+                // else {
+                //     id = 0;
+                // }
 
                 return colors[id];
-            }
+            };
 
+
+
+            legend.onAdd = function(){
+                var div = L.DomUtil.create('div','legend');
+                div.innerHTML+='<b> Population Density (per km<sup>2</sup></sup>)</b></br>';
+                div.innerHTML += '<i style="background: ' + colors[5] + '; opacity: 0.5"></i><p>>150</p>';
+                div.innerHTML += '<i style="background: ' + colors[4] + '; opacity: 0.5"></i><p>125 - 150</p>';
+                div.innerHTML += '<i style="background: ' + colors[3] + '; opacity: 0.5"></i><p>100 - 125</p>';
+                div.innerHTML += '<i style="background: ' + colors[2] + '; opacity: 0.5"></i><p>75 - 100</p>';
+                div.innerHTML += '<i style="background: ' + colors[1] + '; opacity: 0.5"></i><p>50 - 75</p>';
+                div.innerHTML += '<i style="background: ' + colors[0] + '; opacity: 0.5"></i><p>0 - 50</p>'
+                return div
+            };
+            legend.addTo(map);
 
             function style(feature) {
                 return {
@@ -484,6 +516,9 @@ var cover = function (base) {
 /////////////////////////////////////////Tiles////////////////////////////////////////////////////////////////////
 
 var giam = function () {
+    // map.eachLayer(function (layer) {
+    //     map.removeLayer(layer);
+    // });
     L.tileLayer('assets/giam/giam/{z}/{x}/{y}.png', {
         maxZoom: 10,
         tms: false,
@@ -538,24 +573,24 @@ function highlightFeaturedams(e) {
 
 };
 
-
-// 3.3 add these event the layer obejct.
+////////////////////////////////////////////////////////////DAMs//////////////////////////////////////////////////////
+// 3.3 add these event the layer object.
 
 function damColor(d) {
     var id = 0;
-    if (d > 17) {
+    if (d > 711) {
         id = 5;
     }
-    else if (d > 18 && d <= 59) {
+    else if (d > 186 && d <= 710) {
         id = 4;
     }
-    else if (d > 60 && d <= 101) {
+    else if (d > 102 && d <= 185) {
         id = 3;
     }
-    else if (d > 102 && d <= 185) {
+    else if (d > 60 && d <= 101) {
         id = 2;
     }
-    else if (d > 186 && d <= 710) {
+    else if (d > 18 && d <=59) {
         id = 1;
     }
     else {
@@ -580,7 +615,9 @@ function damStyle(feature) {
 function damBasin() {
     map.eachLayer(function (layer) {
         map.removeLayer(layer);
+        map.removeControl(legend)
     });
+
     L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png').addTo(map);
     // L.mapboxGL({
     //     accessToken: mapbox_token,
@@ -591,6 +628,20 @@ function damBasin() {
         style: damStyle,
         onEachFeature: onEachFeaturedams,
     }).addTo(map)
+
+
+    legend.onAdd = function(){
+        var div = L.DomUtil.create('div','legend');
+        div.innerHTML+='<b> Dams </b></br>';
+        // div.innerHTML += '<i style="background: ' + colors[5] + '; opacity: 0.5"></i><p>>711</p>';
+        div.innerHTML += '<i style="background: ' + colors[4] + '; opacity: 0.5"></i><p>176 - 710</p>';
+        div.innerHTML += '<i style="background: ' + colors[3] + '; opacity: 0.5"></i><p>102 - 185</p>';
+        div.innerHTML += '<i style="background: ' + colors[2] + '; opacity: 0.5"></i><p>60 - 101</p>';
+        div.innerHTML += '<i style="background: ' + colors[1] + '; opacity: 0.5"></i><p>18 - 59</p>';
+        div.innerHTML += '<i style="background: ' + colors[0] + '; opacity: 0.5"></i><p>0 - 17</p>'
+        return div
+    };
+    legend.addTo(map);
 }
 
 ///////////////////////////////////////////////////Runoff/////////////////////////////////////////////////////////////
@@ -653,6 +704,7 @@ function runoffStyle(feature) {
 function runoffBasin() {
     map.eachLayer(function (layer) {
         map.removeLayer(layer);
+        map.removeControl(legend);
     });
     L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png').addTo(map);
     // L.mapboxGL({
@@ -664,6 +716,18 @@ function runoffBasin() {
         style: runoffStyle,
         onEachFeature: onEachFeaturerunoff,
     }).addTo(map)
+    legend.onAdd = function(){
+        var div = L.DomUtil.create('div','legend');
+        div.innerHTML+='<b> Runoff</b></br>';
+        // div.innerHTML += '<i style="background: ' + colors[5] + '; opacity: 0.5"></i><p>>711</p>';
+        div.innerHTML += '<i style="background: ' + colors[4] + '; opacity: 0.5"></i><p>1707 - 2777</p>';
+        div.innerHTML += '<i style="background: ' + colors[3] + '; opacity: 0.5"></i><p>965 - 1706</p>';
+        div.innerHTML += '<i style="background: ' + colors[2] + '; opacity: 0.5"></i><p>419 - 964</p>';
+        div.innerHTML += '<i style="background: ' + colors[1] + '; opacity: 0.5"></i><p>1 - 418</p>';
+        div.innerHTML += '<i style="background: ' + colors[0] + '; opacity: 0.5"></i><p>0 - 17</p>'
+        return div
+    };
+    legend.addTo(map);
 }
 
 ///////////////////////////////////////////consumption////////////////////////////////////////////////////////////
@@ -726,6 +790,7 @@ function consumStyle(feature) {
 function consumBasin() {
     map.eachLayer(function (layer) {
         map.removeLayer(layer);
+        map.removeControl(legend);
     });
     // L.mapboxGL({
     //     accessToken: mapbox_token,
@@ -737,6 +802,18 @@ function consumBasin() {
         style: consumStyle,
         onEachFeature: onEachFeatureconsum,
     }).addTo(map)
+    legend.onAdd = function(){
+        var div = L.DomUtil.create('div','legend');
+        div.innerHTML+='<b> Consumption </b></br>';
+        // div.innerHTML += '<i style="background: ' + colors[5] + '; opacity: 0.5"></i><p>>711</p>';
+        div.innerHTML += '<i style="background: ' + colors[4] + '; opacity: 0.5"></i><p>63357 - 170000</p>';
+        div.innerHTML += '<i style="background: ' + colors[3] + '; opacity: 0.5"></i><p>20788 - 63356</p>';
+        div.innerHTML += '<i style="background: ' + colors[2] + '; opacity: 0.5"></i><p>5553 - 20787</p>';
+        div.innerHTML += '<i style="background: ' + colors[1] + '; opacity: 0.5"></i><p>1 - 5552</p>';
+        div.innerHTML += '<i style="background: ' + colors[0] + '; opacity: 0.5"></i><p>0</p>'
+        return div
+    };
+    legend.addTo(map);
 }
 
 ///////////////////////////////////////////withdrawal////////////////////////////////////////////////////////////
@@ -799,6 +876,7 @@ function withStyle(feature) {
 function withBasin() {
     map.eachLayer(function (layer) {
         map.removeLayer(layer);
+        map.removeControl(legend)
     });
     L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png').addTo(map);
     // L.mapboxGL({
@@ -810,6 +888,18 @@ function withBasin() {
         style: withStyle,
         onEachFeature: onEachFeaturewith,
     }).addTo(map)
+    legend.onAdd = function(){
+        var div = L.DomUtil.create('div','legend');
+        div.innerHTML+='<b> Withdrawal </b></br>';
+        // div.innerHTML += '<i style="background: ' + colors[5] + '; opacity: 0.5"></i><p>>711</p>';
+        div.innerHTML += '<i style="background: ' + colors[4] + '; opacity: 0.5"></i><p>111709 - 500084</p>';
+        div.innerHTML += '<i style="background: ' + colors[3] + '; opacity: 0.5"></i><p>55583 - 111708</p>';
+        div.innerHTML += '<i style="background: ' + colors[2] + '; opacity: 0.5"></i><p>15871 - 55582</p>';
+        div.innerHTML += '<i style="background: ' + colors[1] + '; opacity: 0.5"></i><p>1 - 15871</p>';
+        div.innerHTML += '<i style="background: ' + colors[0] + '; opacity: 0.5"></i><p>0</p>'
+        return div
+    };
+    legend.addTo(map);
 }
 
 
@@ -884,6 +974,18 @@ function hydropolBasin() {
         style: hydropolStyle,
         onEachFeature: onEachFeaturehydropol,
     }).addTo(map)
+    legend.onAdd = function(){
+        var div = L.DomUtil.create('div','legend');
+        div.innerHTML+='<b> Hydro-Political Tension </b></br>';
+        // div.innerHTML += '<i style="background: ' + colors[5] + '; opacity: 0.5"></i><p>5</p>';
+        div.innerHTML += '<i style="background: ' + colors[4] + '; opacity: 0.5"></i><p>5</p>';
+        div.innerHTML += '<i style="background: ' + colors[3] + '; opacity: 0.5"></i><p>4</p>';
+        div.innerHTML += '<i style="background: ' + colors[2] + '; opacity: 0.5"></i><p>3</p>';
+        div.innerHTML += '<i style="background: ' + colors[1] + '; opacity: 0.5"></i><p>2</p>';
+        div.innerHTML += '<i style="background: ' + colors[0] + '; opacity: 0.5"></i><p>1</p>'
+        return div
+    };
+    legend.addTo(map);
 }
 
 
@@ -947,6 +1049,7 @@ function InstitVulnStyle(feature) {
 function InstitVulnBasin() {
     map.eachLayer(function (layer) {
         map.removeLayer(layer);
+        map.removeControl(legend)
     });
     L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png').addTo(map);
     // L.mapboxGL({
@@ -958,6 +1061,18 @@ function InstitVulnBasin() {
         style: InstitVulnStyle,
         onEachFeature: onEachFeatureInstitVuln,
     }).addTo(map)
+    legend.onAdd = function(){
+        var div = L.DomUtil.create('div','legend');
+        div.innerHTML+='<b> Institutional Vulnerability </b></br>';
+        // div.innerHTML += '<i style="background: ' + colors[5] + '; opacity: 0.5"></i><p>5</p>';
+        div.innerHTML += '<i style="background: ' + colors[4] + '; opacity: 0.5"></i><p>5</p>';
+        div.innerHTML += '<i style="background: ' + colors[3] + '; opacity: 0.5"></i><p>4</p>';
+        div.innerHTML += '<i style="background: ' + colors[2] + '; opacity: 0.5"></i><p>3</p>';
+        div.innerHTML += '<i style="background: ' + colors[1] + '; opacity: 0.5"></i><p>2</p>';
+        div.innerHTML += '<i style="background: ' + colors[0] + '; opacity: 0.5"></i><p>1</p>'
+        return div
+    };
+    legend.addTo(map);
 }
 
 
@@ -1021,6 +1136,7 @@ function GDPStyle(feature) {
 function GDPBasin() {
     map.eachLayer(function (layer) {
         map.removeLayer(layer);
+        map.removeControl(legend)
     });
     L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png').addTo(map);
     // L.mapboxGL({
@@ -1032,6 +1148,18 @@ function GDPBasin() {
         style: GDPStyle,
         onEachFeature: onEachFeatureGDP,
     }).addTo(map)
+    legend.onAdd = function(){
+        var div = L.DomUtil.create('div','legend');
+        div.innerHTML+='<b> GDP (Thousands) </b></br>';
+        // div.innerHTML += '<i style="background: ' + colors[5] + '; opacity: 0.5"></i><p>>64176</p>';
+        div.innerHTML += '<i style="background: ' + colors[4] + '; opacity: 0.5"></i><p>45638 - 64175</p>';
+        div.innerHTML += '<i style="background: ' + colors[3] + '; opacity: 0.5"></i><p>21650 - 45637</p>';
+        div.innerHTML += '<i style="background: ' + colors[2] + '; opacity: 0.5"></i><p>6924 - 21649</p>';
+        div.innerHTML += '<i style="background: ' + colors[1] + '; opacity: 0.5"></i><p>285 - 6923</p>';
+        div.innerHTML += '<i style="background: ' + colors[0] + '; opacity: 0.5"></i><p><285</p>'
+        return div
+    };
+    legend.addTo(map);
 }
 
 
@@ -1080,4 +1208,4 @@ window.onload = function () {
         return false
     }
 }
-
+// document.body.style.zoom="90%"
