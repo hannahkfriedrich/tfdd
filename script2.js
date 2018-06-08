@@ -69,10 +69,21 @@ window.onload = function() {
 //var colors = ['#afb6bc','#919ba3','#53626f','#374e60','#2f3942']
 var positioning = 'map'
 
+
+
+/*window.onresize = function() {
+    
+    var width = $(window).width();
+    var height = $(window).height();
+    $("svg").attr("viewBox", "(0 , 0, " + height + ", " + width  + ")");
+}*/
+
 var width = 1360
-var height = 650
-//var color = d3.scaleOrdinal(d3.schemeCategory10);
-var color = d3.scaleOrdinal(['#afb6bc','#374e60','#919ba3','#53626f','#2f3942']);
+var height = 800
+
+
+var color = d3.scaleOrdinal(d3.schemePaired);
+//var color = d3.scaleOrdinal(['#4F6168','#6E7E85','#2A9D8F','#7C9EB2','#2A9D8F','#476A6F']);
 var projection = d3.geoMercator()
     .scale([width * 0.1])
     .translate([width / 2, height / 2])
@@ -85,7 +96,7 @@ var linkForce = d3.forceLink()
 
 var simulation = d3.forceSimulation()
     .force('link', linkForce)
-    .force('charge', d3.forceManyBody())
+    .force('charge', d3.forceManyBody().strength(-90))
     .force('center', d3.forceCenter(width/2 , height/2 ))
     .stop()
 
@@ -224,6 +235,15 @@ nodes.append("text")
             zoom_actions()
         } 
     }
+
+    function searchCountry(e){
+       // var layer = e.target;
+        var value = e.id;
+        $("#myTable tr").filter(function () {
+            $(this).toggle($(this).text().indexOf(value) > -1)
+        });
+        
+    }
 //FUNCTION TO HIGHLIGHT NODES
 
     //Toggle stores whether the highlighting is on
@@ -240,14 +260,7 @@ nodes.append("text")
     function neighboring(a, b) {
         return linkedByIndex[a.index + "," + b.index];
     }
-    function searchCountry(e){
-        var layer = e.target;
-        var value = e.id;
-        $("#myTable tr").filter(function () {
-            $(this).toggle($(this).text().indexOf(value) > -1)
-        });
-        
-    }
+
 
     
     function connectedNodes() {
