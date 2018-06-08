@@ -1439,8 +1439,8 @@
             "id": "General",
             "group": "Basin",
             "value": "5",
-            "lat": "-20.1",
-            "lon": "40.1"
+            "lat": "40.1",
+            "lon": "8.1"
         },
         {
             "id": "Drin",
