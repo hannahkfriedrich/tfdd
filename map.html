@@ -272,7 +272,7 @@
         <ul class="nav navbar-nav">
             <li class="active"><a href="index.html">Home</a></li>
 
-            <li><a href="events.html">Events</a></li>
+            <li><a href="#">Events</a></li>
             <li><a href="treaties.html">Treaties</a></li>
 
             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Unit Layer <span
@@ -290,7 +290,7 @@
                     <li><a href="#">Land Cover</a></li>
                     <li><a href="javascript:giam() ">Irrigation</a></li>
                     <li><a href="javascript:gmrca()">Rainfall</a></li>
-                    <li><a href="javascript:damBasin()">Dams</a></li>
+                    <li><a href="javascript:damBasin()">Existing Dams</a></li>
                     <li><a href="javascript:runoffBasin()">Runoff</a></li>
                     <li><a href="javascript:consumBasin()">Consumption</a></li>
                     <li><a href="javascript:withBasin()">Withdrawal</a></li>
@@ -304,6 +304,7 @@
 
         </ul>
         <ul class="nav navbar-nav navbar-right" >
+            <li><a target="_blank" href="http://transboundarywaters.science.oregonstate.edu/content/transboundary-freshwater-dispute-database"><i style="color: #afb6bc;" class="fas fa-download"></i></a></li>
             <li><a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">
                 <i class="fa fa-address-book" style="color: #afb6bc;" aria-hidden="true"></i>
             </a></li>
@@ -439,19 +440,21 @@
 <a id="backbutton" href="javascript: cover(base)"><i class="fa fa-arrow-circle-left fa-2x"  style="z-index:1000;color: #2f3942; left: 5px; top:75px;position: absolute;"></i></a>
 <input style="position: absolute; z-index:1000; bottom:30%; width: 70%" class="form-control" id="myInput" type="text" placeholder="Search Database...">
 <div id="data-table" class="container scrollbar "
-     style="width: 70%; height: 30%; margin-bottom: 0px; position: absolute;  bottom: 0px; left: 0px; font-size: 12px">
+     style="width: 70%; height: 30%; margin: 0px; padding: 0px; position: absolute;  bottom: 0px; left: 0px; font-size: 12px">
         <div class="row">
         <div class="col-sm-4"><strong>Basin Name</strong></div>
     </div>
-    <div class="row">
-        <div class="col-sm-2"><strong>Basin Code</strong></div>
-        <div class="col-sm-2"><strong>Area (Km<sup>2</sup>)</strong></div>
-        <div class="col-md-2"><strong>Population Density (per km<sup>2</sup>)</strong></div>
-        <div class="col-md-2"><strong>Dams Exist</strong></div>
+    <div class="row table table-bordered table-condensed table-striped" style="width: 100%;margin: 0px; padding: 0px;">
+        <div class="col-sm-1"><strong>BASIN CODE</strong></div>
+        <div class="col-md-2"><strong>2012 Population Density (per km<sup>2</sup>)</strong></div>
+        <div class="col-md-2"><strong>2015 Population Density (per km<sup>2</sup>)</strong></div>
+        <div class="col-md-2"><strong>2020 Population Density (per km<sup>2</sup> projected)</strong></div>
+        <div class="col-md-1"><strong>Existing Dams </strong></div>
+        <div class="col-md-1"><strong>Planned/ Proposed Dams </strong></div>
         <div class="col-sm-3"><strong>Country Name</strong></div>
-        <div class="col-sm-1"><strong>RBO</strong></div>
+
     </div>
-            <table class="table table-bordered table-striped" style="display:inline-table; width: 800px" id="myTable"> </table>
+            <table class="table table-bordered table-striped" style="display:inline-table; width: 100%" id="myTable"> </table>
 
 </div>
 
@@ -495,10 +498,10 @@
             </div>
 
         </div>
-<!--         <div class="row" style="width: 100%; background-color: #FFFFFF; height: available">
+        <div class="row" style="width: 100%; background-color: #FFFFFF; height: available">
             <h1> Landcover map here</h1>
 
-        </div> -->
+        </div>
     </div>
 
 

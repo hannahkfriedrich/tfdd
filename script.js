@@ -214,25 +214,26 @@ var cover = function (base) {
                     function (d) {
                         return d.properties.BCODE
                     },
-                    // function (d) {
-                    //     return d.properties.Basin_Name
-                    // },
 
                     function (d) {
-                        return d.properties.Area_km2
+                        return d.properties.PopDen12_P
                     },
+
                     function (d) {
                         return d.properties.PopDen2015
+                    },
+                    function (d) {
+                        return d.properties.PopDen2020
                     },
                     function (d) {
                         return d.properties.Dams_Exist
                     },
                     function (d) {
-                        return d.properties.adm0_name
+                        return d.properties.Dam_Plnd
                     },
                     function (d) {
-                        return d.properties.rbo
-                    }
+                        return d.properties.adm0_name
+                    },
                 ])
                 // .showGroups(false)
                 .size(325)
@@ -379,7 +380,7 @@ var cover = function (base) {
             legend.onAdd = function(){
                 var div = L.DomUtil.create('div','legend');
                 div.innerHTML+='<b> Population Density (per km<sup>2</sup></sup>)</b></br>';
-                div.innerHTML += '<i style="background: ' + colors[5] + '; opacity: 0.5"></i><p>>150</p>';
+                // div.innerHTML += '<i style="background: ' + colors[5] + '; "></i><p>>150</p>';
                 div.innerHTML += '<i style="background: ' + colors[4] + '; opacity: 0.5"></i><p>125 - 150</p>';
                 div.innerHTML += '<i style="background: ' + colors[3] + '; opacity: 0.5"></i><p>100 - 125</p>';
                 div.innerHTML += '<i style="background: ' + colors[2] + '; opacity: 0.5"></i><p>75 - 100</p>';
@@ -578,6 +579,7 @@ function highlightFeaturedams(e) {
 
 function damColor(d) {
     var id = 0;
+    var dam_color = ['#7ba7e9', '#4c8cf2', '#0d6ef6', '#004cf5', '#1217eb'];
     if (d > 711) {
         id = 5;
     }
@@ -597,7 +599,7 @@ function damColor(d) {
         id = 0;
     }
 
-    return colors[id];
+    return dam_color[id];
 }
 
 
@@ -631,14 +633,15 @@ function damBasin() {
 
 
     legend.onAdd = function(){
+        var dam_color = ['#7ba7e9', '#4c8cf2', '#0d6ef6', '#004cf5', '#1217eb'];
         var div = L.DomUtil.create('div','legend');
         div.innerHTML+='<b> Dams </b></br>';
         // div.innerHTML += '<i style="background: ' + colors[5] + '; opacity: 0.5"></i><p>>711</p>';
-        div.innerHTML += '<i style="background: ' + colors[4] + '; opacity: 0.5"></i><p>176 - 710</p>';
-        div.innerHTML += '<i style="background: ' + colors[3] + '; opacity: 0.5"></i><p>102 - 185</p>';
-        div.innerHTML += '<i style="background: ' + colors[2] + '; opacity: 0.5"></i><p>60 - 101</p>';
-        div.innerHTML += '<i style="background: ' + colors[1] + '; opacity: 0.5"></i><p>18 - 59</p>';
-        div.innerHTML += '<i style="background: ' + colors[0] + '; opacity: 0.5"></i><p>0 - 17</p>'
+        div.innerHTML += '<i style="background: ' + dam_color[4] + '; opacity: 0.5"></i><p>176 - 710</p>';
+        div.innerHTML += '<i style="background: ' + dam_color[3] + '; opacity: 0.5"></i><p>102 - 185</p>';
+        div.innerHTML += '<i style="background: ' + dam_color[2] + '; opacity: 0.5"></i><p>60 - 101</p>';
+        div.innerHTML += '<i style="background: ' + dam_color[1] + '; opacity: 0.5"></i><p>18 - 59</p>';
+        div.innerHTML += '<i style="background: ' + dam_color[0] + '; opacity: 0.5"></i><p>0 - 17</p>'
         return div
     };
     legend.addTo(map);
@@ -654,7 +657,7 @@ function onEachFeaturerunoff(feature, layer) {
 }
 
 function highlightFeaturerunoff(e) {
-    var list = 'Basin Name: ' + e.target.feature.properties.Basin_Name + '<br>' + 'Runoff:' + e.target.feature.properties.runoff_
+    var list = 'Basin Name: ' + e.target.feature.properties.Basin_Name + '<br>' + 'Runoff:' + e.target.feature.properties.runoff_ + ' mm/yr'
     // this.bindPopup ('Basin Name: ' + e.target.feature.properties.Basin_Name)
     this.bindPopup(list)
     this.openPopup()
@@ -666,7 +669,7 @@ function highlightFeaturerunoff(e) {
 function runoffColor(d) {
     var id = 0;
     //different runoff colors because 9999 is used as a null value, greys our the nulls
-    var colors_runoff = ['#afb6bc', '#919ba3', '#53626f', '#374e60', '#2f3942', '#f0f0f0']
+    var colors_runoff = ['#a2a3a2', '#99a299', '#889788', '#4e724e', '#4a564a', '#f0f0f0']
     if (d > 2778) {
         id = 5;
     }
@@ -718,13 +721,14 @@ function runoffBasin() {
     }).addTo(map)
     legend.onAdd = function(){
         var div = L.DomUtil.create('div','legend');
-        div.innerHTML+='<b> Runoff</b></br>';
+        var colors_runoff = ['#a2a3a2', '#99a299', '#889788', '#4e724e', '#4a564a', '#f0f0f0']
+        div.innerHTML+='<b> Runoff (mm/yr)</b></br>';
         // div.innerHTML += '<i style="background: ' + colors[5] + '; opacity: 0.5"></i><p>>711</p>';
-        div.innerHTML += '<i style="background: ' + colors[4] + '; opacity: 0.5"></i><p>1707 - 2777</p>';
-        div.innerHTML += '<i style="background: ' + colors[3] + '; opacity: 0.5"></i><p>965 - 1706</p>';
-        div.innerHTML += '<i style="background: ' + colors[2] + '; opacity: 0.5"></i><p>419 - 964</p>';
-        div.innerHTML += '<i style="background: ' + colors[1] + '; opacity: 0.5"></i><p>1 - 418</p>';
-        div.innerHTML += '<i style="background: ' + colors[0] + '; opacity: 0.5"></i><p>0 - 17</p>'
+        div.innerHTML += '<i style="background: ' + colors_runoff[4] + '; opacity: 0.5"></i><p>1707 - 2777</p>';
+        div.innerHTML += '<i style="background: ' + colors_runoff[3] + '; opacity: 0.5"></i><p>965 - 1706</p>';
+        div.innerHTML += '<i style="background: ' + colors_runoff[2] + '; opacity: 0.5"></i><p>419 - 964</p>';
+        div.innerHTML += '<i style="background: ' + colors_runoff[1] + '; opacity: 0.5"></i><p>1 - 418</p>';
+        div.innerHTML += '<i style="background: ' + colors_runoff[0] + '; opacity: 0.5"></i><p>0 - 17</p>'
         return div
     };
     legend.addTo(map);
@@ -740,7 +744,7 @@ function onEachFeatureconsum(feature, layer) {
 }
 
 function highlightFeatureconsum(e) {
-    var list = 'Basin Name: ' + e.target.feature.properties.Basin_Name + '<br>' + 'Consumption: ' + e.target.feature.properties.consumption
+    var list = 'Basin Name: ' + e.target.feature.properties.Basin_Name + '<br>' + 'Consumption: ' + e.target.feature.properties.consumption + ' km<sup>3</sup>/yr'
     // this.bindPopup ('Basin Name: ' + e.target.feature.properties.Basin_Name)
     this.bindPopup(list)
     this.openPopup()
@@ -752,7 +756,7 @@ function highlightFeatureconsum(e) {
 function consumColor(d) {
     var id = 0;
     //different runoff colors because 9999 is used as a null value, greys our the nulls
-    var colors_runoff = ['#afb6bc', '#919ba3', '#53626f', '#374e60', '#2f3942', '#ffffff']
+    var colors_consum = ['#acbed1', '#92abca', '#4b6281', '#1b557f', '#042c50', '#ffffff']
     if (d > 170000) {
         id = 5;
     }
@@ -772,7 +776,7 @@ function consumColor(d) {
         id = 0;
     }
 
-    return colors_runoff[id];
+    return colors_consum[id];
 }
 
 
@@ -804,13 +808,14 @@ function consumBasin() {
     }).addTo(map)
     legend.onAdd = function(){
         var div = L.DomUtil.create('div','legend');
-        div.innerHTML+='<b> Consumption </b></br>';
+        var colors_consum = ['#acbed1', '#92abca', '#4b6281', '#1b557f', '#042c50', '#ffffff']
+        div.innerHTML+='<b> Consumption (km<sup>3</sup>/yr)</b></br>';
         // div.innerHTML += '<i style="background: ' + colors[5] + '; opacity: 0.5"></i><p>>711</p>';
-        div.innerHTML += '<i style="background: ' + colors[4] + '; opacity: 0.5"></i><p>63357 - 170000</p>';
-        div.innerHTML += '<i style="background: ' + colors[3] + '; opacity: 0.5"></i><p>20788 - 63356</p>';
-        div.innerHTML += '<i style="background: ' + colors[2] + '; opacity: 0.5"></i><p>5553 - 20787</p>';
-        div.innerHTML += '<i style="background: ' + colors[1] + '; opacity: 0.5"></i><p>1 - 5552</p>';
-        div.innerHTML += '<i style="background: ' + colors[0] + '; opacity: 0.5"></i><p>0</p>'
+        div.innerHTML += '<i style="background: ' + colors_consum[4] + '; opacity: 0.5"></i><p>63357 - 170000</p>';
+        div.innerHTML += '<i style="background: ' + colors_consum[3] + '; opacity: 0.5"></i><p>20788 - 63356</p>';
+        div.innerHTML += '<i style="background: ' + colors_consum[2] + '; opacity: 0.5"></i><p>5553 - 20787</p>';
+        div.innerHTML += '<i style="background: ' + colors_consum[1] + '; opacity: 0.5"></i><p>1 - 5552</p>';
+        div.innerHTML += '<i style="background: ' + colors_consum[0] + '; opacity: 0.5"></i><p>0</p>'
         return div
     };
     legend.addTo(map);
@@ -826,7 +831,7 @@ function onEachFeaturewith(feature, layer) {
 }
 
 function highlightFeaturewith(e) {
-    var list = 'Basin: ' + e.target.feature.properties.Basin_Name + '<br>' + 'Withdrawal: ' + e.target.feature.properties.withdrawl_
+    var list = 'Basin: ' + e.target.feature.properties.Basin_Name + '<br>' + 'Withdrawal: ' + e.target.feature.properties.withdrawl_ + ' km<sup>3</sup>/yr'
     // this.bindPopup ('Basin Name: ' + e.target.feature.properties.Basin_Name)
     this.bindPopup(list)
     this.openPopup()
@@ -838,7 +843,7 @@ function highlightFeaturewith(e) {
 function withColor(d) {
     var id = 0;
     //different runoff colors because 9999 is used as a null value, greys our the nulls
-    var colors_runoff = ['#afb6bc', '#919ba3', '#53626f', '#374e60', '#2f3942', '#ffffff']
+    var colors_with = ['#a7dod6', '#78b9c1', '#92acaf', '#546f72', '#274144', '#ffffff']
     if (d > 600000) {
         id = 5;
     }
@@ -858,7 +863,7 @@ function withColor(d) {
         id = 0;
     }
 
-    return colors_runoff[id];
+    return colors_with[id];
 }
 
 
@@ -890,20 +895,22 @@ function withBasin() {
     }).addTo(map)
     legend.onAdd = function(){
         var div = L.DomUtil.create('div','legend');
-        div.innerHTML+='<b> Withdrawal </b></br>';
+
+        var colors_with = ['#a7dod6', '#78b9c1', '#92acaf', '#546f72', '#274144', '#ffffff']
+        div.innerHTML+='<b> Withdrawal (km<sup>3</sup>/yr</b>)</br>';
         // div.innerHTML += '<i style="background: ' + colors[5] + '; opacity: 0.5"></i><p>>711</p>';
-        div.innerHTML += '<i style="background: ' + colors[4] + '; opacity: 0.5"></i><p>111709 - 500084</p>';
-        div.innerHTML += '<i style="background: ' + colors[3] + '; opacity: 0.5"></i><p>55583 - 111708</p>';
-        div.innerHTML += '<i style="background: ' + colors[2] + '; opacity: 0.5"></i><p>15871 - 55582</p>';
-        div.innerHTML += '<i style="background: ' + colors[1] + '; opacity: 0.5"></i><p>1 - 15871</p>';
-        div.innerHTML += '<i style="background: ' + colors[0] + '; opacity: 0.5"></i><p>0</p>'
+        div.innerHTML += '<i style="background: ' + colors_with[4] + '; opacity: 0.5"></i><p>111709 - 500084</p>';
+        div.innerHTML += '<i style="background: ' + colors_with[3] + '; opacity: 0.5"></i><p>55583 - 111708</p>';
+        div.innerHTML += '<i style="background: ' + colors_with[2] + '; opacity: 0.5"></i><p>15871 - 55582</p>';
+        div.innerHTML += '<i style="background: ' + colors_with[1] + '; opacity: 0.5"></i><p>1 - 15871</p>';
+        div.innerHTML += '<i style="background: ' + colors_with[0] + '; opacity: 0.5"></i><p>0</p>'
         return div
     };
     legend.addTo(map);
 }
 
 
-///////////////////////////////////////////withdrawal////////////////////////////////////////////////////////////
+///////////////////////////////////////////hydropolte////////////////////////////////////////////////////////////
 function onEachFeaturehydropol(feature, layer) {
     layer.on({
         mouseover: highlightFeaturehydropol,
@@ -925,7 +932,7 @@ function highlightFeaturehydropol(e) {
 function hydropolColor(d) {
     var id = 0;
     //different runoff colors because 9999 is used as a null value, greys our the nulls
-    var colors_runoff = ['#afb6bc', '#919ba3', '#53626f', '#374e60', '#2f3942', '#ffffff']
+    var colors_tension=['#87a7ad', '#51828c', '#3b747f', '#33575e', '#213a3f', '#ffffff']
     if (d > 600000) {
         id = 5;
     }
@@ -945,7 +952,7 @@ function hydropolColor(d) {
         id = 0;
     }
 
-    return colors_runoff[id];
+    return colors_tension[id];
 }
 
 
@@ -976,13 +983,14 @@ function hydropolBasin() {
     }).addTo(map)
     legend.onAdd = function(){
         var div = L.DomUtil.create('div','legend');
-        div.innerHTML+='<b> Hydro-Political Tension </b></br>';
+        var colors_tension=['#87a7ad', '#51828c', '#3b747f', '#33575e', '#213a3f', '#ffffff']
+        div.innerHTML+='<b> Hydropolitical Tension </b></br>';
         // div.innerHTML += '<i style="background: ' + colors[5] + '; opacity: 0.5"></i><p>5</p>';
-        div.innerHTML += '<i style="background: ' + colors[4] + '; opacity: 0.5"></i><p>5</p>';
-        div.innerHTML += '<i style="background: ' + colors[3] + '; opacity: 0.5"></i><p>4</p>';
-        div.innerHTML += '<i style="background: ' + colors[2] + '; opacity: 0.5"></i><p>3</p>';
-        div.innerHTML += '<i style="background: ' + colors[1] + '; opacity: 0.5"></i><p>2</p>';
-        div.innerHTML += '<i style="background: ' + colors[0] + '; opacity: 0.5"></i><p>1</p>'
+        div.innerHTML += '<i style="background: ' + colors_tension[4] + '; opacity: 0.5"></i><p>5</p>';
+        div.innerHTML += '<i style="background: ' + colors_tension[3] + '; opacity: 0.5"></i><p>4</p>';
+        div.innerHTML += '<i style="background: ' + colors_tension[2] + '; opacity: 0.5"></i><p>3</p>';
+        div.innerHTML += '<i style="background: ' + colors_tension[1] + '; opacity: 0.5"></i><p>2</p>';
+        div.innerHTML += '<i style="background: ' + colors_tension[0] + '; opacity: 0.5"></i><p>1</p>'
         return div
     };
     legend.addTo(map);
@@ -1011,7 +1019,7 @@ function highlightFeatureInstitVuln(e) {
 function InstitVulnColor(d) {
     var id = 0;
     //different runoff colors because 9999 is used as a null value, greys our the nulls
-    var colors_runoff = ['#afb6bc', '#919ba3', '#53626f', '#374e60', '#2f3942', '#ffffff']
+    var colors_instit = ['#e2dcf2', '#d1ccdc', '#837c93', '#554e66', '#312c3d', '#ffffff']
     if (d === '5') {
         id = 4;
     }
@@ -1031,7 +1039,7 @@ function InstitVulnColor(d) {
         id = 0;
     }
 
-    return colors_runoff[id];
+    return colors_instit[id];
 }
 
 
@@ -1063,13 +1071,14 @@ function InstitVulnBasin() {
     }).addTo(map)
     legend.onAdd = function(){
         var div = L.DomUtil.create('div','legend');
+        var colors_instit = ['#e2dcf2', '#d1ccdc', '#837c93', '#554e66', '#312c3d', '#ffffff']
         div.innerHTML+='<b> Institutional Vulnerability </b></br>';
         // div.innerHTML += '<i style="background: ' + colors[5] + '; opacity: 0.5"></i><p>5</p>';
-        div.innerHTML += '<i style="background: ' + colors[4] + '; opacity: 0.5"></i><p>5</p>';
-        div.innerHTML += '<i style="background: ' + colors[3] + '; opacity: 0.5"></i><p>4</p>';
-        div.innerHTML += '<i style="background: ' + colors[2] + '; opacity: 0.5"></i><p>3</p>';
-        div.innerHTML += '<i style="background: ' + colors[1] + '; opacity: 0.5"></i><p>2</p>';
-        div.innerHTML += '<i style="background: ' + colors[0] + '; opacity: 0.5"></i><p>1</p>'
+        div.innerHTML += '<i style="background: ' + colors_instit[4] + '; opacity: 0.5"></i><p>5</p>';
+        div.innerHTML += '<i style="background: ' + colors_instit[3] + '; opacity: 0.5"></i><p>4</p>';
+        div.innerHTML += '<i style="background: ' + colors_instit[2] + '; opacity: 0.5"></i><p>3</p>';
+        div.innerHTML += '<i style="background: ' + colors_instit[1] + '; opacity: 0.5"></i><p>2</p>';
+        div.innerHTML += '<i style="background: ' + colors_instit[0] + '; opacity: 0.5"></i><p>1</p>'
         return div
     };
     legend.addTo(map);
@@ -1086,7 +1095,7 @@ function onEachFeatureGDP(feature, layer) {
 }
 
 function highlightFeatureGDP(e) {
-    var list = 'Country: ' + e.target.feature.properties.adm0_name + '<br>' + 'GDP: ' + e.target.feature.properties.gdp_2016
+    var list = 'Country: ' + e.target.feature.properties.adm0_name + '<br>' + 'GDP: ' + '$' + e.target.feature.properties.gdp_2016
     // this.bindPopup ('Basin Name: ' + e.target.feature.properties.Basin_Name)
     this.bindPopup(list)
     this.openPopup()
@@ -1098,7 +1107,7 @@ function highlightFeatureGDP(e) {
 function GDPColor(d) {
     var id = 0;
     //different runoff colors because 9999 is used as a null value, greys our the nulls
-    var colors_runoff = ['#afb6bc', '#919ba3', '#53626f', '#374e60', '#2f3942', '#ffffff']
+    var colors_GDP= ['#c6cec9', '#b8c1b6', '#889685', '#66915e', '#21381c', '#ffffff']
     if (d > 64176) {
         id = 5;
     }
@@ -1118,7 +1127,7 @@ function GDPColor(d) {
         id = 0;
     }
 
-    return colors_runoff[id];
+    return colors_GDP[id];
 }
 
 
@@ -1150,13 +1159,14 @@ function GDPBasin() {
     }).addTo(map)
     legend.onAdd = function(){
         var div = L.DomUtil.create('div','legend');
-        div.innerHTML+='<b> GDP (Thousands) </b></br>';
+        var colors_GDP= ['#c6cec9', '#b8c1b6', '#889685', '#66915e', '#21381c', '#ffffff']
+        div.innerHTML+='<b> GDP (per Capita USD) </b></br>';
         // div.innerHTML += '<i style="background: ' + colors[5] + '; opacity: 0.5"></i><p>>64176</p>';
-        div.innerHTML += '<i style="background: ' + colors[4] + '; opacity: 0.5"></i><p>45638 - 64175</p>';
-        div.innerHTML += '<i style="background: ' + colors[3] + '; opacity: 0.5"></i><p>21650 - 45637</p>';
-        div.innerHTML += '<i style="background: ' + colors[2] + '; opacity: 0.5"></i><p>6924 - 21649</p>';
-        div.innerHTML += '<i style="background: ' + colors[1] + '; opacity: 0.5"></i><p>285 - 6923</p>';
-        div.innerHTML += '<i style="background: ' + colors[0] + '; opacity: 0.5"></i><p><285</p>'
+        div.innerHTML += '<i style="background: ' + colors_GDP[4] + '; opacity: 0.5"></i><p>45638 - 64175</p>';
+        div.innerHTML += '<i style="background: ' + colors_GDP[3] + '; opacity: 0.5"></i><p>21650 - 45637</p>';
+        div.innerHTML += '<i style="background: ' + colors_GDP[2] + '; opacity: 0.5"></i><p>6924 - 21649</p>';
+        div.innerHTML += '<i style="background: ' + colors_GDP[1] + '; opacity: 0.5"></i><p>285 - 6923</p>';
+        div.innerHTML += '<i style="background: ' + colors_GDP[0] + '; opacity: 0.5"></i><p><285</p>'
         return div
     };
     legend.addTo(map);
