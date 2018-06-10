@@ -5,14 +5,14 @@
     <title>Transboundary Freshwater Dispute Database</title>
     <!doctype html>
     <html lang="en" xmlns:display="http://www.w3.org/1999/xhtml">
-<head>
+    <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>TFDD</title>
 
 
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <!--<script src="https://d3js.org/d3.v5.min.js"></script>-->
@@ -26,9 +26,9 @@
         <script src="https://dc-js.github.io/dc.js/js/dc.js"></script>
         <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://d3js.org/d3-array.v1.min.js"></script>
-    <script src="https://d3js.org/d3-geo.v1.min.js"></script>
-    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+        <script src="https://d3js.org/d3-array.v1.min.js"></script>
+        <script src="https://d3js.org/d3-geo.v1.min.js"></script>
+        <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
 
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="shortcut icon" href="assets/img/tfdd_logo.png" type="image/x-icon">
@@ -42,7 +42,7 @@
                 padding: 0;
                 background-color: #3e3e3e;
                 font-family: 'Artifika', serif;
-                font-size: 14px;
+                font-size: 12px;
                 position: relative
 
             }
@@ -146,7 +146,7 @@
 
             body {
                 background-color: rgba(255, 255, 255, 0.747);
-                
+
 
             }
             .node {
@@ -171,13 +171,12 @@
                 z-index: 100;
             }
 
-
-
             #smerc {
                 position: fixed;
                 left: 8px; top: 168px;
                 z-index: 100;
             }
+
 
             .map path {
                 fill: #eee;
@@ -191,14 +190,14 @@
             }
 
             .nodes circle {
-            stroke: #679;
-            stroke-width: 0.5px;
-            fill-opacity: 0.95;
+                stroke: #679;
+                stroke-width: 0.5px;
+                fill-opacity: 0.95;
             }
-            
+
             /*#treaties {*/
-                /*width: 100%;*/
-                /*height: 65%;                        */
+            /*width: 100%;*/
+            /*height: 65%;                        */
             /*}*/
 
             #myInput {
@@ -207,14 +206,14 @@
             }
 
             #treaties {
-                background-color: rgb(213,218,220);
+                background-color: rgb(213,218,220); 
             }
 
             .navbar {
                 margin-bottom: 0px;
             }
         </style>
-</head>
+    </head>
 <body>
     <nav class="navbar navbar-inverse" style="z-index: 1000; font-size: 16px">
         <div class="container-fluid">
@@ -239,13 +238,13 @@
                             <span style=" font-family: Rosario"></span> Tutorial</a></li>
                     </ul>
                 </div>
-        </nav>
-    <input class="form-control" id="myInput" type="text" placeholder="Search...">    
-    <ul class="nav nav-tabs">
+    </nav>
+<input class="form-control" id="myInput" type="text" placeholder="Search...">
+<ul class="nav nav-tabs">
     <li class="active" style="position: absolute;  bottom: 30%"><a data-toggle="tab" href="javascript:tTable()" >Treaties</a></li>
     <!--<li><a data-toggle="tab" href="#menu3">Menu 3</a></li>-->
-    </ul>
-        <div id="data-table" class="container scrollbar "
+</ul>
+<div id="data-table" class="container scrollbar "
      style="width: 100%; height: 30%; margin-bottom: 0px; position: absolute;  bottom: 0px; left: 0px;">
     <!--<input class="form-control" id="myInput" type="text" placeholder="Search...">-->
     <!--<span class="col-sm-2">BCODE</span>-->
@@ -259,34 +258,34 @@
 
     <div class="tab-content" >
         <div>
-            
+
             <table class="table table-bordered table-striped" id="myTable"> </table>
         </div>
 
     </div>
-    </div>
-    <input type="image" id="toggle" src="assets/icon/network.png" height="40px"/>
-    <!--<input type="image" id="smap" src="assets/icon/world.png" height="40px" onClick="document.location.reload(true)"/>-->
-    <a href="mollweide.html"><input type="image" id="smap" src="assets/icon/world.png" height="40px" /></a>
-    <a href="treaties.html"><input type="image" id="smerc" src="assets/icon/merc.png" height="40px" /></a>
+</div>
+<input type="image" id="toggle" src="assets/icon/network.png" height="40px"/>
+<!--<input type="image" id="smap" src="assets/icon/world.png" height="40px" onClick="document.location.reload(true)"/>-->
+<a href="mollweide.html"><input type="image" id="smap" src="assets/icon/world.png" height="40px" /></a>
+<a href="treaties.html"><input type="image" id="smerc" src="assets/icon/merc.png" height="40px" /></a>
 
 
-    <!--<input id="search"><button id="searchnode" onclick="searchNode()">Search</button>-->
+<!--<input id="search"><button id="searchnode" onclick="searchNode()">Search</button>-->
 
-    <script src="//d3js.org/d3.v5.min.js"></script>
+<script src="//d3js.org/d3.v5.min.js"></script>
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.0.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
-    <!--<div id="treaties"></div>-->
-   <!--<div id="treaties"-->
-    <!--viewBox="0 0 1860 500"-->
-    <!--preserveAspectRatio="xMidYMid meet">        -->
-    <!--</div>  -->
+<script type="text/javascript" src="//code.jquery.com/jquery-2.1.0.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+<!--<div id="treaties"></div>-->
+<!--<div id="treaties"-->
+<!--viewBox="0 0 1860 500"-->
+<!--preserveAspectRatio="xMidYMid meet">        -->
+<!--</div>  -->
 
-        <div id="treaties">
-        </div>
-        <script src="script2.js"></script>
+<div id="treaties">
+</div>
+<script src="script4.js"></script>
 
 </body>
 </html>
