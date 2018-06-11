@@ -295,7 +295,7 @@
                     class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <li><a href="javascript:popTile() ">Population Density</a></li>
-                    <li><a href="#">Land Cover</a></li>
+                    <li><a href="javascript:lcTile()">Land Cover</a></li>
                     <li><a href="javascript:giam() ">Irrigation</a></li>
                     <li><a href="javascript:gmrca()">Rainfall</a></li>
                     <li><a href="javascript:damBasin()">Existing Dams</a></li>
@@ -544,6 +544,18 @@ you are interested in only one basin or country you can search the table."
                 <a class="reset" href="javascript:areadimChart2.filterAll();dc.redrawAll();"
                    style="display:none;">reset</a>
                 <div class="clearfix"></div>
+            </div>
+
+        </div>
+        <!--<div class="col-sm-12" style="color: #afb6bc; padding-left: 0px;">Number of Dams in the Basin: <span class= "clear" id="damCount"> </span></div>-->
+        <!--</div>-->
+    </div>
+    <div class="row">
+        <br>
+        <div class="col-md-12">
+            <div id="title">
+                <strong style="color: #afb6bc"> Distribution of Landcover by Basin</strong>
+                <div id="lc-chart"></div>
             </div>
 
         </div>
