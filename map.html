@@ -39,7 +39,14 @@
         <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.1/mapbox-gl.js"></script>
         <!-- leaflet mapbox js -->
         <script src="https://rawgit.com/mapbox/mapbox-gl-leaflet/master/leaflet-mapbox-gl.js"></script>
+        <script type="text/javascript" src="assets/intro.js-2.9.3/intro.js"></script>
+        <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../assets/css/demo.css" rel="stylesheet">
 
+        <!-- Add IntroJs styles -->
+        <link href="assets/intro.js-2.9.3/introjs.css" rel="stylesheet">
+
+        <link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet">
 
         <style>
 
@@ -265,17 +272,17 @@
     </head>
 <body>
 <nav class="navbar navbar-inverse" style="z-index: 1000; font-size: 16px">
-    <div class="container-fluid">
-        <div class="navbar-header">
+    <div class="container-fluid" data-step="1" data-intro="Welcome to the TFDD! This Navigation bar is where you can select different basemaps and sort through different data layers.">
+        <div class="navbar-header" >
             <a class="navbar-brand" style="padding-top: 7px" href="http://transboundarywaters.science.oregonstate.edu/" target="_blank"><img src="assets/img/tfdd_logo.png" style="width: 50px;"></img></a>
         </div>
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home</a></li>
+        <ul class="nav navbar-nav" >
+            <li class="active"><a href="index.html"data-step="2" data-intro="The HOME button till take you back to the previous page.">Home</a></li>
 
-            <li><a href="events.html">Events</a></li>
-            <li><a href="treaties.html">Treaties</a></li>
+            <li><a data-step="2" data-intro="The EVENTS button will display how each of the countries have interacted with each other, either good or bad." href="events.html">Events</a></li>
+            <li><a data-step="3" data-intro="The TREATIES button will show which countries have a treaties with one another." href="treaties.html">Treaties</a></li>
 
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Unit Layer <span
+            <li class="dropdown"><a data-step="4" data-intro="In this dropdown menu you can select to display either the Basins, Basin/Country Units (BCU) or by Country."class="dropdown-toggle" data-toggle="dropdown" href="#">Unit Layer <span
                     class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <li><a href="javascript:cover(base)">Basins</a></li>
@@ -283,7 +290,8 @@
                     <li><a href="javascript:cover(world)">Country</a></li>
                 </ul>
             </li>
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Topic Layer <span
+            <li class="dropdown"><a data-step="5" data-intro="From this dropdown menu you can change the layers on the map. The first four layers: population density, Land Cover, Irrigation and Rainfall
+            are all basemap layers. The rest of the layers will change what data is displayed within the Basin Layer." class="dropdown-toggle" data-toggle="dropdown" href="#">Topic Layer <span
                     class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <li><a href="javascript:popTile() ">Population Density</a></li>
@@ -303,7 +311,7 @@
 
 
         </ul>
-        <ul class="nav navbar-nav navbar-right" >
+        <ul class="nav navbar-nav navbar-right" data-step="6" data-intro="From these items you can download the data, share on facebook, go to the Github repository for this page or view the about page for more information about the project.">
             <li><a target="_blank" href="http://transboundarywaters.science.oregonstate.edu/content/transboundary-freshwater-dispute-database"><i style="color: #afb6bc;" class="fas fa-download"></i></a></li>
             <li><a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">
                 <i class="fa fa-address-book" style="color: #afb6bc;" aria-hidden="true"></i>
@@ -312,7 +320,7 @@
                    href="https://github.com/hannahfriedrich/TFDDGeoViz"><i class="fab fa-github " style="color: #afb6bc;"></i></a></li>
             <li><a data-toggle="modal" data-target="#aboutModal"  ; style='color: #afb6bc;'>
                 <i class="fa fa-info-circle" style="color: #afb6bc;"></i></a></li>
-            <li><a data-toggle="modal" data-target="#tutorialModal" style='color: #afb6bc;'>
+            <li><a class="animated tada" href="javascript:void(0);" onclick="javascript:introJs().start();" style='color: #afb6bc; animation-duration: 2s; animation-delay:2s; animation-iteration-count: 3'>
                 <span style=" font-family: Rosario"></span> Tutorial</a></li>
         </ul>
     </div>
@@ -416,29 +424,31 @@
 </div>
 
 
-<div class="modal fade" id="tutorialModal" role="dialog">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content" style="font-family: Rosario">
-            <div class="modal-header">
+<!--<div class="modal fade" id="tutorialModal" role="dialog">-->
+    <!--<div class="modal-dialog modal-lg">-->
+        <!--<div class="modal-content" style="font-family: Rosario">-->
+            <!--<div class="modal-header">-->
 
-                <h4 class="modal-title">Tutorial</h4>
-            </div>
-            <div class="modal-body">
-                This is where the training will take place
-                <br><br>
+                <!--<h4 class="modal-title">Tutorial</h4>-->
+            <!--</div>-->
+            <!--<div class="modal-body">this is where the training will take place-->
+                <!--<br><br>-->
 
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
+            <!--</div>-->
+            <!--<div class="modal-footer">-->
+                <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
 <!--<a id="backbutton"><i class="fa fa-arrow-left"style="z-index: 1010;top: 10%;left: 20px; position:static; height:50px;width:50px"></i></a>-->
-<div id="map" class="map"></div>
+<div id="map" class="map" data-step="7" data-intro="On the map section you will view each of the transboundary basins. Clicking on one will highlight that basin in the charts to the right.
+ Also the table at the bottom of the page will reflect the sub Basin/Country Units that are within the selected basin. Hovering over each of the basins will display the more pertinent information
+based on the selected topic layer."></div>
 
 <a id="backbutton" href="javascript: cover(base)"><i class="fa fa-arrow-circle-left fa-2x"  style="z-index:1000;color: #2f3942; left: 5px; top:75px;position: absolute;"></i></a>
 <input style="position: absolute; z-index:1000; bottom:30%; width: 70%" class="form-control" id="myInput" type="text" placeholder="Search Database...">
+
 <div id="data-table" class="container scrollbar "
      style="width: 70%; height: 30%; margin: 0px; padding: 0px; position: absolute;  bottom: 0px; left: 0px; font-size: 12px">
         <div class="row">
@@ -460,7 +470,8 @@
 
 
 
-<div class="container side-menu">
+<div class="container side-menu" data-step="6" data-intro="In this side panel you will find two interactive charts showing the distrobution of population and area by Basin. Theses charts will
+ filter the map when clicked. The other features on the panel displays how many basins are viewed from the filters, which basin is selected and how many dams are in the selected basin.">
     <div id="1">
         <div class="row">
             <div class="col-sm-12 dc-data-count" style="color: #afb6bc; padding-bottom: 20px;">
@@ -498,10 +509,7 @@
             </div>
 
         </div>
-        <div class="row" style="width: 100%; background-color: #FFFFFF; height: available">
-            <h1> Landcover map here</h1>
 
-        </div>
     </div>
 
 
