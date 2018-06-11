@@ -65,9 +65,18 @@ window.onload = function() {
 
 
 ///////////////////////////////////////////////ATLAS//////////////////////////////////////////////////////////////////////
+
+var width = $(window).width();
+var height = $(window).height() *0.80 ;
+ 
+$(window).on("resize",resize());
+function resize(){
+    $("svg")
+        .attr("viewBox", "(0 , 0, 100, 100)")
+        .attr("width", width)
+        .attr("height", height);
+}
 var i,
-    width = 1800,
-    height = 600,
     transitionTime = 1500,
     spacing = 11,
     margin = 20,
